@@ -1,31 +1,81 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "adam",
+      "password": "adam1"
+    }
+  ],
 
-"users": [
-  {
-    "id": 1,
-    "username": "adam",
-    "password": "adam1"
-  }
-],
+  "userMedications": [
+    {
+      "id": 1,
+      "userId": 1,
+      "medicationId": 1
+    }
+  ],
 
-"userMedications": [
-  {
-    "id": 1,
-    "userId": 1,
-    "medicationId": 1
-  }
-],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "medicationId": 1,
+      "comments": "hey"
+    }
+  ],
 
-"comments": [
-  {
-    "id": 1,
-    "userId": 1,
-    "medicationId": 1,
-    "comments": "hey"
-  }
-],
-
-
+  "transplantMedications": [
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "id": 1
+    },
+    {
+      "name": "mycophenolate mofetil",
+      "class": "inosine monophosphateh dehydrogenase inhibitor",
+      "route": "PO",
+      "dosage": "1.5 mg",
+      "frequency": "Every 12 Hours",
+      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
+      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
+      "id": 2
+    },
+    {
+      "name": "rituximab",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "1000 mg",
+      "frequency": "Once a week",
+      "indications": "An immunotherapy medicine that interferes with the growth and spread of cancer cells and helps prevent rejection of transplanted organs in the body.",
+      "mechanism": "Binds to B-lymphocyte CD20 surface antigens (monoclonal antibody)",
+      "id": 3
+    },
+    {
+      "name": "cyclosporine",
+      "class": "calcineurin inhibitor",
+      "route": "PO",
+      "dosage": " 7-9 mg/kg/day",
+      "frequency": "Twice a day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
+      "id": 4
+    },
+    {
+      "name": "sirolimus",
+      "class": "immunosuppressant",
+      "route": "PO",
+      "dosage": "1-5 mg",
+      "frequency": "Once a Day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
+      "id": 5
+    }
+  ],
 
   "units": [
     {
