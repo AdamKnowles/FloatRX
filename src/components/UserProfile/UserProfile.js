@@ -4,7 +4,7 @@ import { withRouter } from 'react-router'
     render() {
         return (
             <div>
-                <p>Hey</p>
+                <p>This is User Profile</p>
             </div>
         )
     }

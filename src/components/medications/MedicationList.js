@@ -5,7 +5,7 @@ class MedicationList extends Component {
     render() {
         return (
             <div>
-                <p>Hey</p>
+                <p>This is the medication list</p>
                 
             </div>
         )
