@@ -1,0 +1,13 @@
+import React, { Component } from 'react'
+import ApplicationViews from "./ApplicationViews"
+
+export default class FloatRX extends Component {
+    render() {
+        return (
+            <React.Fragment>
+        {/* <NavBar /> */}
+        <ApplicationViews />
+      </React.Fragment>
+        )
+    }
+}
