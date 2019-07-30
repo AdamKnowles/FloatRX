@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import FloatRX from './FloatRX';
+import { BrowserRouter as Router } from "react-router-dom"
 
 
-ReactDOM.render(<FloatRX />, document.getElementById('root'));
+ReactDOM.render(<Router><FloatRX /></Router>, document.getElementById('root'));
 
 
