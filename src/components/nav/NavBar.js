@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 export default class NavBar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-light light-blue d-flex justify-content-center p-0 shadow">
+            <nav className="navbar navbar-light bg-medium d-flex justify-content-center p-0 shadow">
                 <ul className="nav nav-pills nav-fill">
                     <li className="nav-item">
                         <Link className="nav-link" to="/medicationlist">Medication List</Link>

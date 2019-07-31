@@ -77,6 +77,59 @@
     }
   ],
 
+  "oncologyMedications": [
+    {
+      "name": "cisplatin",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "20-70 mg",
+      "frequency": "Once a day for 5 Days",
+      "indications": "Testicular and Ovarian Carcinoma",
+      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
+      "id": 1
+    },
+    {
+      "name": "methotrexate",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "40 mg",
+      "frequency": "Once a day for 28 days",
+      "indications": "Used to treat leukemia and certain types of cancer of the breast, skin, head and neck, or lung",
+      "mechanism": "Inhibits dihydrofolate reductase; inhibits lymphocyte proliferation (folate antagonist)",
+      "id": 2
+    },
+    {
+      "name": "doxorubicin",
+      "class": "anthracycline",
+      "route": "IV",
+      "dosage": "60-75 mg",
+      "frequency": "Once a day",
+      "indications": "Used to treat different types of cancers that affect the breast, bladder, ovary, thyroid, stomach, lungs, bones, nerve tissues, muscles, joints, and soft tissues. Doxorubicin is also used to treat Hodgkin's disease and certain types of leukemia",
+      "mechanism": "Binds and intercalates into DNA, inhibiting nucleic acid and protein synthesis; triggers DNA cleavage by topoisomerase II",
+      "id": 3
+    },
+    {
+      "name": "megestrol",
+      "class": "progestin",
+      "route": "PO",
+      "dosage": "800 mg",
+      "frequency": "Every day",
+      "indications": "Used to treat loss of appetite and wasting syndrome in people with acquired immunodeficiency syndrome (AIDS).",
+      "mechanism": "Exact mechanism of action unknown; agonizes glucocorticoid receptors; may interfere with cachexin (progestin)",
+      "id": 4
+    },
+    {
+      "name": "etoposide",
+      "class": "DNA topoisomerase II inhibitor",
+      "route": "IV",
+      "dosage": "50-100 mg",
+      "frequency": "Once a day",
+      "indications": "Used to treat small cell lung cancer. It is usually given in combination with other cancer medicines",
+      "mechanism": "Affects cell cycle G2, lysing cells entering mitosis and inhibiting cells from entering prophase",
+      "id": 5
+    }
+  ],
+
   "units": [
     {
       "id": 1,

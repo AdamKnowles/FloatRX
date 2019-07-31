@@ -3,25 +3,29 @@ import { withRouter } from 'react-router'
 import MedicationCard from "./MedicationCard"
 import NavBar from '../nav/NavBar';
 import "bootstrap/dist/css/bootstrap.min.css"
+import MedDropdown from "../Dropdown"
 
 class MedicationList extends Component {
+    
     render() {
         return (
             <React.Fragment>
+                
             
             <div>
+                <MedDropdown 
+                // {...this.props} 
+                />
                 
-                <select >
-                    <option value="transplant">Transplant</option>
-                    <option value="oncology">Oncology</option>
-                    <option value="obstetrics">Obstetrics</option>
-                    <option value="icu">ICU</option>
-                    <option value="urology">Urology</option>
-
-
-                </select>
+                
                 {
-                    this.props.medications
+                    this.props.transplantMedications
+                .map(medication => <MedicationCard key={medication.id} medication={medication} {...this.props} />)
+                
+                }
+                
+                {
+                    this.props.oncologyMedications
                 .map(medication => <MedicationCard key={medication.id} medication={medication} {...this.props} />)
                 
                 }

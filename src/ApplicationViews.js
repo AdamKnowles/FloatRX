@@ -8,18 +8,32 @@ import MedicationCard from "./components/medications/MedicationCard";
 
 class ApplicationViews extends Component {
   state = {
-    medications: [],
+    transplantMedications: [],
+    oncologyMedications: [],
     users: []
   };
 
   componentDidMount() {
     const newState = {};
-    APImanager.getAll("transplantMedications").then(
-      medications => (newState.medications = medications)
-)
-      .then(() => this.setState(newState))
-      console.log(newState);
+    this.getTransplantMeds().then(
+      transplantMedications =>
+        (newState.transplantMedications = transplantMedications)
+    )
+    this.getOncologyMeds()
+      .then(
+        oncologyMedications =>
+          (newState.oncologyMedications = oncologyMedications)
+      )
+      .then(() => this.setState(newState));
   }
+
+  getTransplantMeds = () => {
+    return APImanager.getAll("transplantMedications");
+  };
+
+  getOncologyMeds = () => {
+    return APImanager.getAll("oncologyMedications");
+  };
 
   render() {
     return (
@@ -28,16 +42,19 @@ class ApplicationViews extends Component {
           exact
           path="/medicationlist"
           render={props => {
-            return  <MedicationList medications={this.state.medications} />;
-            
+            return (
+              <MedicationList
+                oncologyMedications={this.state.oncologyMedications}
+                transplantMedications={this.state.transplantMedications}
+              />
+            );
           }}
         />
         <Route
           exact
           path="/profile"
           render={props => {
-            return <UserProfile />;
-            
+            return <UserProfile {...props} />;
           }}
         />
       </React.Fragment>

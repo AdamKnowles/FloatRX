@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 export default class MedicationCard extends Component {
     render() {
@@ -6,19 +8,22 @@ export default class MedicationCard extends Component {
             <section className="medications">
         {
           
-            <div key={this.props.medication.id} className="card">
-              <div className="card-body">
-                <div className="card-title">
-                  <p>Name: {this.props.medication.name}</p>
-                  <p>Class: {this.props.medication.class}</p>
-                  <p>Route: {this.props.medication.route}</p>
-                  <p>Dosage: {this.props.medication.dosage}</p>
-                  <p>Indication: {this.props.medication.indications}</p>
-                  <p>Mechanism of Action: {this.props.medication.mechanism}</p>
-                  
-                </div>
-              </div>
-            </div>
+            
+
+<div key={this.props.medication.id} className="card">
+<Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+  
+  <CardBody className='#8fbc8f' >
+    <CardText>Name: {this.props.medication.name}</CardText>
+    <CardText>Class: {this.props.medication.class}</CardText>
+    <CardText>Route: {this.props.medication.route}</CardText>
+    <CardText>Dosage: {this.props.medication.dosage}</CardText>
+    <CardText>Indication: {this.props.medication.indications}</CardText>
+    <CardText>Mechanism of Action: {this.props.medication.mechanism}</CardText>
+    <Button>Add to Profile</Button>
+  </CardBody>
+</Card>
+</div>
           
         }
       </section>
