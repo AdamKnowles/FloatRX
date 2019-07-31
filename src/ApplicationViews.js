@@ -8,32 +8,24 @@ import MedicationCard from "./components/medications/MedicationCard";
 
 class ApplicationViews extends Component {
   state = {
-    transplantMedications: [],
-    oncologyMedications: [],
+    medications: [],
     users: []
   };
 
   componentDidMount() {
     const newState = {};
-    this.getTransplantMeds().then(
-      transplantMedications =>
-        (newState.transplantMedications = transplantMedications)
+    this.getMeds().then(
+        medications =>
+        (newState.medications = medications)
     )
-    this.getOncologyMeds()
-      .then(
-        oncologyMedications =>
-          (newState.oncologyMedications = oncologyMedications)
-      )
       .then(() => this.setState(newState));
   }
 
-  getTransplantMeds = () => {
-    return APImanager.getAll("transplantMedications");
+  getMeds = () => {
+    return APImanager.getAll("unitMedications?unitId=3&_expand=medication");
   };
 
-  getOncologyMeds = () => {
-    return APImanager.getAll("oncologyMedications");
-  };
+  
 
   render() {
     return (
@@ -44,8 +36,8 @@ class ApplicationViews extends Component {
           render={props => {
             return (
               <MedicationList
-                oncologyMedications={this.state.oncologyMedications}
-                transplantMedications={this.state.transplantMedications}
+              medications={this.state.medications}
+                // transplantMedications={this.state.transplantMedications}
               />
             );
           }}

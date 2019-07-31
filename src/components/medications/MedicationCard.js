@@ -5,7 +5,7 @@ import { Card, CardImg, CardText, CardBody,
 export default class MedicationCard extends Component {
     render() {
         return (
-            <section className="medications">
+            <section className="medication">
         {
           
             

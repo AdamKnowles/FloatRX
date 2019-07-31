@@ -19,16 +19,16 @@ class MedicationList extends Component {
                 
                 
                 {
-                    this.props.transplantMedications
+                    this.props.medications
                 .map(medication => <MedicationCard key={medication.id} medication={medication} {...this.props} />)
                 
                 }
                 
-                {
+                {/* {
                     this.props.oncologyMedications
                 .map(medication => <MedicationCard key={medication.id} medication={medication} {...this.props} />)
                 
-                }
+                } */}
                 
             </div>
             </React.Fragment>
