@@ -9,21 +9,30 @@ import MedicationCard from "./components/medications/MedicationCard";
 class ApplicationViews extends Component {
   state = {
     medications: [],
-    users: []
+    users: [],
+    units:[],
+    unitParam: ""
+
   };
 
   componentDidMount() {
     const newState = {};
-    this.getMeds().then(
+    this.getMeds("2").then(
         medications =>
         (newState.medications = medications)
     )
+    APImanager.getAll("units")
+      .then(units => (newState.units = units))
       .then(() => this.setState(newState));
   }
 
-  getMeds = () => {
-    return APImanager.getAll("unitMedications?unitId=3&_expand=medication");
+  getMeds = (id) => {
+    return APImanager.getUnitMedications(id);
   };
+
+  searchParam = (unitId) => {
+      this.setState({unitParam: unitId})
+  }
 
   
 
@@ -36,7 +45,7 @@ class ApplicationViews extends Component {
           render={props => {
             return (
               <MedicationList
-              medications={this.state.medications}
+              medications={this.state.medications} units={this.state.units} searchParam={this.searchParam}{...props}
                 // transplantMedications={this.state.transplantMedications}
               />
             );

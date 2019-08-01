@@ -14,6 +14,13 @@ export default Object.create(null, {
     }
   },
 
+  getUnitMedications: {
+      value: function (unitId) {
+          return fetch(`${remoteURL}/unitMedications?unitId=${unitId}&_expand=medication`).then(e => e.json());
+      }
+
+  },
+
   //delete entry
   delete: {
     value: function (resource, id) {

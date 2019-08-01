@@ -27,23 +27,23 @@
   "units": [
     {
       "id": 1,
-      "name": "transplant"
+      "name": "Transplant"
     },
     {
       "id": 2,
-      "name": "oncology"
+      "name": "Oncology"
     },
     {
       "id": 3,
-      "name": "obstetrics"
+      "name": "Obstetrics"
     },
     {
       "id": 4,
-      "name": "icu"
+      "name": "Icu"
     },
     {
       "id": 5,
-      "name": "urology"
+      "name": "Urology"
     }
   ],
 
