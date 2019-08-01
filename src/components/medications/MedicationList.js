@@ -14,7 +14,7 @@ class MedicationList extends Component {
             
             <div>
                 
-                <MedDropdown units={this.props.units} {...this.props} 
+                <MedDropdown  units={this.props.units} {...this.props} 
                 searchParam={this.props.searchParam} 
                 />
                 

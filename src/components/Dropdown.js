@@ -23,9 +23,9 @@ export default class MedDropdown extends Component {
       dropdownOpen: !this.state.dropdownOpen,
       value: event.target.innerText
     });
-    // searchParam(event.target.value)
+    this.props.searchParam(event.target.value)
   }
-
+  
   render() {
     return (
       
@@ -35,7 +35,7 @@ export default class MedDropdown extends Component {
         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
           <DropdownToggle> {this.state.value} Unit</DropdownToggle>
           <DropdownMenu>
-            {this.props.units.map(unit => <DropdownItem value={unit.id} onClick={this.select}>{unit.name}</DropdownItem>)}
+          {this.props.units.map(unit => <DropdownItem value={unit.id} onClick={this.select}>{unit.name}</DropdownItem>)}
           
           </DropdownMenu>
         </Dropdown>
