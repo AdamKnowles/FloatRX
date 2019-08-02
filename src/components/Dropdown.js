@@ -23,22 +23,26 @@ export default class MedDropdown extends Component {
       dropdownOpen: !this.state.dropdownOpen,
       value: event.target.innerText
     });
+    this.props.searchParam(event.target.value)
   }
-
+  
   render() {
     return (
+      
       <React.Fragment>
+        {
+        <div>
         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
           <DropdownToggle> {this.state.value} Unit</DropdownToggle>
           <DropdownMenu>
-            <DropdownItem onClick={this.select}>Transplant</DropdownItem>
-            <DropdownItem onClick={this.select}>Obstetrics</DropdownItem>
-            <DropdownItem onClick={this.select}>Oncology</DropdownItem>
-            <DropdownItem onClick={this.select}>Intensive Care</DropdownItem>
-            <DropdownItem onClick={this.select}>Urology</DropdownItem>
+          {this.props.units.map(unit => <DropdownItem onClick={this.toggle_modal} toggle={false} value={unit.id} onClick={this.select}>{unit.name}</DropdownItem>)}
+          
           </DropdownMenu>
         </Dropdown>
+        </div>
+        }
       </React.Fragment>
+      
     );
   }
 }

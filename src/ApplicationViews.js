@@ -8,34 +8,46 @@ import MedicationCard from "./components/medications/MedicationCard";
 
 class ApplicationViews extends Component {
   state = {
-    transplantMedications: [],
-    oncologyMedications: [],
-    users: []
-  };
+    medications: [],
+    users: [],
+    units:[],
+    unitParam: "1"
+
+  }
+
+  
 
   componentDidMount() {
     const newState = {};
-    this.getTransplantMeds().then(
-      transplantMedications =>
-        (newState.transplantMedications = transplantMedications)
+    
+    
+    
+    this.getAllUnitMeds().then(
+        medications =>
+        (newState.medications = medications)
     )
-    this.getOncologyMeds()
-      .then(
-        oncologyMedications =>
-          (newState.oncologyMedications = oncologyMedications)
-      )
+    APImanager.getAll("unit")
+      .then(units => (newState.units = units))
       .then(() => this.setState(newState));
+    
+    
   }
 
-  getTransplantMeds = () => {
-    return APImanager.getAll("transplantMedications");
+  getUnitMeds = (id) => {
+    return APImanager.getUnitMedications(id);
+  };
+  getAllUnitMeds = () => {
+    return APImanager.getAllUnitMedications();
   };
 
-  getOncologyMeds = () => {
-    return APImanager.getAll("oncologyMedications");
-  };
+  searchParam = (unitId) => {
+      this.setState({unitParam: unitId})
+  }
+
+  
 
   render() {
+    
     return (
       <React.Fragment>
         <Route
@@ -44,8 +56,8 @@ class ApplicationViews extends Component {
           render={props => {
             return (
               <MedicationList
-                oncologyMedications={this.state.oncologyMedications}
-                transplantMedications={this.state.transplantMedications}
+              medications={this.state.medications} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam}{...props}
+                // transplantMedications={this.state.transplantMedications}
               />
             );
           }}

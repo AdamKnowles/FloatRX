@@ -23,8 +23,160 @@
       "comments": "hey"
     }
   ],
+  
+  "unit": [
+    {
+      "id": 1,
+      "name": "Transplant"
+    },
+    {
+      "id": 2,
+      "name": "Oncology"
+    },
+    {
+      "id": 3,
+      "name": "Obstetrics"
+    },
+    {
+      "id": 4,
+      "name": "Icu"
+    },
+    {
+      "id": 5,
+      "name": "Urology"
+    }
+  ],
 
-  "transplantMedications": [
+  "unitMedications":[
+    {
+      "id": 1,
+      "medicationId":1,
+      "unitId":1
+    },
+    {
+      "id": 2,
+      "medicationId":2,
+      "unitId":1
+    },
+    {
+      "id": 3,
+      "medicationId":3,
+      "unitId":1
+    },
+    {
+      "id": 4,
+      "medicationId":4,
+      "unitId":1
+    },
+    {
+      "id": 5,
+      "medicationId":5,
+      "unitId":1
+    },
+    {
+      "id": 6,
+      "medicationId":6,
+      "unitId":2
+    },
+    {
+      "id": 7,
+      "medicationId":7,
+      "unitId":2
+    },
+    {
+      "id": 8,
+      "medicationId":8,
+      "unitId":2
+    },
+    {
+      "id": 9,
+      "medicationId":9,
+      "unitId":2
+    },
+    {
+      "id": 10,
+      "medicationId":10,
+      "unitId":2
+    },
+    {
+      "id": 11,
+      "medicationId":11,
+      "unitId":3
+    },
+    {
+      "id": 12,
+      "medicationId":12,
+      "unitId":3
+    },
+    {
+      "id": 13,
+      "medicationId":13,
+      "unitId":3
+    },
+    {
+      "id": 14,
+      "medicationId":14,
+      "unitId":3
+    },
+    {
+      "id": 15,
+      "medicationId":15,
+      "unitId":3
+    },
+    {
+      "id": 16,
+      "medicationId":16,
+      "unitId":4
+    },
+    {
+      "id": 17,
+      "medicationId":17,
+      "unitId":4
+    },
+    {
+      "id": 18,
+      "medicationId":18,
+      "unitId":4
+    },
+    {
+      "id": 19,
+      "medicationId":19,
+      "unitId":4
+    },
+    {
+      "id": 20,
+      "medicationId":20,
+      "unitId":4
+    },
+    {
+      "id": 21,
+      "medicationId":21,
+      "unitId":5
+    },
+    {
+      "id": 22,
+      "medicationId":22,
+      "unitId":5
+    },
+    {
+      "id": 23,
+      "medicationId":23,
+      "unitId":5
+    },
+    {
+      "id": 24,
+      "medicationId":24,
+      "unitId":5
+    },
+    {
+      "id": 25,
+      "medicationId":25,
+      "unitId":5
+    }
+
+  ],
+
+  "medications": [
     {
       "name": "tacrolimus",
       "class": "Calcineurin Inhibitors",
@@ -74,10 +226,7 @@
       "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
       "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
       "id": 5
-    }
-  ],
-
-  "oncologyMedications": [
+    },
     {
       "name": "cisplatin",
       "class": "antineoplastics",
@@ -86,7 +235,7 @@
       "frequency": "Once a day for 5 Days",
       "indications": "Testicular and Ovarian Carcinoma",
       "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "id": 1
+      "id": 6
     },
     {
       "name": "methotrexate",
@@ -96,7 +245,7 @@
       "frequency": "Once a day for 28 days",
       "indications": "Used to treat leukemia and certain types of cancer of the breast, skin, head and neck, or lung",
       "mechanism": "Inhibits dihydrofolate reductase; inhibits lymphocyte proliferation (folate antagonist)",
-      "id": 2
+      "id": 7
     },
     {
       "name": "doxorubicin",
@@ -106,7 +255,7 @@
       "frequency": "Once a day",
       "indications": "Used to treat different types of cancers that affect the breast, bladder, ovary, thyroid, stomach, lungs, bones, nerve tissues, muscles, joints, and soft tissues. Doxorubicin is also used to treat Hodgkin's disease and certain types of leukemia",
       "mechanism": "Binds and intercalates into DNA, inhibiting nucleic acid and protein synthesis; triggers DNA cleavage by topoisomerase II",
-      "id": 3
+      "id": 8
     },
     {
       "name": "megestrol",
@@ -116,7 +265,7 @@
       "frequency": "Every day",
       "indications": "Used to treat loss of appetite and wasting syndrome in people with acquired immunodeficiency syndrome (AIDS).",
       "mechanism": "Exact mechanism of action unknown; agonizes glucocorticoid receptors; may interfere with cachexin (progestin)",
-      "id": 4
+      "id": 9
     },
     {
       "name": "etoposide",
@@ -126,315 +275,157 @@
       "frequency": "Once a day",
       "indications": "Used to treat small cell lung cancer. It is usually given in combination with other cancer medicines",
       "mechanism": "Affects cell cycle G2, lysing cells entering mitosis and inhibiting cells from entering prophase",
-      "id": 5
-    }
-  ],
-
-  "units": [
-    {
-      "id": 1,
-      "transplant": [
-        {
-          "id": 1,
-          "unitId": 1,
-          "medications": [
-            {
-              "name": "tacrolimus",
-              "class": "Calcineurin Inhibitors",
-              "route": "PO",
-              "dosage": "0.1-0.2 mg/kg/day",
-              "frequency": "Every 12 Hours",
-              "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-              "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-              "id": 1
-            },
-            {
-              "name": "mycophenolate mofetil",
-              "class": "inosine monophosphateh dehydrogenase inhibitor",
-              "route": "PO",
-              "dosage": "1.5 mg",
-              "frequency": "Every 12 Hours",
-              "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
-              "mechanism": "Inhibits B- and T-lymphocyte proliferation",
-              "id": 2
-            },
-            {
-              "name": "rituximab",
-              "class": "antineoplastics",
-              "route": "IV",
-              "dosage": "1000 mg",
-              "frequency": "Once a week",
-              "indications": "An immunotherapy medicine that interferes with the growth and spread of cancer cells and helps prevent rejection of transplanted organs in the body.",
-              "mechanism": "Binds to B-lymphocyte CD20 surface antigens (monoclonal antibody)",
-              "id": 3
-            },
-            {
-              "name": "cyclosporine",
-              "class": "calcineurin inhibitor",
-              "route": "PO",
-              "dosage": " 7-9 mg/kg/day",
-              "frequency": "Twice a day",
-              "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-              "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
-              "id": 4
-            },
-            {
-              "name": "sirolimus",
-              "class": "immunosuppressant",
-              "route": "PO",
-              "dosage": "1-5 mg",
-              "frequency": "Once a Day",
-              "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-              "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
-              "id": 5
-            }
-          ]
-        }
-      ]
+      "id": 10
     },
     {
-      "id": 2,
-      "oncology": [
-        {
-          "id": 2,
-          "unitId": 2,
-          "medications": [
-            {
-              "name": "cisplatin",
-              "class": "antineoplastics",
-              "route": "IV",
-              "dosage": "20-70 mg",
-              "frequency": "Once a day for 5 Days",
-              "indications": "Testicular and Ovarian Carcinoma",
-              "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-              "id": 1
-            },
-            {
-              "name": "methotrexate",
-              "class": "antineoplastics",
-              "route": "IV",
-              "dosage": "40 mg",
-              "frequency": "Once a day for 28 days",
-              "indications": "Used to treat leukemia and certain types of cancer of the breast, skin, head and neck, or lung",
-              "mechanism": "Inhibits dihydrofolate reductase; inhibits lymphocyte proliferation (folate antagonist)",
-              "id": 2
-            },
-            {
-              "name": "doxorubicin",
-              "class": "anthracycline",
-              "route": "IV",
-              "dosage": "60-75 mg",
-              "frequency": "Once a day",
-              "indications": "Used to treat different types of cancers that affect the breast, bladder, ovary, thyroid, stomach, lungs, bones, nerve tissues, muscles, joints, and soft tissues. Doxorubicin is also used to treat Hodgkin's disease and certain types of leukemia",
-              "mechanism": "Binds and intercalates into DNA, inhibiting nucleic acid and protein synthesis; triggers DNA cleavage by topoisomerase II",
-              "id": 3
-            },
-            {
-              "name": "megestrol",
-              "class": "progestin",
-              "route": "PO",
-              "dosage": "800 mg",
-              "frequency": "Every day",
-              "indications": "Used to treat loss of appetite and wasting syndrome in people with acquired immunodeficiency syndrome (AIDS).",
-              "mechanism": "Exact mechanism of action unknown; agonizes glucocorticoid receptors; may interfere with cachexin (progestin)",
-              "id": 4
-            },
-            {
-              "name": "etoposide",
-              "class": "DNA topoisomerase II inhibitor",
-              "route": "IV",
-              "dosage": "50-100 mg",
-              "frequency": "Once a day",
-              "indications": "Used to treat small cell lung cancer. It is usually given in combination with other cancer medicines",
-              "mechanism": "Affects cell cycle G2, lysing cells entering mitosis and inhibiting cells from entering prophase",
-              "id": 5
-            }
-          ]
-        }
-      ]
+      "name": "oxytocin",
+      "class": "polypeptide hormone",
+      "route": "IV",
+      "dosage": "0.5-2 milliunits/min",
+      "frequency": "Every 15-40 min",
+      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
+      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
+      "id": 11
     },
     {
-      "id": 3,
-      "obstetrics": [
-        {
-          "id": 3,
-          "unitId": 3,
-          "medications": [
-            {
-              "name": "oxytocin",
-              "class": "polypeptide hormone",
-              "route": "IV",
-              "dosage": "0.5-2 milliunits/min",
-              "frequency": "Every 15-40 min",
-              "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
-              "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
-              "id": 1
-            },
-            {
-              "name": "magnesium sulfate",
-              "class": "Antidysrhythmics, Electrolytes",
-              "route": "IV",
-              "dosage": "1-2 g/h",
-              "frequency": "Continuous",
-              "indications": "Used to prevent seizures in pregnant women with conditions such as pre-eclampsia, eclampsia, or toxemia of pregnancy",
-              "mechanism": "Participates in physiologic processes",
-              "id": 2
-            },
-            {
-              "name": "Salbutamol",
-              "class": "myometrial relaxant",
-              "route": "IV",
-              "dosage": "10 mcg/min",
-              "frequency": "Continuous",
-              "indications": "Uncomplicated premature labour between 24–33 weeks gestation",
-              "mechanism": "Participates in physiologic processes",
-              "id": 3
-            },
-            {
-              "name": "misoprostol",
-              "class": "",
-              "route": "PV",
-              "dosage": "25 mcg",
-              "frequency": "Every 3-6 hours",
-              "indications": "Reduces stomach acid and helps protect the stomach from damage that can be caused by taking a nonsteroidal anti-inflammatory drug",
-              "mechanism": "Inhibits gastric acid secretion and protects GI mucosa; produces uterine contractions (prostaglandin E1)",
-              "id": 4
-            },
-            {
-              "name": "bupivacaine",
-              "class": "sodium channel blocker",
-              "route": "IntraThecal",
-              "dosage": " 2 mg/kg",
-              "frequency": "Continuous",
-              "indications": "Regional anesthesia during childbirth",
-              "mechanism": "Inhibits Na ion channels, stabilizing neuronal cell membranes and inhibiting nerve impulse initiation and conduction",
-              "id": 5
-            }
-          ]
-        }
-      ]
+      "name": "magnesium sulfate",
+      "class": "Antidysrhythmics, Electrolytes",
+      "route": "IV",
+      "dosage": "1-2 g/h",
+      "frequency": "Continuous",
+      "indications": "Used to prevent seizures in pregnant women with conditions such as pre-eclampsia, eclampsia, or toxemia of pregnancy",
+      "mechanism": "Participates in physiologic processes",
+      "id": 12
     },
     {
-      "id": 4,
-      "ICU": [
-        {
-          "id": 4,
-          "unitId": 4,
-          "medications": [
-            {
-              "name": "propofol",
-              "class": "general anesthetic",
-              "route": "IV",
-              "dosage": "5 mcg/kg/min",
-              "frequency": "Continuous",
-              "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-              "mechanism": "Induces hypnosis",
-              "id": 1
-            },
-            {
-              "name": "norepinephrine",
-              "class": " Catecholamines",
-              "route": "IV",
-              "dosage": "0.02-1 mcg/kg/min",
-              "frequency": "Continuous",
-              "indications": "Used to treat life-threatening low blood pressure (hypotension)",
-              "mechanism": "Stimulates alpha and beta-1 adrenergic receptors; produces inotropic and vasopressor effects",
-              "id": 2
-            },
-            {
-              "name": "nitroprusside",
-              "class": "nitrate",
-              "route": "IV",
-              "dosage": "3-4 mcg/kg/min",
-              "frequency": "Continuous",
-              "indications": "Hypertensive Crisis or high blood pressure",
-              "mechanism": "Directly dilates peripheral vessels",
-              "id": 3
-            },
-            {
-              "name": "vasopressin",
-              "class": "anti-diuretic hormone",
-              "route": "IV",
-              "dosage": "0.01-0.04 units/min",
-              "frequency": "Continuous",
-              "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
-              "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
-              "id": 4
-            },
-            {
-              "name": "dexmedetomidine",
-              "class": "alpha-2 agonist",
-              "route": "IV",
-              "dosage": " 1 mcg/kg",
-              "frequency": "Continuous",
-              "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
-              "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
-              "id": 5
-            }
-          ]
-        }
-      ]
+      "name": "Salbutamol",
+      "class": "myometrial relaxant",
+      "route": "IV",
+      "dosage": "10 mcg/min",
+      "frequency": "Continuous",
+      "indications": "Uncomplicated premature labour between 24–33 weeks gestation",
+      "mechanism": "Participates in physiologic processes",
+      "id": 13
     },
     {
-      "id": 5,
-      "urology": [
-        {
-          "id": 5,
-          "unitId": 5,
-          "medications": [
-            {
-              "name": "phenazopyridine",
-              "class": " Alpha1 Agonist",
-              "route": "PO",
-              "dosage": "100-200 mg",
-              "frequency": "3 times a day",
-              "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
-              "mechanism": "Produces topical analgesia",
-              "id": 1
-            },
-            {
-              "name": "flavoxate",
-              "class": "anticholinergic",
-              "route": "PO",
-              "dosage": "100-200 mg",
-              "frequency": "3-4 times a day",
-              "indications": "Bladder Spasms",
-              "mechanism": "Antagonizes acetylcholine receptors (anticholinergic)",
-              "id": 2
-            },
-            {
-              "name": "oxybutynin",
-              "class": "Bladder selective muscarinic antagonist",
-              "route": "PO",
-              "dosage": "5 mg",
-              "frequency": "2-3 times a day",
-              "indications": "Reduces muscle spasms of the bladder and urinary tract.",
-              "mechanism": "Antagonizes acetylcholine at muscarinic receptors; relaxes bladder smooth muscle, inhibits involuntary detrusor muscle contractions (anticholinergic)",
-              "id": 3
-            },
-            {
-              "name": "finasteride",
-              "class": "5-alpha reductase inhibitor",
-              "route": "PO",
-              "dosage": "5 mg",
-              "frequency": "daily",
-              "indications": "Used to treat symptoms of benign prostatic hyperplasia (BPH) in men with an enlarged prostate",
-              "mechanism": "Inhibits type II 5-alpha-reductase, interfering w/ conversion of testosterone to 5-alpha-dihydrotestosterone",
-              "id": 4
-            },
-            {
-              "name": "tamsulosin",
-              "class": "alpha-1 blocker, selective",
-              "route": "PO",
-              "dosage": "0.4 mg",
-              "frequency": "Daily",
-              "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
-              "mechanism": "Selectively antagonizes prostate alpha-1a adrenergic receptors, relaxing smooth muscle and improving urine flow (peripherally-acting alpha blocker)",
-              "id": 5
-            }
-          ]
-        }
-      ]
+      "name": "misoprostol",
+      "class": "",
+      "route": "PV",
+      "dosage": "25 mcg",
+      "frequency": "Every 3-6 hours",
+      "indications": "Reduces stomach acid and helps protect the stomach from damage that can be caused by taking a nonsteroidal anti-inflammatory drug",
+      "mechanism": "Inhibits gastric acid secretion and protects GI mucosa; produces uterine contractions (prostaglandin E1)",
+      "id": 14
+    },
+    {
+      "name": "bupivacaine",
+      "class": "sodium channel blocker",
+      "route": "IntraThecal",
+      "dosage": " 2 mg/kg",
+      "frequency": "Continuous",
+      "indications": "Regional anesthesia during childbirth",
+      "mechanism": "Inhibits Na ion channels, stabilizing neuronal cell membranes and inhibiting nerve impulse initiation and conduction",
+      "id": 15
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "id": 16
+    },
+    {
+      "name": "norepinephrine",
+      "class": " Catecholamines",
+      "route": "IV",
+      "dosage": "0.02-1 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to treat life-threatening low blood pressure (hypotension)",
+      "mechanism": "Stimulates alpha and beta-1 adrenergic receptors; produces inotropic and vasopressor effects",
+      "id": 17
+    },
+    {
+      "name": "nitroprusside",
+      "class": "nitrate",
+      "route": "IV",
+      "dosage": "3-4 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Hypertensive Crisis or high blood pressure",
+      "mechanism": "Directly dilates peripheral vessels",
+      "id": 18
+    },
+    {
+      "name": "vasopressin",
+      "class": "anti-diuretic hormone",
+      "route": "IV",
+      "dosage": "0.01-0.04 units/min",
+      "frequency": "Continuous",
+      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
+      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
+      "id": 19
+    },
+    {
+      "name": "dexmedetomidine",
+      "class": "alpha-2 agonist",
+      "route": "IV",
+      "dosage": " 1 mcg/kg",
+      "frequency": "Continuous",
+      "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
+      "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
+      "id": 20
+    },
+    {
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "id": 21
+    },
+    {
+      "name": "flavoxate",
+      "class": "anticholinergic",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3-4 times a day",
+      "indications": "Bladder Spasms",
+      "mechanism": "Antagonizes acetylcholine receptors (anticholinergic)",
+      "id": 22
+    },
+    {
+      "name": "oxybutynin",
+      "class": "Bladder selective muscarinic antagonist",
+      "route": "PO",
+      "dosage": "5 mg",
+      "frequency": "2-3 times a day",
+      "indications": "Reduces muscle spasms of the bladder and urinary tract.",
+      "mechanism": "Antagonizes acetylcholine at muscarinic receptors; relaxes bladder smooth muscle, inhibits involuntary detrusor muscle contractions (anticholinergic)",
+      "id": 23
+    },
+    {
+      "name": "finasteride",
+      "class": "5-alpha reductase inhibitor",
+      "route": "PO",
+      "dosage": "5 mg",
+      "frequency": "daily",
+      "indications": "Used to treat symptoms of benign prostatic hyperplasia (BPH) in men with an enlarged prostate",
+      "mechanism": "Inhibits type II 5-alpha-reductase, interfering w/ conversion of testosterone to 5-alpha-dihydrotestosterone",
+      "id": 24
+    },
+    {
+      "name": "tamsulosin",
+      "class": "alpha-1 blocker, selective",
+      "route": "PO",
+      "dosage": "0.4 mg",
+      "frequency": "Daily",
+      "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
+      "mechanism": "Selectively antagonizes prostate alpha-1a adrenergic receptors, relaxing smooth muscle and improving urine flow (peripherally-acting alpha blocker)",
+      "id": 25
     }
   ]
 }
