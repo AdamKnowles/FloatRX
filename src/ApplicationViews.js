@@ -11,6 +11,7 @@ class ApplicationViews extends Component {
     medications: [],
     users: [],
     units:[],
+    userProfile:[],
     unitParam: "1"
 
   }
@@ -28,7 +29,9 @@ class ApplicationViews extends Component {
     )
     APImanager.getAll("unit")
       .then(units => (newState.units = units))
-      .then(() => this.setState(newState));
+    APImanager.getAll("userProfile")
+      .then(userProfile => (newState.userProfile = userProfile))
+    .then(() => this.setState(newState));
     
     
   }
@@ -38,11 +41,30 @@ class ApplicationViews extends Component {
   };
   getAllUnitMeds = () => {
     return APImanager.getAllUnitMedications();
-  };
+  }
 
   searchParam = (unitId) => {
       this.setState({unitParam: unitId})
   }
+
+  addMedicationToProfile = medication => {
+    return APImanager.post("userProfile", medication)
+      .then(() => APImanager.getAll("userProfile"))
+      .then(medication =>
+        this.setState({
+          userProfile: medication
+        })
+      );
+  }
+
+  deleteMedFromProfile = id => {
+    return APImanager.delete("userProfile", id)
+      .then(() => APImanager.getAll("userProfile"))
+      .then(medication => {
+        // this.props.history.push("/events");
+        this.setState({ userProfile: medication });
+      });
+  };
 
   
 
@@ -56,7 +78,7 @@ class ApplicationViews extends Component {
           render={props => {
             return (
               <MedicationList
-              medications={this.state.medications} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam}{...props}
+              medications={this.state.medications} units={this.state.units} unitParam={this.state.unitParam} addMedicationToProfile={this.addMedicationToProfile} searchParam={this.searchParam}{...props}
                 // transplantMedications={this.state.transplantMedications}
               />
             );
@@ -66,7 +88,7 @@ class ApplicationViews extends Component {
           exact
           path="/profile"
           render={props => {
-            return <UserProfile {...props} />;
+            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} deleteMedFromProfile={this.deleteMedFromProfile} {...props} />;
           }}
         />
       </React.Fragment>

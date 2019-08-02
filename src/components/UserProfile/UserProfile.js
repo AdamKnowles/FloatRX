@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import MedicationCard from "../medications/MedicationCard"
+import UserProfileMedCard from './UserProfileMedCard';
  class UserProfile extends Component {
     render() {
         return (
+            <React.Fragment>
             <div>
-                <p>This is User Profile</p>
+                 {this.props.userProfile.map(medication => <UserProfileMedCard key={medication.id}  medication={medication} deleteMedFromProfile={this.props.deleteMedFromProfile} {...this.props}  />)}
+                
             </div>
+            </React.Fragment>
         )
     }
 }

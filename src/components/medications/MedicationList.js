@@ -20,7 +20,7 @@ class MedicationList extends Component {
                   
         
                 {this.props.medications.filter(medication => medication.unitId === parseInt(this.props.unitParam))
-                .map(medication => <MedicationCard key={medication.id} medication={medication} {...this.props} />)}
+                .map(medication => <MedicationCard key={medication.id} addMedicationToProfile={this.props.addMedicationToProfile} medication={medication} {...this.props}  />)}
             </div>
         </React.Fragment>
             )
