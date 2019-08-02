@@ -309,7 +309,7 @@
     },
     {
       "name": "misoprostol",
-      "class": "",
+      "class": "prostaglandins",
       "route": "PV",
       "dosage": "25 mcg",
       "frequency": "Every 3-6 hours",

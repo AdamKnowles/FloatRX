@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardImg, CardText, CardBody,
+import { Card,Col, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 export default class MedicationCard extends Component {
@@ -11,11 +11,11 @@ export default class MedicationCard extends Component {
             
 
 <div key={this.props.medication.medication.id} className="card">
-<Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+<Card body className="text-center" body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
   
   <CardBody className='#8fbc8f' >
-    <CardText>Name: {this.props.medication.medication.name}</CardText>
-    <CardText>Class: {this.props.medication.medication.class}</CardText>
+  <h1><u>{this.props.medication.medication.name}</u></h1>
+    <h5>{this.props.medication.medication.class}</h5>
     <CardText>Route: {this.props.medication.medication.route}</CardText>
     <CardText>Dosage: {this.props.medication.medication.dosage}</CardText>
     <CardText>Indication: {this.props.medication.medication.indications}</CardText>
