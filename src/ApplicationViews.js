@@ -79,7 +79,7 @@ class ApplicationViews extends Component {
           exact
           path="/profile"
           render={props => {
-            return <UserProfile medications={this.state.medications} units={this.state.units} {...props} />;
+            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} {...props} />;
           }}
         />
       </React.Fragment>

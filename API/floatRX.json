@@ -43,6 +43,16 @@
       "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
       "medicationId": 25,
       "id": 3
+    },
+    {
+      "name": "megestrol",
+      "class": "progestin",
+      "route": "PO",
+      "dosage": "800 mg",
+      "frequency": "Every day",
+      "indications": "Used to treat loss of appetite and wasting syndrome in people with acquired immunodeficiency syndrome (AIDS).",
+      "medicationId": 9,
+      "id": 4
     }
   ],
   "comments": [
