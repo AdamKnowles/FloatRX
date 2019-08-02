@@ -57,6 +57,15 @@ class ApplicationViews extends Component {
       );
   }
 
+  deleteMedFromProfile = id => {
+    return APImanager.delete("userProfile", id)
+      .then(() => APImanager.getAll("userProfile"))
+      .then(medication => {
+        // this.props.history.push("/events");
+        this.setState({ userProfile: medication });
+      });
+  };
+
   
 
   render() {
@@ -79,7 +88,7 @@ class ApplicationViews extends Component {
           exact
           path="/profile"
           render={props => {
-            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} {...props} />;
+            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} deleteMedFromProfile={this.deleteMedFromProfile} {...props} />;
           }}
         />
       </React.Fragment>

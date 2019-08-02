@@ -15,44 +15,15 @@
   ],
   "userProfile": [
     {
-      "name": "mycophenolate mofetil",
-      "class": "inosine monophosphateh dehydrogenase inhibitor",
-      "route": "PO",
-      "dosage": "1.5 mg",
-      "frequency": "Every 12 Hours",
-      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
-      "medicationId": 2,
-      "id": 1
-    },
-    {
-      "name": "cyclosporine",
-      "class": "calcineurin inhibitor",
-      "route": "PO",
-      "dosage": " 7-9 mg/kg/day",
-      "frequency": "Twice a day",
-      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "medicationId": 4,
-      "id": 2
-    },
-    {
-      "name": "tamsulosin",
-      "class": "alpha-1 blocker, selective",
-      "route": "PO",
-      "dosage": "0.4 mg",
-      "frequency": "Daily",
-      "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
-      "medicationId": 25,
+      "name": "doxorubicin",
+      "class": "anthracycline",
+      "route": "IV",
+      "dosage": "60-75 mg",
+      "frequency": "Once a day",
+      "indications": "Used to treat different types of cancers that affect the breast, bladder, ovary, thyroid, stomach, lungs, bones, nerve tissues, muscles, joints, and soft tissues. Doxorubicin is also used to treat Hodgkin's disease and certain types of leukemia",
+      "mechanism": "Binds and intercalates into DNA, inhibiting nucleic acid and protein synthesis; triggers DNA cleavage by topoisomerase II",
+      "medicationId": 8,
       "id": 3
-    },
-    {
-      "name": "megestrol",
-      "class": "progestin",
-      "route": "PO",
-      "dosage": "800 mg",
-      "frequency": "Every day",
-      "indications": "Used to treat loss of appetite and wasting syndrome in people with acquired immunodeficiency syndrome (AIDS).",
-      "medicationId": 9,
-      "id": 4
     }
   ],
   "comments": [

@@ -7,8 +7,8 @@ import UserProfileMedCard from './UserProfileMedCard';
         return (
             <React.Fragment>
             <div>
-                 {this.props.userProfile.map(medication => <UserProfileMedCard key={medication.id}  medication={medication} {...this.props}  />)}
-                <p>This is User Profile</p>
+                 {this.props.userProfile.map(medication => <UserProfileMedCard key={medication.id}  medication={medication} deleteMedFromProfile={this.props.deleteMedFromProfile} {...this.props}  />)}
+                
             </div>
             </React.Fragment>
         )

@@ -10,6 +10,7 @@ export default class MedicationCard extends Component {
   dosage:this.props.medication.medication.dosage,
   frequency: this.props.medication.medication.frequency,
   indications:this.props.medication.medication.indications ,
+  mechanism:this.props.medication.medication.mechanism,
   medicationId: this.props.medication.medication.id
   };
   
@@ -23,7 +24,8 @@ export default class MedicationCard extends Component {
   route:this.state.route ,
   dosage:this.state.dosage,
   frequency: this.state.frequency,
-  indications:this.state.indications ,
+  indications:this.state.indications,
+  mechanism:this.state.mechanism ,
   medicationId: this.state.medicationId
       }
       
