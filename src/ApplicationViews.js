@@ -11,23 +11,33 @@ class ApplicationViews extends Component {
     medications: [],
     users: [],
     units:[],
-    unitParam: ""
+    unitParam: "1"
 
-  };
+  }
+
+  
 
   componentDidMount() {
     const newState = {};
-    this.getMeds("2").then(
+    
+    
+    
+    this.getAllUnitMeds().then(
         medications =>
         (newState.medications = medications)
     )
-    APImanager.getAll("units")
+    APImanager.getAll("unit")
       .then(units => (newState.units = units))
       .then(() => this.setState(newState));
+    
+    
   }
 
-  getMeds = (id) => {
+  getUnitMeds = (id) => {
     return APImanager.getUnitMedications(id);
+  };
+  getAllUnitMeds = () => {
+    return APImanager.getAllUnitMedications();
   };
 
   searchParam = (unitId) => {
@@ -37,6 +47,7 @@ class ApplicationViews extends Component {
   
 
   render() {
+    
     return (
       <React.Fragment>
         <Route
@@ -45,7 +56,7 @@ class ApplicationViews extends Component {
           render={props => {
             return (
               <MedicationList
-              medications={this.state.medications} units={this.state.units} searchParam={this.searchParam}{...props}
+              medications={this.state.medications} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam}{...props}
                 // transplantMedications={this.state.transplantMedications}
               />
             );
