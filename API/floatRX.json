@@ -6,7 +6,6 @@
       "password": "adam1"
     }
   ],
-
   "userMedications": [
     {
       "id": 1,
@@ -14,7 +13,38 @@
       "medicationId": 1
     }
   ],
-
+  "userProfile": [
+    {
+      "name": "mycophenolate mofetil",
+      "class": "inosine monophosphateh dehydrogenase inhibitor",
+      "route": "PO",
+      "dosage": "1.5 mg",
+      "frequency": "Every 12 Hours",
+      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
+      "medicationId": 2,
+      "id": 1
+    },
+    {
+      "name": "cyclosporine",
+      "class": "calcineurin inhibitor",
+      "route": "PO",
+      "dosage": " 7-9 mg/kg/day",
+      "frequency": "Twice a day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "medicationId": 4,
+      "id": 2
+    },
+    {
+      "name": "tamsulosin",
+      "class": "alpha-1 blocker, selective",
+      "route": "PO",
+      "dosage": "0.4 mg",
+      "frequency": "Daily",
+      "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
+      "medicationId": 25,
+      "id": 3
+    }
+  ],
   "comments": [
     {
       "id": 1,
@@ -23,7 +53,6 @@
       "comments": "hey"
     }
   ],
-  
   "unit": [
     {
       "id": 1,
@@ -46,136 +75,133 @@
       "name": "Urology"
     }
   ],
-
-  "unitMedications":[
+  "unitMedications": [
     {
       "id": 1,
-      "medicationId":1,
-      "unitId":1
+      "medicationId": 1,
+      "unitId": 1
     },
     {
       "id": 2,
-      "medicationId":2,
-      "unitId":1
+      "medicationId": 2,
+      "unitId": 1
     },
     {
       "id": 3,
-      "medicationId":3,
-      "unitId":1
+      "medicationId": 3,
+      "unitId": 1
     },
     {
       "id": 4,
-      "medicationId":4,
-      "unitId":1
+      "medicationId": 4,
+      "unitId": 1
     },
     {
       "id": 5,
-      "medicationId":5,
-      "unitId":1
+      "medicationId": 5,
+      "unitId": 1
     },
     {
       "id": 6,
-      "medicationId":6,
-      "unitId":2
+      "medicationId": 6,
+      "unitId": 2
     },
     {
       "id": 7,
-      "medicationId":7,
-      "unitId":2
+      "medicationId": 7,
+      "unitId": 2
     },
     {
       "id": 8,
-      "medicationId":8,
-      "unitId":2
+      "medicationId": 8,
+      "unitId": 2
     },
     {
       "id": 9,
-      "medicationId":9,
-      "unitId":2
+      "medicationId": 9,
+      "unitId": 2
     },
     {
       "id": 10,
-      "medicationId":10,
-      "unitId":2
+      "medicationId": 10,
+      "unitId": 2
     },
     {
       "id": 11,
-      "medicationId":11,
-      "unitId":3
+      "medicationId": 11,
+      "unitId": 3
     },
     {
       "id": 12,
-      "medicationId":12,
-      "unitId":3
+      "medicationId": 12,
+      "unitId": 3
     },
     {
       "id": 13,
-      "medicationId":13,
-      "unitId":3
+      "medicationId": 13,
+      "unitId": 3
     },
     {
       "id": 14,
-      "medicationId":14,
-      "unitId":3
+      "medicationId": 14,
+      "unitId": 3
     },
     {
       "id": 15,
-      "medicationId":15,
-      "unitId":3
+      "medicationId": 15,
+      "unitId": 3
     },
     {
       "id": 16,
-      "medicationId":16,
-      "unitId":4
+      "medicationId": 16,
+      "unitId": 4
     },
     {
       "id": 17,
-      "medicationId":17,
-      "unitId":4
+      "medicationId": 17,
+      "unitId": 4
     },
     {
       "id": 18,
-      "medicationId":18,
-      "unitId":4
+      "medicationId": 18,
+      "unitId": 4
     },
     {
       "id": 19,
-      "medicationId":19,
-      "unitId":4
+      "medicationId": 19,
+      "unitId": 4
     },
     {
       "id": 20,
-      "medicationId":20,
-      "unitId":4
+      "medicationId": 20,
+      "unitId": 4
     },
     {
       "id": 21,
-      "medicationId":21,
-      "unitId":5
+      "medicationId": 21,
+      "unitId": 5
     },
     {
       "id": 22,
-      "medicationId":22,
-      "unitId":5
+      "medicationId": 22,
+      "unitId": 5
     },
     {
       "id": 23,
-      "medicationId":23,
-      "unitId":5
+      "medicationId": 23,
+      "unitId": 5
     },
     {
       "id": 24,
-      "medicationId":24,
-      "unitId":5
+      "medicationId": 24,
+      "unitId": 5
     },
     {
       "id": 25,
-      "medicationId":25,
-      "unitId":5
+      "medicationId": 25,
+      "unitId": 5
     }
-
   ],
-
   "medications": [
     {
       "name": "tacrolimus",
