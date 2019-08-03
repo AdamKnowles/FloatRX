@@ -32,7 +32,7 @@ export default class MedDropdown extends Component {
       <React.Fragment>
         {
         <div>
-        <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+        <Dropdown body className="text-center" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
           <DropdownToggle> {this.state.value} Unit</DropdownToggle>
           <DropdownMenu>
           {this.props.units.map(unit => <DropdownItem onClick={this.toggle_modal} toggle={false} value={unit.id} onClick={this.select}>{unit.name}</DropdownItem>)}

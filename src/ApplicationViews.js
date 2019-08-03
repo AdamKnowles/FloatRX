@@ -5,6 +5,9 @@ import { withRouter } from "react-router";
 import { Route, Redirect } from "react-router-dom";
 import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
+import AddNoteToProfile from "./components/UserProfile/AddNoteToProfile"
+import Login from "./components/Login/login"
+
 
 class ApplicationViews extends Component {
   state = {
@@ -19,6 +22,7 @@ class ApplicationViews extends Component {
   
 
   componentDidMount() {
+    let currentUserId = sessionStorage.getItem("userId")
     const newState = {};
     
     
@@ -29,7 +33,7 @@ class ApplicationViews extends Component {
     )
     APImanager.getAll("unit")
       .then(units => (newState.units = units))
-    APImanager.getAll("userProfile")
+    APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
     .then(() => this.setState(newState));
     
@@ -43,16 +47,32 @@ class ApplicationViews extends Component {
     return APImanager.getAllUnitMedications();
   }
 
+  logout =()=> {
+    console.log("hey")
+    sessionStorage.clear()
+     this.props.history.push("/")
+  }
+
   searchParam = (unitId) => {
       this.setState({unitParam: unitId})
   }
 
   addMedicationToProfile = medication => {
+    let currentUserId = sessionStorage.getItem("userId")
     return APImanager.post("userProfile", medication)
-      .then(() => APImanager.getAll("userProfile"))
+      .then(() => APImanager.getUserMeds("userProfile", currentUserId))
       .then(medication =>
         this.setState({
           userProfile: medication
+        })
+      );
+  }
+  addNote = note => {
+    return APImanager.post("comments", note)
+      .then(() => APImanager.getAll("comments"))
+      .then(note =>
+        this.setState({
+          comments: note
         })
       );
   }
@@ -65,6 +85,31 @@ class ApplicationViews extends Component {
         this.setState({ userProfile: medication });
       });
   };
+  userData = (userId) => {
+    const newState = {}
+    APImanager.getUserMeds("userProfile", userId)
+      .then(medications => {
+        return newState.userProfile = medications
+      })
+      .then(() => this.setState(newState))
+  }
+
+  register = (user) => {
+    return APImanager.post("users", user)
+    .then(() => APImanager.getAll("users"))
+    .then(users => this.setState({
+      users: users
+    }))
+    }
+
+  login = () => {
+    this.setState ({
+      userId: sessionStorage.getItem("userId")
+    })
+    // this.userData(this.state.userId)
+   }
+
+   isAuthenticated = () => sessionStorage.getItem("userId") !== null
 
   
 
@@ -72,6 +117,14 @@ class ApplicationViews extends Component {
     
     return (
       <React.Fragment>
+        <Route
+          exact
+          path="/"
+          render={props => {
+            return <Login {...props} users={this.state.users} login={this.login} register={this.register} /> 
+            
+          }}
+        />
         <Route
           exact
           path="/medicationlist"
@@ -88,7 +141,15 @@ class ApplicationViews extends Component {
           exact
           path="/profile"
           render={props => {
-            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} deleteMedFromProfile={this.deleteMedFromProfile} {...props} />;
+            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} deleteMedFromProfile={this.deleteMedFromProfile} logout={this.logout} {...props} />;
+          }}
+        />
+        <Route
+          exact
+          path="/profile/addNoteForm"
+          render={props => {
+            return <AddNoteToProfile userProfile={this.state.userProfile} addNote={this.addNote} {...props} />
+            
           }}
         />
       </React.Fragment>
