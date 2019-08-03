@@ -4,6 +4,31 @@
       "id": 1,
       "username": "adam",
       "password": "adam1"
+    },
+    {
+      "username": "jlkdjfd",
+      "password": "lnfmnd",
+      "id": 2
+    },
+    {
+      "username": "melanie",
+      "password": "climb",
+      "id": 3
+    },
+    {
+      "username": "kfkj",
+      "password": "lndnf",
+      "id": 4
+    },
+    {
+      "username": "joe",
+      "password": "1",
+      "id": 5
+    },
+    {
+      "username": "wes",
+      "password": "bos",
+      "id": 6
     }
   ],
   "userMedications": [
@@ -15,26 +40,50 @@
   ],
   "userProfile": [
     {
-      "name": "misoprostol",
-      "class": "prostaglandins",
-      "route": "PV",
-      "dosage": "25 mcg",
-      "frequency": "Every 3-6 hours",
-      "indications": "Reduces stomach acid and helps protect the stomach from damage that can be caused by taking a nonsteroidal anti-inflammatory drug",
-      "mechanism": "Inhibits gastric acid secretion and protects GI mucosa; produces uterine contractions (prostaglandin E1)",
-      "medicationId": 14,
-      "id": 2
+      "name": "dexmedetomidine",
+      "class": "alpha-2 agonist",
+      "route": "IV",
+      "dosage": " 1 mcg/kg",
+      "frequency": "Continuous",
+      "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
+      "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
+      "medicationId": 20,
+      "id": 8
     },
     {
-      "name": "bupivacaine",
-      "class": "sodium channel blocker",
-      "route": "IntraThecal",
-      "dosage": " 2 mg/kg",
+      "name": "oxybutynin",
+      "class": "Bladder selective muscarinic antagonist",
+      "route": "PO",
+      "dosage": "5 mg",
+      "frequency": "2-3 times a day",
+      "indications": "Reduces muscle spasms of the bladder and urinary tract.",
+      "mechanism": "Antagonizes acetylcholine at muscarinic receptors; relaxes bladder smooth muscle, inhibits involuntary detrusor muscle contractions (anticholinergic)",
+      "medicationId": 23,
+      "id": 9
+    },
+    {
+      "name": "nitroprusside",
+      "class": "nitrate",
+      "route": "IV",
+      "dosage": "3-4 mcg/kg/min",
       "frequency": "Continuous",
-      "indications": "Regional anesthesia during childbirth",
-      "mechanism": "Inhibits Na ion channels, stabilizing neuronal cell membranes and inhibiting nerve impulse initiation and conduction",
-      "medicationId": 15,
-      "id": 4
+      "indications": "Hypertensive Crisis or high blood pressure",
+      "mechanism": "Directly dilates peripheral vessels",
+      "medicationId": 18,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "name": "sirolimus",
+      "class": "immunosuppressant",
+      "route": "PO",
+      "dosage": "1-5 mg",
+      "frequency": "Once a Day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
+      "medicationId": 5,
+      "userId": 6,
+      "id": 11
     }
   ],
   "comments": [
@@ -71,7 +120,7 @@
     },
     {
       "id": 4,
-      "name": "Icu"
+      "name": "Intensive Care"
     },
     {
       "id": 5,

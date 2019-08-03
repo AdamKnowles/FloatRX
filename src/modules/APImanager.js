@@ -25,6 +25,10 @@ export default Object.create(null, {
         return fetch(`${remoteURL}/unitMedications?_expand=medication`).then(e => e.json());
     }
   },
+  getUserMeds(path, id) {
+    return fetch(`${remoteURL}/${path}?userId=${id}`)
+    .then(e => e.json())
+  },
 
   //delete entry
   delete: {

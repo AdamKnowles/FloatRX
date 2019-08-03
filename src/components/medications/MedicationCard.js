@@ -36,7 +36,8 @@ export default class MedicationCard extends Component {
   frequency: this.state.frequency,
   indications:this.state.indications,
   mechanism:this.state.mechanism ,
-  medicationId: this.state.medicationId
+  medicationId: this.state.medicationId,
+  userId: Number(sessionStorage.getItem("userId"))
       }
       
       this.props
@@ -79,7 +80,7 @@ export default class MedicationCard extends Component {
   <CardBody className='#8fbc8f' >
   <h1 onClick={this.toggle}><u>{this.props.medication.medication.name}</u></h1>
     <h4>{this.props.medication.medication.class}</h4>
-    <Button className="mr-4" onClick={this.addNewMed}>Add to Profile</Button>
+    <Button body className="text-center" onClick={this.addNewMed}>Add to Profile</Button>
     
   </CardBody>
 </Card>

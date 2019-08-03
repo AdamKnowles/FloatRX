@@ -6,6 +6,7 @@ import { Route, Redirect } from "react-router-dom";
 import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
 import AddNoteToProfile from "./components/UserProfile/AddNoteToProfile"
+import Login from "./components/Login/login"
 
 
 class ApplicationViews extends Component {
@@ -76,6 +77,31 @@ class ApplicationViews extends Component {
         this.setState({ userProfile: medication });
       });
   };
+  userData = (userId) => {
+    const newState = {}
+    APImanager.getUserMeds("userProfile", userId)
+      .then(medications => {
+        return newState.userProfile = medications
+      })
+      .then(() => this.setState(newState))
+  }
+
+  register = (user) => {
+    return APImanager.post("users", user)
+    .then(() => APImanager.getAll("users"))
+    .then(users => this.setState({
+      users: users
+    }))
+    }
+
+  login = () => {
+    this.setState ({
+      userId: sessionStorage.getItem("userId")
+    })
+    // this.userData(this.state.userId)
+   }
+
+   isAuthenticated = () => sessionStorage.getItem("userId") !== null
 
   
 
@@ -83,6 +109,14 @@ class ApplicationViews extends Component {
     
     return (
       <React.Fragment>
+        <Route
+          
+          path="/login"
+          render={props => {
+            return <Login {...props} users={this.state.users} login={this.login} register={this.register} /> 
+            
+          }}
+        />
         <Route
           exact
           path="/medicationlist"

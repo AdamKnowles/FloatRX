@@ -13,6 +13,7 @@ class MedicationList extends Component {
         
       return(
           <React.Fragment>
+              <h2 body className="text-center">Unit Specific Medication List</h2>
               <div>
                   <MedDropdown  units={this.props.units} {...this.props} 
                   searchParam={this.props.searchParam} unitParam={this.props.unitParam}
