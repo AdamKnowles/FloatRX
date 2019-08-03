@@ -15,23 +15,45 @@
   ],
   "userProfile": [
     {
-      "name": "doxorubicin",
-      "class": "anthracycline",
-      "route": "IV",
-      "dosage": "60-75 mg",
-      "frequency": "Once a day",
-      "indications": "Used to treat different types of cancers that affect the breast, bladder, ovary, thyroid, stomach, lungs, bones, nerve tissues, muscles, joints, and soft tissues. Doxorubicin is also used to treat Hodgkin's disease and certain types of leukemia",
-      "mechanism": "Binds and intercalates into DNA, inhibiting nucleic acid and protein synthesis; triggers DNA cleavage by topoisomerase II",
-      "medicationId": 8,
-      "id": 3
+      "name": "misoprostol",
+      "class": "prostaglandins",
+      "route": "PV",
+      "dosage": "25 mcg",
+      "frequency": "Every 3-6 hours",
+      "indications": "Reduces stomach acid and helps protect the stomach from damage that can be caused by taking a nonsteroidal anti-inflammatory drug",
+      "mechanism": "Inhibits gastric acid secretion and protects GI mucosa; produces uterine contractions (prostaglandin E1)",
+      "medicationId": 14,
+      "id": 2
+    },
+    {
+      "name": "bupivacaine",
+      "class": "sodium channel blocker",
+      "route": "IntraThecal",
+      "dosage": " 2 mg/kg",
+      "frequency": "Continuous",
+      "indications": "Regional anesthesia during childbirth",
+      "mechanism": "Inhibits Na ion channels, stabilizing neuronal cell membranes and inhibiting nerve impulse initiation and conduction",
+      "medicationId": 15,
+      "id": 4
     }
   ],
   "comments": [
     {
       "id": 1,
-      "userId": 1,
       "medicationId": 1,
-      "comments": "hey"
+      "note": "is this working"
+    },
+    {
+      "note": "jklsjdfkl",
+      "id": 2
+    },
+    {
+      "note": "what up",
+      "id": 3
+    },
+    {
+      "note": "kljdfkjsdf",
+      "id": 4
     }
   ],
   "unit": [

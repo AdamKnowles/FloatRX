@@ -8,7 +8,7 @@ import MedDropdown from "../Dropdown"
 class MedicationList extends Component {
     
     render() {
-     console.log(this.props.unitParam)
+     
      if (this.props.unitParam !== ""){
         
       return(

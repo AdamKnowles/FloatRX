@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import { Card,Col, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card,Col, CardImg, h6, CardBody,
+  CardTitle, CardSubtitle, Button,  Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 export default class MedicationCard extends Component {
-  state = {
+  constructor(props) {
+    super(props);
+  this.state = {
   name:this.props.medication.medication.name ,
   class:this.props.medication.medication.class ,
   route:this.props.medication.medication.route ,
@@ -11,8 +13,16 @@ export default class MedicationCard extends Component {
   frequency: this.props.medication.medication.frequency,
   indications:this.props.medication.medication.indications ,
   mechanism:this.props.medication.medication.mechanism,
-  medicationId: this.props.medication.medication.id
+  medicationId: this.props.medication.medication.id,
+  modal: false
   };
+  this.toggle = this.toggle.bind(this);
+  }
+  toggle() {
+    this.setState(prevState => ({
+      modal: !prevState.modal
+    }));
+  }
   
 
   addNewMed = (evt) => {
@@ -41,16 +51,36 @@ export default class MedicationCard extends Component {
             
 
 <div key={this.props.medication.medication.id} className="card">
-<Card body className="text-center" body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+<div>
+        
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
+          <Card body className="text-center" body inverse style={{ backgroundColor: '#93E9BE', borderColor: '#93E9BE', color: "#93E9BE" }}>
+  
+  <CardBody className="text-dark" >
+  <h1><u>{this.props.medication.medication.name}</u></h1>
+    <h4>{this.props.medication.medication.class}</h4>
+    <h6>Route: {this.props.medication.medication.route}</h6>
+    <h6>Dosage: {this.props.medication.medication.dosage}</h6>
+    <h6 >Indication: {this.props.medication.medication.indications}</h6>
+    <h6>Mechanism of Action: {this.props.medication.medication.mechanism}</h6>
+    
+  </CardBody>
+</Card>
+          
+          <ModalFooter>
+            <Button color="primary" onClick={this.toggle} onClick={this.addNewMed}  >Add To Profile</Button>
+            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+          </ModalFooter>
+        </Modal>
+      </div>
+<Card body className="text-center" body inverse style={{ backgroundColor: '#9CA89E', borderColor: '#9CA89E' }}>
   
   <CardBody className='#8fbc8f' >
-  <h1><u>{this.props.medication.medication.name}</u></h1>
-    <h5>{this.props.medication.medication.class}</h5>
-    <CardText>Route: {this.props.medication.medication.route}</CardText>
-    <CardText>Dosage: {this.props.medication.medication.dosage}</CardText>
-    <CardText>Indication: {this.props.medication.medication.indications}</CardText>
-    <CardText>Mechanism of Action: {this.props.medication.medication.mechanism}</CardText>
-    <Button onClick={this.addNewMed}>Add to Profile</Button>
+  <h1 onClick={this.toggle}><u>{this.props.medication.medication.name}</u></h1>
+    <h4>{this.props.medication.medication.class}</h4>
+    <Button className="mr-4" onClick={this.addNewMed}>Add to Profile</Button>
+    
   </CardBody>
 </Card>
 </div>
