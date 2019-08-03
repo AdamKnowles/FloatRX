@@ -22,6 +22,7 @@ class ApplicationViews extends Component {
   
 
   componentDidMount() {
+    let currentUserId = sessionStorage.getItem("userId")
     const newState = {};
     
     
@@ -32,7 +33,7 @@ class ApplicationViews extends Component {
     )
     APImanager.getAll("unit")
       .then(units => (newState.units = units))
-    APImanager.getAll("userProfile")
+    APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
     .then(() => this.setState(newState));
     
@@ -46,13 +47,20 @@ class ApplicationViews extends Component {
     return APImanager.getAllUnitMedications();
   }
 
+  logout =()=> {
+    console.log("hey")
+    sessionStorage.clear()
+     this.props.history.push("/")
+  }
+
   searchParam = (unitId) => {
       this.setState({unitParam: unitId})
   }
 
   addMedicationToProfile = medication => {
+    let currentUserId = sessionStorage.getItem("userId")
     return APImanager.post("userProfile", medication)
-      .then(() => APImanager.getAll("userProfile"))
+      .then(() => APImanager.getUserMeds("userProfile", currentUserId))
       .then(medication =>
         this.setState({
           userProfile: medication
@@ -110,8 +118,8 @@ class ApplicationViews extends Component {
     return (
       <React.Fragment>
         <Route
-          
-          path="/login"
+          exact
+          path="/"
           render={props => {
             return <Login {...props} users={this.state.users} login={this.login} register={this.register} /> 
             
@@ -133,7 +141,7 @@ class ApplicationViews extends Component {
           exact
           path="/profile"
           render={props => {
-            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} deleteMedFromProfile={this.deleteMedFromProfile} {...props} />;
+            return <UserProfile userProfile={this.state.userProfile} units={this.state.units} deleteMedFromProfile={this.deleteMedFromProfile} logout={this.logout} {...props} />;
           }}
         />
         <Route

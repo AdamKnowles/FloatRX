@@ -24,7 +24,7 @@ export default class Login extends Component {
         if (tempUserName) {
             sessionStorage.setItem("userId", tempUserName.id)
             this.props.login();
-            this.props.history.push("/medicationlist")
+            this.props.history.push("/profile")
             } else {
                 window.alert("Invalid login information. Please try again or register a new account.")
             }
@@ -53,7 +53,7 @@ export default class Login extends Component {
                 .then(r => r.find(user => user.username === this.state.username))
                 .then(matchedUserInfo => sessionStorage.setItem("userId", matchedUserInfo.id))
                 .then(() => this.props.login())
-                .then(() => this.props.history.push("/medicationlist"))
+                .then(() => this.props.history.push("/profile"))
             }
         })
     }

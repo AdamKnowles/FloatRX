@@ -43,6 +43,7 @@ export default class UserProfileMedCard extends Component {
     <Button className="mr-5" id="moveOver" type="button" onClick = {() => this.props.history.push("/profile/addNoteForm")}>Add Note</Button>
     
     
+    
   </CardBody>
 </Card>
 </div>

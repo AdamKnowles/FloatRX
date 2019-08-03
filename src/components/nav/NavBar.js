@@ -16,6 +16,7 @@ export default class NavBar extends Component {
                         <Link className="nav-link" to="/profile">User Profile</Link>
                     </li>
                     
+                    
                 </ul>
             </nav>
         )

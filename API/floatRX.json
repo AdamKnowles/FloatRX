@@ -1,34 +1,29 @@
 {
   "users": [
     {
-      "id": 1,
       "username": "adam",
-      "password": "adam1"
+      "password": "knowles",
+      "id": 1
     },
     {
-      "username": "jlkdjfd",
-      "password": "lnfmnd",
+      "username": "jeremy",
+      "password": "davis",
       "id": 2
     },
     {
-      "username": "melanie",
-      "password": "climb",
+      "username": "diana",
+      "password": "wells-english",
       "id": 3
     },
     {
-      "username": "kfkj",
-      "password": "lndnf",
+      "username": "grant",
+      "password": "yentzer",
       "id": 4
     },
     {
-      "username": "joe",
-      "password": "1",
+      "username": "jess",
+      "password": "duble",
       "id": 5
-    },
-    {
-      "username": "wes",
-      "password": "bos",
-      "id": 6
     }
   ],
   "userMedications": [
@@ -40,50 +35,64 @@
   ],
   "userProfile": [
     {
-      "name": "dexmedetomidine",
-      "class": "alpha-2 agonist",
-      "route": "IV",
-      "dosage": " 1 mcg/kg",
-      "frequency": "Continuous",
-      "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
-      "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
-      "medicationId": 20,
-      "id": 8
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
+      "userId": 1,
+      "id": 1
     },
     {
-      "name": "oxybutynin",
-      "class": "Bladder selective muscarinic antagonist",
+      "name": "megestrol",
+      "class": "progestin",
+      "route": "PO",
+      "dosage": "800 mg",
+      "frequency": "Every day",
+      "indications": "Used to treat loss of appetite and wasting syndrome in people with acquired immunodeficiency syndrome (AIDS).",
+      "mechanism": "Exact mechanism of action unknown; agonizes glucocorticoid receptors; may interfere with cachexin (progestin)",
+      "medicationId": 9,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "name": "finasteride",
+      "class": "5-alpha reductase inhibitor",
       "route": "PO",
       "dosage": "5 mg",
-      "frequency": "2-3 times a day",
-      "indications": "Reduces muscle spasms of the bladder and urinary tract.",
-      "mechanism": "Antagonizes acetylcholine at muscarinic receptors; relaxes bladder smooth muscle, inhibits involuntary detrusor muscle contractions (anticholinergic)",
-      "medicationId": 23,
-      "id": 9
+      "frequency": "daily",
+      "indications": "Used to treat symptoms of benign prostatic hyperplasia (BPH) in men with an enlarged prostate",
+      "mechanism": "Inhibits type II 5-alpha-reductase, interfering w/ conversion of testosterone to 5-alpha-dihydrotestosterone",
+      "medicationId": 24,
+      "userId": 3,
+      "id": 3
     },
     {
-      "name": "nitroprusside",
-      "class": "nitrate",
-      "route": "IV",
-      "dosage": "3-4 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Hypertensive Crisis or high blood pressure",
-      "mechanism": "Directly dilates peripheral vessels",
-      "medicationId": 18,
-      "userId": 1,
-      "id": 10
-    },
-    {
-      "name": "sirolimus",
-      "class": "immunosuppressant",
+      "name": "cyclosporine",
+      "class": "calcineurin inhibitor",
       "route": "PO",
-      "dosage": "1-5 mg",
-      "frequency": "Once a Day",
+      "dosage": " 7-9 mg/kg/day",
+      "frequency": "Twice a day",
       "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
-      "medicationId": 5,
-      "userId": 6,
-      "id": 11
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
+      "medicationId": 4,
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "name": "vasopressin",
+      "class": "anti-diuretic hormone",
+      "route": "IV",
+      "dosage": "0.01-0.04 units/min",
+      "frequency": "Continuous",
+      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
+      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
+      "medicationId": 19,
+      "userId": 5,
+      "id": 5
     }
   ],
   "comments": [
