@@ -29,6 +29,7 @@ export default Object.create(null, {
     value:function(resource, id) {
     return fetch(`${remoteURL}/${resource}?userId=${id}`)
     .then(e => e.json())}
+    
   },
 
   //delete entry
