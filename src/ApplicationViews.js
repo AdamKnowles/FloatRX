@@ -28,6 +28,7 @@ class ApplicationViews extends Component {
     APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
       .then(() => this.setState(newState));
+      
   }
   
  
@@ -69,9 +70,11 @@ class ApplicationViews extends Component {
       .then(note =>
         this.setState({
           notes: note
+          
         })
         
       );
+      
       
   };
 
@@ -95,6 +98,7 @@ class ApplicationViews extends Component {
         return (newState.notes = notes);
       })
       .then(() => this.setState(newState));
+      
       
   };
   
@@ -141,6 +145,7 @@ class ApplicationViews extends Component {
           exact
           path="/medicationlist"
           render={props => {
+            if(this.isAuthenticated()){
             return (
               <MedicationList
                 medications={this.state.medications}
@@ -153,13 +158,17 @@ class ApplicationViews extends Component {
                 {...props}
                 // transplantMedications={this.state.transplantMedications}
               />
-            );
-          }}
+            
+            );}
+            else {
+              return <Redirect to="/" />
+          }}}
         />
         <Route
           exact
           path="/profile"
           render={props => {
+            if(this.isAuthenticated()){
             return (
               <UserProfile
                 userProfile={this.state.userProfile}
@@ -169,8 +178,10 @@ class ApplicationViews extends Component {
                 addNote={this.addNote}
                 {...props}
               />
-            );
-          }}
+            );}
+            else {
+              return <Redirect to="/" />
+          }}}
         />
         <Route
           exact

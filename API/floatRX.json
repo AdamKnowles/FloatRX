@@ -34,6 +34,11 @@
       "username": "melanie",
       "password": "bond",
       "id": 7
+    },
+    {
+      "username": "joy",
+      "password": "jou",
+      "id": 8
     }
   ],
   "userMedications": [
@@ -69,18 +74,6 @@
       "id": 5
     },
     {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 6
-    },
-    {
       "name": "cyclosporine",
       "class": "calcineurin inhibitor",
       "route": "PO",
@@ -113,18 +106,6 @@
       "indications": "Testicular and Ovarian Carcinoma",
       "mechanism": "Death of rapidly growing cells, particularly malignant ones",
       "medicationId": 6,
-      "userId": 1,
-      "id": 11
-    },
-    {
-      "name": "cisplatin",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
       "userId": 7,
       "id": 12
     },
@@ -139,6 +120,18 @@
       "medicationId": 6,
       "userId": 4,
       "id": 13
+    },
+    {
+      "name": "oxytocin",
+      "class": "polypeptide hormone",
+      "route": "IV",
+      "dosage": "0.5-2 milliunits/min",
+      "frequency": "Every 15-40 min",
+      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
+      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
+      "medicationId": 11,
+      "userId": 8,
+      "id": 16
     }
   ],
   "notes": [
@@ -259,6 +252,30 @@
       "medicationId": 6,
       "userId": 1,
       "id": 20
+    },
+    {
+      "note": "okay",
+      "medicationId": 1,
+      "userId": 8,
+      "id": 21
+    },
+    {
+      "note": "okay",
+      "medicationId": 11,
+      "userId": 8,
+      "id": 22
+    },
+    {
+      "note": "okay",
+      "medicationId": 1,
+      "userId": 2,
+      "id": 23
+    },
+    {
+      "note": "i dont wanna",
+      "medicationId": 12,
+      "userId": 6,
+      "id": 24
     }
   ],
   "unit": [

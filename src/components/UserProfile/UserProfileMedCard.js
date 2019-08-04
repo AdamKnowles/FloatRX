@@ -33,6 +33,7 @@ export default class UserProfileMedCard extends Component {
   addNewNoteToDatabase = evt => {
     evt.preventDefault();
     console.log("New note added");
+    
     const note = {
       note:this.state.note,
       medicationId: this.state.medicationId,
