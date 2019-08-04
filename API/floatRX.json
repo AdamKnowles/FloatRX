@@ -24,6 +24,11 @@
       "username": "jess",
       "password": "duble",
       "id": 5
+    },
+    {
+      "username": "ashley",
+      "password": "gurule",
+      "id": 6
     }
   ],
   "userMedications": [
@@ -35,63 +40,39 @@
   ],
   "userProfile": [
     {
-      "name": "phenazopyridine",
-      "class": " Alpha1 Agonist",
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
       "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3 times a day",
-      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
-      "mechanism": "Produces topical analgesia",
-      "medicationId": 21,
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
       "userId": 1,
       "id": 1
     },
     {
-      "name": "megestrol",
-      "class": "progestin",
-      "route": "PO",
-      "dosage": "800 mg",
-      "frequency": "Every day",
-      "indications": "Used to treat loss of appetite and wasting syndrome in people with acquired immunodeficiency syndrome (AIDS).",
-      "mechanism": "Exact mechanism of action unknown; agonizes glucocorticoid receptors; may interfere with cachexin (progestin)",
-      "medicationId": 9,
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "name": "finasteride",
-      "class": "5-alpha reductase inhibitor",
-      "route": "PO",
-      "dosage": "5 mg",
-      "frequency": "daily",
-      "indications": "Used to treat symptoms of benign prostatic hyperplasia (BPH) in men with an enlarged prostate",
-      "mechanism": "Inhibits type II 5-alpha-reductase, interfering w/ conversion of testosterone to 5-alpha-dihydrotestosterone",
-      "medicationId": 24,
+      "name": "cisplatin",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "20-70 mg",
+      "frequency": "Once a day for 5 Days",
+      "indications": "Testicular and Ovarian Carcinoma",
+      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
+      "medicationId": 6,
       "userId": 3,
-      "id": 3
-    },
-    {
-      "name": "cyclosporine",
-      "class": "calcineurin inhibitor",
-      "route": "PO",
-      "dosage": " 7-9 mg/kg/day",
-      "frequency": "Twice a day",
-      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
-      "medicationId": 4,
-      "userId": 4,
       "id": 4
     },
     {
-      "name": "vasopressin",
-      "class": "anti-diuretic hormone",
+      "name": "methotrexate",
+      "class": "antineoplastics",
       "route": "IV",
-      "dosage": "0.01-0.04 units/min",
-      "frequency": "Continuous",
-      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
-      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
-      "medicationId": 19,
-      "userId": 5,
+      "dosage": "40 mg",
+      "frequency": "Once a day for 28 days",
+      "indications": "Used to treat leukemia and certain types of cancer of the breast, skin, head and neck, or lung",
+      "mechanism": "Inhibits dihydrofolate reductase; inhibits lymphocyte proliferation (folate antagonist)",
+      "medicationId": 7,
+      "userId": 3,
       "id": 5
     }
   ],
