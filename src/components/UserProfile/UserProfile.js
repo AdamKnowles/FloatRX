@@ -29,6 +29,7 @@ class UserProfile extends Component {
               key={medication.id}
               medication={medication}
               deleteMedFromProfile={this.props.deleteMedFromProfile}
+              addNote={this.props.addNote}
               {...this.props}
             />
           ))}

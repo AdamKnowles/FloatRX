@@ -14,6 +14,7 @@ class ApplicationViews extends Component {
     users: [],
     units: [],
     userProfile: [],
+    notes:[],
     unitParam: "1"
   };
   componentDidMount() {
@@ -60,11 +61,11 @@ class ApplicationViews extends Component {
       );
   };
   addNote = note => {
-    return APImanager.post("comments", note)
-      .then(() => APImanager.getAll("comments"))
+    return APImanager.post("notes", note)
+      .then(() => APImanager.getAll("notes"))
       .then(note =>
         this.setState({
-          comments: note
+          notes: note
         })
       );
   };
@@ -155,6 +156,7 @@ class ApplicationViews extends Component {
                 units={this.state.units}
                 deleteMedFromProfile={this.deleteMedFromProfile}
                 logout={this.logout}
+                addNote={this.addNote}
                 {...props}
               />
             );

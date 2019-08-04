@@ -74,25 +74,114 @@
       "medicationId": 7,
       "userId": 3,
       "id": 5
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "medicationId": 1,
-      "note": "is this working"
     },
     {
-      "note": "jklsjdfkl",
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "name": "cyclosporine",
+      "class": "calcineurin inhibitor",
+      "route": "PO",
+      "dosage": " 7-9 mg/kg/day",
+      "frequency": "Twice a day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
+      "medicationId": 4,
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "name": "mycophenolate mofetil",
+      "class": "inosine monophosphateh dehydrogenase inhibitor",
+      "route": "PO",
+      "dosage": "1.5 mg",
+      "frequency": "Every 12 Hours",
+      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
+      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
+      "medicationId": 2,
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "name": "mycophenolate mofetil",
+      "class": "inosine monophosphateh dehydrogenase inhibitor",
+      "route": "PO",
+      "dosage": "1.5 mg",
+      "frequency": "Every 12 Hours",
+      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
+      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
+      "medicationId": 2,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "name": "cisplatin",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "20-70 mg",
+      "frequency": "Once a day for 5 Days",
+      "indications": "Testicular and Ovarian Carcinoma",
+      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
+      "medicationId": 6,
+      "userId": 1,
+      "id": 11
+    }
+  ],
+  "notes": [
+    {
+      "note": "what",
+      "medicationId": 10,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "note": "should be 2",
+      "userId": 1,
       "id": 2
     },
     {
-      "note": "what up",
+      "note": "should be 2",
+      "userId": 1,
       "id": 3
     },
     {
-      "note": "kljdfkjsdf",
+      "note": "should be 2",
+      "medicationId": 10,
+      "userId": 1,
       "id": 4
+    },
+    {
+      "note": "should be 2",
+      "medicationId": 2,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "note": "this should be 6",
+      "medicationId": 6,
+      "userId": 1,
+      "id": 6
     }
   ],
   "unit": [
