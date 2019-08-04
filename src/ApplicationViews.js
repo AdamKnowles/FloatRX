@@ -29,6 +29,7 @@ class ApplicationViews extends Component {
       .then(userProfile => (newState.userProfile = userProfile))
       .then(() => this.setState(newState));
   }
+  
  
 
 
@@ -61,13 +62,17 @@ class ApplicationViews extends Component {
       );
   };
   addNote = note => {
+    let currentUserId = sessionStorage.getItem("userId");
+    
     return APImanager.post("notes", note)
-      .then(() => APImanager.getAll("notes"))
+      .then(() => APImanager.getUserNotes("notes", currentUserId))
       .then(note =>
         this.setState({
           notes: note
         })
+        
       );
+      
   };
 
   deleteMedFromProfile = id => {
@@ -85,9 +90,14 @@ class ApplicationViews extends Component {
       .then(medications => {
         return (newState.userProfile = medications);
       })
+    APImanager.getUserNotes("notes", currentUserId)
+      .then(notes => {
+        return (newState.notes = notes);
+      })
       .then(() => this.setState(newState));
       
   };
+  
 
   register = user => {
     return APImanager.post("users", user)

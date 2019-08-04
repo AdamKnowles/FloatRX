@@ -41,7 +41,7 @@ export default class UserProfileMedCard extends Component {
 
     this.props
       .addNote(note)
-      // .then(() => this.props.history.push("/profile"));
+      this.state.modal=false
   }
 
   render() {
