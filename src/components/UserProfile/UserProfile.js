@@ -30,6 +30,8 @@ class UserProfile extends Component {
               medication={medication}
               deleteMedFromProfile={this.props.deleteMedFromProfile}
               addNote={this.props.addNote}
+              notes={this.props.notes}
+              toggle={this.props.toggle}
               {...this.props}
             />
           ))}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
+import AddNoteToProfileModal from "./AddNoteToProfileModal";
 
 export default class UserProfileMedCard extends Component {
   constructor(props) {
@@ -127,6 +128,7 @@ export default class UserProfileMedCard extends Component {
                 <Button color="secondary" onClick={this.toggle}>
                     Add Note
                   </Button>
+                  <AddNoteToProfileModal toggle={this.props.toggle} notes={this.props.notes} {...this.props} />
               </CardBody>
             </Card>
           </div>

@@ -5,7 +5,7 @@ import { withRouter } from "react-router";
 import { Route, Redirect } from "react-router-dom";
 import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
-import AddNoteToProfile from "./components/UserProfile/AddNoteToProfile";
+
 import Login from "./components/Login/login";
 
 class ApplicationViews extends Component {
@@ -27,6 +27,8 @@ class ApplicationViews extends Component {
     APImanager.getAll("unit").then(units => (newState.units = units));
     APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
+    APImanager.getUserNotes("notes", currentUserId)
+      .then(notes => (newState.notes = notes))
       .then(() => this.setState(newState));
       
   }
@@ -176,6 +178,7 @@ class ApplicationViews extends Component {
                 deleteMedFromProfile={this.deleteMedFromProfile}
                 logout={this.logout}
                 addNote={this.addNote}
+                notes={this.state.notes}
                 {...props}
               />
             );}
@@ -183,19 +186,7 @@ class ApplicationViews extends Component {
               return <Redirect to="/" />
           }}}
         />
-        <Route
-          exact
-          path="/profile/addNoteForm"
-          render={props => {
-            return (
-              <AddNoteToProfile
-                userProfile={this.state.userProfile}
-                addNote={this.addNote}
-                {...props}
-              />
-            );
-          }}
-        />
+        
       </React.Fragment>
     );
   }

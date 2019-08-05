@@ -39,6 +39,11 @@
       "username": "joy",
       "password": "jou",
       "id": 8
+    },
+    {
+      "username": "karla",
+      "password": "galagos",
+      "id": 9
     }
   ],
   "userMedications": [
@@ -132,6 +137,42 @@
       "medicationId": 11,
       "userId": 8,
       "id": 16
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "name": "magnesium sulfate",
+      "class": "Antidysrhythmics, Electrolytes",
+      "route": "IV",
+      "dosage": "1-2 g/h",
+      "frequency": "Continuous",
+      "indications": "Used to prevent seizures in pregnant women with conditions such as pre-eclampsia, eclampsia, or toxemia of pregnancy",
+      "mechanism": "Participates in physiologic processes",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 18
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 9,
+      "id": 19
     }
   ],
   "notes": [
@@ -276,6 +317,60 @@
       "medicationId": 12,
       "userId": 6,
       "id": 24
+    },
+    {
+      "note": "jkljdfla",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 25
+    },
+    {
+      "note": "kjsldjf",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 26
+    },
+    {
+      "note": "ff",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 27
+    },
+    {
+      "note": "",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 28
+    },
+    {
+      "note": "ffff",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 29
+    },
+    {
+      "note": "",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 30
+    },
+    {
+      "note": "",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 31
+    },
+    {
+      "note": "kuosjf",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 32
+    },
+    {
+      "note": "Thank you Sam",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 33
     }
   ],
   "unit": [

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
 
-export default class AddNoteToProfile extends Component {
+export default class AddNoteToProfileModal extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +16,8 @@ export default class AddNoteToProfile extends Component {
 
   toggle() {
     this.setState(prevState => ({
-      modal: !prevState.modal
+      modal: !prevState.modal,
+       
     }));
   }
 
@@ -29,10 +30,13 @@ export default class AddNoteToProfile extends Component {
     console.log(this.props.notes)
     return (
       
-        <section className="medication">
-        
-        {
+      <section className="medication">
+      <Button onClick={this.toggle}>View Notes</Button>
+      {
           <div key={this.props.notes.id} className="card">
+          <Modal isOpen={this.state.modal}
+                toggle={this.toggle}
+                className={this.props.className}>
           <Card
               body
               className="text-center"
@@ -43,14 +47,16 @@ export default class AddNoteToProfile extends Component {
               <CardBody className="text-dark">
                 
                 
-                <h6>Note: {this.props.note.note}</h6>
+                {this.props.notes.map( note =>(<h6>Note: {note.note}</h6>))}
                 
                 
               </CardBody>
             </Card>
+        </Modal>
             </div>
         }
             </section>
+        
       
     );
   }
