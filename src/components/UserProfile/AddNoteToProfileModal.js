@@ -43,11 +43,18 @@ export default class AddNoteToProfileModal extends Component {
               body
               inverse
               style={{ backgroundColor: "#CADEDF", borderColor: "#0C2D48" }}
-            >
-              <CardBody className="text-dark">
+            ><h3 color="secondary">Notes</h3>
+              <CardBody className="text-dark card">
                 
-                
-                {this.props.notes.map( note =>(<h6>Note: {note.note}</h6>))}
+                <div>
+                {this.props.notes.map( note =>(<React.Fragment><div className="card-body border border-dark"><h4>{note.note}</h4><Button color="secondary">
+                    Edit
+                  </Button> <Button color="secondary">
+                    Delete
+                  </Button></div></React.Fragment>))}</div>
+                  <Button onClick={this.toggle} className="btn">
+                    cancel
+                  </Button>
                 
                 
               </CardBody>

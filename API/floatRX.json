@@ -173,6 +173,18 @@
       "medicationId": 1,
       "userId": 9,
       "id": 19
+    },
+    {
+      "name": "cyclosporine",
+      "class": "calcineurin inhibitor",
+      "route": "PO",
+      "dosage": " 7-9 mg/kg/day",
+      "frequency": "Twice a day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
+      "medicationId": 4,
+      "userId": 6,
+      "id": 20
     }
   ],
   "notes": [
@@ -371,6 +383,42 @@
       "medicationId": 12,
       "userId": 9,
       "id": 33
+    },
+    {
+      "note": "fff",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 34
+    },
+    {
+      "note": "jfjfj",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 35
+    },
+    {
+      "note": "jfjfjf",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 36
+    },
+    {
+      "note": "kjdsf",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 37
+    },
+    {
+      "note": "okay",
+      "medicationId": 4,
+      "userId": 6,
+      "id": 38
+    },
+    {
+      "note": "kdkd",
+      "medicationId": 4,
+      "userId": 6,
+      "id": 39
     }
   ],
   "unit": [
