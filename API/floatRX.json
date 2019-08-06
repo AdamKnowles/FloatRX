@@ -126,18 +126,6 @@
       "indications": "Testicular and Ovarian Carcinoma",
       "mechanism": "Death of rapidly growing cells, particularly malignant ones",
       "medicationId": 6,
-      "userId": 7,
-      "id": 12
-    },
-    {
-      "name": "cisplatin",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
       "userId": 4,
       "id": 13
     },
@@ -258,44 +246,8 @@
       "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
       "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
       "medicationId": 1,
-      "userId": 1,
-      "id": 29
-    },
-    {
-      "name": "mycophenolate mofetil",
-      "class": "inosine monophosphateh dehydrogenase inhibitor",
-      "route": "PO",
-      "dosage": "1.5 mg",
-      "frequency": "Every 12 Hours",
-      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
-      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
-      "medicationId": 2,
-      "userId": 1,
-      "id": 30
-    },
-    {
-      "name": "magnesium sulfate",
-      "class": "Antidysrhythmics, Electrolytes",
-      "route": "IV",
-      "dosage": "1-2 g/h",
-      "frequency": "Continuous",
-      "indications": "Used to prevent seizures in pregnant women with conditions such as pre-eclampsia, eclampsia, or toxemia of pregnancy",
-      "mechanism": "Participates in physiologic processes",
-      "medicationId": 12,
-      "userId": 1,
-      "id": 31
-    },
-    {
-      "name": "tamsulosin",
-      "class": "alpha-1 blocker, selective",
-      "route": "PO",
-      "dosage": "0.4 mg",
-      "frequency": "Daily",
-      "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
-      "mechanism": "Selectively antagonizes prostate alpha-1a adrenergic receptors, relaxing smooth muscle and improving urine flow (peripherally-acting alpha blocker)",
-      "medicationId": 25,
-      "userId": 1,
-      "id": 32
+      "userId": 12,
+      "id": 33
     },
     {
       "name": "tacrolimus",
@@ -306,16 +258,23 @@
       "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
       "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
       "medicationId": 1,
-      "userId": 12,
-      "id": 33
+      "userId": 5,
+      "id": 34
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 35
     }
   ],
   "notes": [
-    {
-      "userId": "1",
-      "note": "heloooooooo",
-      "id": 7
-    },
     {
       "note": "hello med should be 6 and new user melanie id high",
       "medicationId": 6,
@@ -327,30 +286,6 @@
       "medicationId": 6,
       "userId": 4,
       "id": 10
-    },
-    {
-      "note": "no",
-      "medicationId": 1,
-      "userId": 5,
-      "id": 11
-    },
-    {
-      "note": "no",
-      "medicationId": 1,
-      "userId": 5,
-      "id": 12
-    },
-    {
-      "note": "no",
-      "medicationId": 1,
-      "userId": 5,
-      "id": 13
-    },
-    {
-      "note": "no",
-      "medicationId": 1,
-      "userId": 5,
-      "id": 14
     },
     {
       "note": "okay",
@@ -443,29 +378,14 @@
       "id": 41
     },
     {
-      "note": "hello",
+      "userId": "2",
       "medicationId": 1,
-      "userId": 2,
+      "note": "hey whats up",
       "id": 43
     },
     {
       "userId": "1",
-      "note": "is this working",
-      "id": 45
-    },
-    {
-      "userId": "1",
-      "note": "this is definitely working",
-      "id": 46
-    },
-    {
-      "userId": "1",
-      "note": "maybe",
-      "id": 47
-    },
-    {
-      "userId": "1",
-      "note": "what",
+      "note": "nooooo",
       "id": 48
     },
     {
@@ -479,6 +399,12 @@
       "medicationId": 1,
       "note": "you are wrong",
       "id": 50
+    },
+    {
+      "userId": "5",
+      "medicationId": 1,
+      "note": "it is!",
+      "id": 51
     }
   ],
   "unit": [

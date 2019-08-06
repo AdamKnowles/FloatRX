@@ -44,9 +44,12 @@ export default class NoteEditFormModal extends Component {
         this.state.modal=false
     }
     componentDidMount() {
-        APImanager.get("notes", this.props.notes.id).then(note => {
+        
+        APImanager.get("notes", this.props.note.id).then(note => {
           this.setState({
-            id:note.id
+            id:note.id,
+            notes:note.note
+            
           });
         });
       }
@@ -83,7 +86,7 @@ export default class NoteEditFormModal extends Component {
               onChange={this.handleFieldChange}
               type="textarea"
               id="note"
-              placeholder="Edit Note"
+              placeholder={this.state.notes}
               required
               autoFocus=""
               className="form-control mb-2"
