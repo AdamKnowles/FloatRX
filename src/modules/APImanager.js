@@ -59,5 +59,17 @@ export default Object.create(null, {
       }).then(data => data.json());
     }
   },
+
+  put: {
+    value: function(resource, editedThing) {
+      return fetch(`${remoteURL}/${resource}/${editedThing.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedThing)
+      }).then(data => data.json());
+    }
+  }
  
 });

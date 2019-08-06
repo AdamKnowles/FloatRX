@@ -241,8 +241,8 @@
       "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
       "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
       "medicationId": 1,
-      "userId": 1,
-      "id": 27
+      "userId": 2,
+      "id": 28
     },
     {
       "name": "tacrolimus",
@@ -253,15 +253,26 @@
       "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
       "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
       "medicationId": 1,
-      "userId": 2,
-      "id": 28
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "name": "mycophenolate mofetil",
+      "class": "inosine monophosphateh dehydrogenase inhibitor",
+      "route": "PO",
+      "dosage": "1.5 mg",
+      "frequency": "Every 12 Hours",
+      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
+      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
+      "medicationId": 2,
+      "userId": 1,
+      "id": 30
     }
   ],
   "notes": [
     {
-      "note": "nope",
-      "medicationId": 1,
-      "userId": 2,
+      "userId": "1",
+      "note": "noooooooooooooo",
       "id": 7
     },
     {
@@ -389,6 +400,22 @@
       "medicationId": 21,
       "userId": 11,
       "id": 41
+    },
+    {
+      "note": "hello",
+      "medicationId": 1,
+      "userId": 2,
+      "id": 43
+    },
+    {
+      "userId": "1",
+      "note": "is this working",
+      "id": 45
+    },
+    {
+      "userId": "1",
+      "note": "this is definitely working",
+      "id": 46
     }
   ],
   "unit": [

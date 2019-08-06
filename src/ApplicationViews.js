@@ -110,6 +110,16 @@ class ApplicationViews extends Component {
       
       
   };
+
+  editNewNote = (editedEventObject) => {
+    let currentUserId = sessionStorage.getItem("userId");
+    return APImanager.put("notes", editedEventObject)
+      .then(() => APImanager.getUserNotes("notes", currentUserId))
+      .then(note => {
+
+        this.setState({ notes: note });
+      });
+  };
   
 
   register = user => {
@@ -187,6 +197,7 @@ class ApplicationViews extends Component {
                 addNote={this.addNote}
                 notes={this.state.notes}
                 deleteNoteFromProfile={this.deleteNoteFromProfile}
+                editNewNote={this.editNewNote}
                 {...props}
               />
             );}
