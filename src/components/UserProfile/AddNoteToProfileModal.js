@@ -49,7 +49,7 @@ export default class AddNoteToProfileModal extends Component {
                 <div>
                 {this.props.notes.map( note =>(<React.Fragment><div className="card-body border border-dark"><h4>{note.note}</h4><Button color="secondary">
                     Edit
-                  </Button> <Button color="secondary">
+                  </Button> <Button onClick={() =>this.props.deleteNoteFromProfile(note.id)} color="secondary">
                     Delete
                   </Button></div></React.Fragment>))}</div>
                   <Button onClick={this.toggle} className="btn">

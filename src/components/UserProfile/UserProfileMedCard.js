@@ -128,7 +128,7 @@ export default class UserProfileMedCard extends Component {
                 <Button color="secondary" onClick={this.toggle}>
                     Add Note
                   </Button>
-                  <AddNoteToProfileModal toggle={this.props.toggle} notes={this.props.notes} {...this.props} />
+                  <AddNoteToProfileModal toggle={this.props.toggle} notes={this.props.notes} deleteNoteFromProfile={this.props.deleteNoteFromProfile} {...this.props} />
               </CardBody>
             </Card>
           </div>

@@ -85,8 +85,15 @@ class ApplicationViews extends Component {
     return APImanager.delete("userProfile", id)
       .then(() => APImanager.getUserMeds("userProfile", currentUserId))
       .then(medication => {
-        // this.props.history.push("/events");
         this.setState({ userProfile: medication });
+      });
+  };
+  deleteNoteFromProfile = id => {
+    let currentUserId = sessionStorage.getItem("userId");
+    return APImanager.delete("notes", id)
+      .then(() => APImanager.getUserNotes("notes", currentUserId))
+      .then(note => {
+        this.setState({ notes: note });
       });
   };
   userData = currentUserId => {
@@ -179,6 +186,7 @@ class ApplicationViews extends Component {
                 logout={this.logout}
                 addNote={this.addNote}
                 notes={this.state.notes}
+                deleteNoteFromProfile={this.deleteNoteFromProfile}
                 {...props}
               />
             );}
