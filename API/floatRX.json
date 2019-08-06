@@ -241,27 +241,26 @@
       "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
       "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
       "medicationId": 1,
-      "userId": 1,
-      "id": 27
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
       "userId": 2,
       "id": 28
+    },
+    {
+      "name": "rituximab",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "1000 mg",
+      "frequency": "Once a week",
+      "indications": "An immunotherapy medicine that interferes with the growth and spread of cancer cells and helps prevent rejection of transplanted organs in the body.",
+      "mechanism": "Binds to B-lymphocyte CD20 surface antigens (monoclonal antibody)",
+      "medicationId": 3,
+      "userId": 1,
+      "id": 29
     }
   ],
   "notes": [
     {
-      "note": "nope",
-      "medicationId": 1,
-      "userId": 2,
+      "userId": "1",
+      "note": "why",
       "id": 7
     },
     {
@@ -389,6 +388,18 @@
       "medicationId": 21,
       "userId": 11,
       "id": 41
+    },
+    {
+      "note": "hello",
+      "medicationId": 1,
+      "userId": 2,
+      "id": 43
+    },
+    {
+      "note": "jlksdjlf",
+      "medicationId": 3,
+      "userId": 1,
+      "id": 44
     }
   ],
   "unit": [

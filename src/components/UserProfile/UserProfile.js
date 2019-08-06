@@ -33,6 +33,7 @@ class UserProfile extends Component {
               notes={this.props.notes}
               toggle={this.props.toggle}
               deleteNoteFromProfile={this.props.deleteNoteFromProfile}
+              editNewNote={this.props.editNewNote}
               {...this.props}
             />
           ))}
