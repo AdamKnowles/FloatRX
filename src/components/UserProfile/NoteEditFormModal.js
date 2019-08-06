@@ -9,7 +9,8 @@ export default class NoteEditFormModal extends Component {
           userId: sessionStorage.getItem("userId"),
           modal: false,
           id: "",
-          note: ""
+          note: "",
+          medicationId: ""
           
         };
     
@@ -33,6 +34,7 @@ export default class NoteEditFormModal extends Component {
         evt.preventDefault();
         const note = {
           userId: this.state.userId,
+          medicationId:this.props.note.medicationId,
           note: this.state.note,
           id: this.props.note.id
         };

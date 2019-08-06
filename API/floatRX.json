@@ -54,6 +54,11 @@
       "username": "chris",
       "password": "floyd",
       "id": 11
+    },
+    {
+      "username": "sam",
+      "password": "birky",
+      "id": 12
     }
   ],
   "userMedications": [
@@ -267,12 +272,48 @@
       "medicationId": 2,
       "userId": 1,
       "id": 30
+    },
+    {
+      "name": "magnesium sulfate",
+      "class": "Antidysrhythmics, Electrolytes",
+      "route": "IV",
+      "dosage": "1-2 g/h",
+      "frequency": "Continuous",
+      "indications": "Used to prevent seizures in pregnant women with conditions such as pre-eclampsia, eclampsia, or toxemia of pregnancy",
+      "mechanism": "Participates in physiologic processes",
+      "medicationId": 12,
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "name": "tamsulosin",
+      "class": "alpha-1 blocker, selective",
+      "route": "PO",
+      "dosage": "0.4 mg",
+      "frequency": "Daily",
+      "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
+      "mechanism": "Selectively antagonizes prostate alpha-1a adrenergic receptors, relaxing smooth muscle and improving urine flow (peripherally-acting alpha blocker)",
+      "medicationId": 25,
+      "userId": 1,
+      "id": 32
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 12,
+      "id": 33
     }
   ],
   "notes": [
     {
       "userId": "1",
-      "note": "noooooooooooooo",
+      "note": "heloooooooo",
       "id": 7
     },
     {
@@ -416,6 +457,28 @@
       "userId": "1",
       "note": "this is definitely working",
       "id": 46
+    },
+    {
+      "userId": "1",
+      "note": "maybe",
+      "id": 47
+    },
+    {
+      "userId": "1",
+      "note": "what",
+      "id": 48
+    },
+    {
+      "userId": "6",
+      "medicationId": 4,
+      "note": "i cant do this",
+      "id": 49
+    },
+    {
+      "userId": "12",
+      "medicationId": 1,
+      "note": "you are wrong",
+      "id": 50
     }
   ],
   "unit": [
