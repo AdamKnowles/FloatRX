@@ -34,15 +34,24 @@ export default class NoteEditFormModal extends Component {
         const note = {
           userId: this.state.userId,
           note: this.state.note,
-          id: 7
+          id: this.props.note.id
         };
+        console.log(note)
     
         this.props.editNewNote(note)
         this.state.modal=false
     }
+    componentDidMount() {
+        APImanager.get("notes", this.props.notes.id).then(note => {
+          this.setState({
+            id:note.id
+          });
+        });
+      }
     
     
     render() {
+        console.log(this.props.note.id)
         return (
             <React.Fragment>
             <div>
