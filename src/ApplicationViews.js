@@ -5,7 +5,7 @@ import { withRouter } from "react-router";
 import { Route, Redirect } from "react-router-dom";
 import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
-import AddNoteToProfile from "./components/UserProfile/AddNoteToProfile";
+
 import Login from "./components/Login/login";
 
 class ApplicationViews extends Component {
@@ -27,8 +27,12 @@ class ApplicationViews extends Component {
     APImanager.getAll("unit").then(units => (newState.units = units));
     APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
+    APImanager.getUserNotes("notes", currentUserId)
+      .then(notes => (newState.notes = notes))
       .then(() => this.setState(newState));
+      
   }
+  
  
 
 
@@ -61,13 +65,19 @@ class ApplicationViews extends Component {
       );
   };
   addNote = note => {
+    let currentUserId = sessionStorage.getItem("userId");
+    
     return APImanager.post("notes", note)
-      .then(() => APImanager.getAll("notes"))
+      .then(() => APImanager.getUserNotes("notes", currentUserId))
       .then(note =>
         this.setState({
           notes: note
+          
         })
+        
       );
+      
+      
   };
 
   deleteMedFromProfile = id => {
@@ -75,8 +85,15 @@ class ApplicationViews extends Component {
     return APImanager.delete("userProfile", id)
       .then(() => APImanager.getUserMeds("userProfile", currentUserId))
       .then(medication => {
-        // this.props.history.push("/events");
         this.setState({ userProfile: medication });
+      });
+  };
+  deleteNoteFromProfile = id => {
+    let currentUserId = sessionStorage.getItem("userId");
+    return APImanager.delete("notes", id)
+      .then(() => APImanager.getUserNotes("notes", currentUserId))
+      .then(note => {
+        this.setState({ notes: note });
       });
   };
   userData = currentUserId => {
@@ -85,9 +102,15 @@ class ApplicationViews extends Component {
       .then(medications => {
         return (newState.userProfile = medications);
       })
+    APImanager.getUserNotes("notes", currentUserId)
+      .then(notes => {
+        return (newState.notes = notes);
+      })
       .then(() => this.setState(newState));
       
+      
   };
+  
 
   register = user => {
     return APImanager.post("users", user)
@@ -131,6 +154,7 @@ class ApplicationViews extends Component {
           exact
           path="/medicationlist"
           render={props => {
+            if(this.isAuthenticated()){
             return (
               <MedicationList
                 medications={this.state.medications}
@@ -143,13 +167,17 @@ class ApplicationViews extends Component {
                 {...props}
                 // transplantMedications={this.state.transplantMedications}
               />
-            );
-          }}
+            
+            );}
+            else {
+              return <Redirect to="/" />
+          }}}
         />
         <Route
           exact
           path="/profile"
           render={props => {
+            if(this.isAuthenticated()){
             return (
               <UserProfile
                 userProfile={this.state.userProfile}
@@ -157,24 +185,16 @@ class ApplicationViews extends Component {
                 deleteMedFromProfile={this.deleteMedFromProfile}
                 logout={this.logout}
                 addNote={this.addNote}
+                notes={this.state.notes}
+                deleteNoteFromProfile={this.deleteNoteFromProfile}
                 {...props}
               />
-            );
-          }}
+            );}
+            else {
+              return <Redirect to="/" />
+          }}}
         />
-        <Route
-          exact
-          path="/profile/addNoteForm"
-          render={props => {
-            return (
-              <AddNoteToProfile
-                userProfile={this.state.userProfile}
-                addNote={this.addNote}
-                {...props}
-              />
-            );
-          }}
-        />
+        
       </React.Fragment>
     );
   }

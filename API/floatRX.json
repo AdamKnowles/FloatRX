@@ -29,6 +29,31 @@
       "username": "ashley",
       "password": "gurule",
       "id": 6
+    },
+    {
+      "username": "melanie",
+      "password": "bond",
+      "id": 7
+    },
+    {
+      "username": "joy",
+      "password": "jou",
+      "id": 8
+    },
+    {
+      "username": "karla",
+      "password": "galagos",
+      "id": 9
+    },
+    {
+      "username": "mark",
+      "password": "price",
+      "id": 10
+    },
+    {
+      "username": "chris",
+      "password": "floyd",
+      "id": 11
     }
   ],
   "userMedications": [
@@ -39,18 +64,6 @@
     }
   ],
   "userProfile": [
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 1
-    },
     {
       "name": "cisplatin",
       "class": "antineoplastics",
@@ -74,18 +87,6 @@
       "medicationId": 7,
       "userId": 3,
       "id": 5
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 6
     },
     {
       "name": "cyclosporine",
@@ -112,28 +113,16 @@
       "id": 8
     },
     {
-      "name": "propofol",
-      "class": "general anesthetic",
+      "name": "cisplatin",
+      "class": "antineoplastics",
       "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
-      "userId": 1,
-      "id": 9
-    },
-    {
-      "name": "mycophenolate mofetil",
-      "class": "inosine monophosphateh dehydrogenase inhibitor",
-      "route": "PO",
-      "dosage": "1.5 mg",
-      "frequency": "Every 12 Hours",
-      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
-      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
-      "medicationId": 2,
-      "userId": 1,
-      "id": 10
+      "dosage": "20-70 mg",
+      "frequency": "Once a day for 5 Days",
+      "indications": "Testicular and Ovarian Carcinoma",
+      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
+      "medicationId": 6,
+      "userId": 7,
+      "id": 12
     },
     {
       "name": "cisplatin",
@@ -144,44 +133,262 @@
       "indications": "Testicular and Ovarian Carcinoma",
       "mechanism": "Death of rapidly growing cells, particularly malignant ones",
       "medicationId": 6,
+      "userId": 4,
+      "id": 13
+    },
+    {
+      "name": "oxytocin",
+      "class": "polypeptide hormone",
+      "route": "IV",
+      "dosage": "0.5-2 milliunits/min",
+      "frequency": "Every 15-40 min",
+      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
+      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
+      "medicationId": 11,
+      "userId": 8,
+      "id": 16
+    },
+    {
+      "name": "magnesium sulfate",
+      "class": "Antidysrhythmics, Electrolytes",
+      "route": "IV",
+      "dosage": "1-2 g/h",
+      "frequency": "Continuous",
+      "indications": "Used to prevent seizures in pregnant women with conditions such as pre-eclampsia, eclampsia, or toxemia of pregnancy",
+      "mechanism": "Participates in physiologic processes",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 18
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 9,
+      "id": 19
+    },
+    {
+      "name": "cyclosporine",
+      "class": "calcineurin inhibitor",
+      "route": "PO",
+      "dosage": " 7-9 mg/kg/day",
+      "frequency": "Twice a day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
+      "medicationId": 4,
+      "userId": 6,
+      "id": 20
+    },
+    {
+      "name": "nitroprusside",
+      "class": "nitrate",
+      "route": "IV",
+      "dosage": "3-4 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Hypertensive Crisis or high blood pressure",
+      "mechanism": "Directly dilates peripheral vessels",
+      "medicationId": 18,
+      "userId": 10,
+      "id": 22
+    },
+    {
+      "name": "vasopressin",
+      "class": "anti-diuretic hormone",
+      "route": "IV",
+      "dosage": "0.01-0.04 units/min",
+      "frequency": "Continuous",
+      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
+      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
+      "medicationId": 19,
+      "userId": 10,
+      "id": 23
+    },
+    {
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
+      "userId": 11,
+      "id": 24
+    },
+    {
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
+      "userId": 11,
+      "id": 25
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
       "userId": 1,
-      "id": 11
+      "id": 27
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 2,
+      "id": 28
     }
   ],
   "notes": [
     {
-      "note": "what",
-      "medicationId": 10,
-      "userId": 1,
-      "id": 1
+      "note": "nope",
+      "medicationId": 1,
+      "userId": 2,
+      "id": 7
     },
     {
-      "note": "should be 2",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "note": "should be 2",
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "note": "should be 2",
-      "medicationId": 10,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "note": "should be 2",
-      "medicationId": 2,
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "note": "this should be 6",
+      "note": "hello med should be 6 and new user melanie id high",
       "medicationId": 6,
-      "userId": 1,
-      "id": 6
+      "userId": 7,
+      "id": 9
+    },
+    {
+      "note": "nope",
+      "medicationId": 6,
+      "userId": 4,
+      "id": 10
+    },
+    {
+      "note": "no",
+      "medicationId": 1,
+      "userId": 5,
+      "id": 11
+    },
+    {
+      "note": "no",
+      "medicationId": 1,
+      "userId": 5,
+      "id": 12
+    },
+    {
+      "note": "no",
+      "medicationId": 1,
+      "userId": 5,
+      "id": 13
+    },
+    {
+      "note": "no",
+      "medicationId": 1,
+      "userId": 5,
+      "id": 14
+    },
+    {
+      "note": "okay",
+      "medicationId": 1,
+      "userId": 8,
+      "id": 21
+    },
+    {
+      "note": "okay",
+      "medicationId": 11,
+      "userId": 8,
+      "id": 22
+    },
+    {
+      "note": "i dont wanna",
+      "medicationId": 12,
+      "userId": 6,
+      "id": 24
+    },
+    {
+      "note": "kjsldjf",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 26
+    },
+    {
+      "note": "ff",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 27
+    },
+    {
+      "note": "",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 28
+    },
+    {
+      "note": "ffff",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 29
+    },
+    {
+      "note": "",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 30
+    },
+    {
+      "note": "",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 31
+    },
+    {
+      "note": "kuosjf",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 32
+    },
+    {
+      "note": "Thank you Sam",
+      "medicationId": 12,
+      "userId": 9,
+      "id": 33
+    },
+    {
+      "note": "okay",
+      "medicationId": 4,
+      "userId": 6,
+      "id": 38
+    },
+    {
+      "note": "kdkd",
+      "medicationId": 4,
+      "userId": 6,
+      "id": 39
+    },
+    {
+      "note": "thissl kill ya!",
+      "medicationId": 18,
+      "userId": 10,
+      "id": 40
+    },
+    {
+      "note": "this killed someone dont use it",
+      "medicationId": 21,
+      "userId": 11,
+      "id": 41
     }
   ],
   "unit": [
