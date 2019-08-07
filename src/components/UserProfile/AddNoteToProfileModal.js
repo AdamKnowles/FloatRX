@@ -50,9 +50,12 @@ export default class AddNoteToProfileModal extends Component {
               <AddNoteModal {...this.props} />
                 
                 <div>
-                {this.props.notes.map( note =>(<React.Fragment><CardBody className="text-dark card card-body border border-dark " body
+                {this.props.notes.filter(
+                note =>
+                  note.medicationId === this.props.medication.medicationId).
+              map( note =>(<React.Fragment><CardBody className="text-dark card card-body border border-dark " body
               inverse
-              style={{ backgroundColor: "#93E9BE", borderColor: "#93E9BE" }}><div ><h4>{note.note}</h4><NoteEditFormModal toggle={this.toggle} editNewNote={this.props.editNewNote} notes={this.props.notes} note={note} {...this.props} /> <Button color="danger" size="sm" onClick={() =>this.props.deleteNoteFromProfile(note.id)}>
+              style={{ backgroundColor: "#93E9BE", borderColor: "#93E9BE" }}><div ><h6>{note.note}</h6><NoteEditFormModal toggle={this.toggle} editNewNote={this.props.editNewNote} notes={this.props.notes} note={note} {...this.props} /> <Button color="danger" size="sm" onClick={() =>this.props.deleteNoteFromProfile(note.id)}>
                     Delete
                   </Button></div></CardBody></React.Fragment>))}</div>
                    
