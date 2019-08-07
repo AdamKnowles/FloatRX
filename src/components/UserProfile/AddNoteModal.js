@@ -48,7 +48,7 @@ export default class AddNoteModal extends Component {
         return (
             <div>
                 <Button color="primary" block  onClick={this.toggle} >
-                    Add Note
+                    Add New Note
                   </Button>
                 <Modal
                 isOpen={this.state.modal}
@@ -68,7 +68,7 @@ export default class AddNoteModal extends Component {
                   }}
                 >
                   <CardBody className="text-dark">
-                      <h1>Add Note</h1>
+                      <h2 className="p-1 mb-4 bg-secondary text-white">Add Note</h2>
                     <h1>
                       <u>{this.props.medication.name}</u>
                     </h1>

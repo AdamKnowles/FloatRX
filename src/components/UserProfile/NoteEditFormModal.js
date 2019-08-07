@@ -81,7 +81,7 @@ export default class NoteEditFormModal extends Component {
                   }}
                 >
                   <CardBody className="text-dark">
-                      <h1>Edit Note </h1>
+                      <h2 className="p-1 mb-4 bg-secondary text-white">Edit Note </h2>
                   <h1>
                       <u>{this.props.medication.name}</u>
                     </h1>
