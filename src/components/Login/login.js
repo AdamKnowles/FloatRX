@@ -76,6 +76,9 @@ export default class Login extends Component {
 
   render() {
     return (
+      <div className="container">
+        <br></br>
+        <br></br>
       <div className="card">
         <form onSubmit={this.handleLogin}>
           
@@ -116,6 +119,7 @@ export default class Login extends Component {
             </button>
           </div>
         </form>
+        </div>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Card, CardBody, Button, Modal, ModalFooter } from "reactstrap";
+import "../../index.css"
 
 export default class MedicationCard extends Component {
   constructor(props) {
@@ -46,7 +47,7 @@ export default class MedicationCard extends Component {
     return (
       <section className="medication">
         {
-          <div key={this.props.medication.medication.id} className="card">
+          <div key={this.props.medication.medication.id} className="">
             <div>
               <Modal
                 isOpen={this.state.modal}

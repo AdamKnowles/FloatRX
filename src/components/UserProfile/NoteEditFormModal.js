@@ -15,6 +15,7 @@ export default class NoteEditFormModal extends Component {
         };
     
         this.toggle = this.toggle.bind(this);
+      
       }
     
       toggle() {

@@ -10,7 +10,7 @@ export default class UserProfileMedCard extends Component {
     return (
       <section className="medication">
         {
-          <div key={this.props.medication.id} className="card">
+          <div key={this.props.medication.id} className="">
             
             <Card
               body

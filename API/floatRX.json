@@ -64,6 +64,11 @@
       "username": "joe",
       "password": "kennerly",
       "id": 13
+    },
+    {
+      "username": "jerodis",
+      "password": "williams",
+      "id": 14
     }
   ],
   "userMedications": [
@@ -121,18 +126,6 @@
       "medicationId": 2,
       "userId": 3,
       "id": 8
-    },
-    {
-      "name": "cisplatin",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
-      "userId": 4,
-      "id": 13
     },
     {
       "name": "oxytocin",
@@ -337,6 +330,54 @@
       "medicationId": 16,
       "userId": 7,
       "id": 52
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 4,
+      "id": 53
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 5,
+      "id": 54
+    },
+    {
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
+      "userId": 14,
+      "id": 55
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 1,
+      "id": 56
     }
   ],
   "notes": [
@@ -445,7 +486,7 @@
     {
       "userId": "2",
       "medicationId": 1,
-      "note": "hey ",
+      "note": "is this tacrolimus",
       "id": 43
     },
     {
@@ -513,6 +554,42 @@
       "medicationId": 19,
       "note": "this better be vasopressin and it is babyyyyy",
       "id": 64
+    },
+    {
+      "note": "is this cisplatin",
+      "medicationId": 6,
+      "userId": 2,
+      "id": 65
+    },
+    {
+      "note": "rrrrrrrrrr",
+      "medicationId": 16,
+      "userId": 4,
+      "id": 66
+    },
+    {
+      "note": "bbbbbbbbbbbbb",
+      "medicationId": 16,
+      "userId": 4,
+      "id": 67
+    },
+    {
+      "note": "heyyyy",
+      "medicationId": 17,
+      "userId": 4,
+      "id": 68
+    },
+    {
+      "note": "hdhdhdhd",
+      "medicationId": 21,
+      "userId": 14,
+      "id": 69
+    },
+    {
+      "note": "this will kill you",
+      "medicationId": 16,
+      "userId": 1,
+      "id": 70
     }
   ],
   "unit": [

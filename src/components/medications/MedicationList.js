@@ -11,6 +11,7 @@ class MedicationList extends Component {
     if (this.props.unitParam !== "") {
       return (
         <React.Fragment>
+          <div className="container">
           <h2 body className="text-center">
             Unit Specific Medication List
           </h2>
@@ -39,19 +40,20 @@ class MedicationList extends Component {
                 />
               ))}
           </div>
+          </div>
         </React.Fragment>
       );
     } else {
       return (
         <React.Fragment>
-          <div>
+          <div className="container">
+            <h2 className="text-center">Select a Unit</h2>
             <MedDropdown
               units={this.props.units}
               {...this.props}
               searchParam={this.props.searchParam}
               unitParam={this.props.unitParam}
             />
-            <p>Choose a Unit</p>
           </div>
         </React.Fragment>
       );

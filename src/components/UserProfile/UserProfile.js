@@ -7,6 +7,7 @@ class UserProfile extends Component {
   render() {
     return (
       <React.Fragment>
+        <div className="container">
         <h2 body className="text-center">
           User Profile
         </h2>
@@ -37,6 +38,7 @@ class UserProfile extends Component {
               {...this.props}
             />
           ))}
+        </div>
         </div>
       </React.Fragment>
     );

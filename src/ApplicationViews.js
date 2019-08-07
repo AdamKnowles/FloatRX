@@ -15,7 +15,7 @@ class ApplicationViews extends Component {
     units: [],
     userProfile: [],
     notes:[],
-    unitParam: "1"
+    unitParam: ""
   };
   componentDidMount() {
     let currentUserId = sessionStorage.getItem("userId");
@@ -47,7 +47,7 @@ class ApplicationViews extends Component {
     console.log("hey");
     sessionStorage.clear();
     this.props.history.push("/");
-    // window.location.reload()
+    
   };
 
   searchParam = unitId => {
