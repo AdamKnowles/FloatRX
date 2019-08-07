@@ -17,9 +17,9 @@ export default class UserProfileMedCard extends Component {
               className="text-center card-body border border-dark"
               body
               inverse
-              style={{ backgroundColor: "#CADEDF", borderColor: "#0C2D48" }}
+              style={{ backgroundColor: "#383A3D", borderColor: "#383A3D" }}
             >
-              <CardBody className="text-dark ">
+              <CardBody className="text-light ">
                 <h1>
                   <u>{this.props.medication.name}</u>
                 </h1>

@@ -37,7 +37,7 @@ export default class AddNoteToProfileModal extends Component {
       {
         <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
-                className={this.props.className}>
+                className={this.props.className} size="lg">
                   <div key={this.props.notes.id} className="card">
           <Card
               body

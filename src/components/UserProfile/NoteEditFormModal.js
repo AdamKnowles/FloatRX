@@ -67,7 +67,7 @@ export default class NoteEditFormModal extends Component {
                 <Modal
                 isOpen={this.state.modal}
                 toggle={this.toggle}
-                className={this.props.className}
+                className={this.props.className} size="lg"
               >
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
                 <Card
