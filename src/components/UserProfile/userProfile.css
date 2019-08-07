@@ -1,0 +1,8 @@
+.bothButtons{
+    display: flex;
+    justify-content: center
+}
+.editDeleteButtons{
+    display: flex;
+    justify-content: center
+}

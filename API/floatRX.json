@@ -59,6 +59,11 @@
       "username": "sam",
       "password": "birky",
       "id": 12
+    },
+    {
+      "username": "joe",
+      "password": "kennerly",
+      "id": 13
     }
   ],
   "userMedications": [
@@ -308,6 +313,30 @@
       "medicationId": 1,
       "userId": 1,
       "id": 48
+    },
+    {
+      "name": "norepinephrine",
+      "class": " Catecholamines",
+      "route": "IV",
+      "dosage": "0.02-1 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to treat life-threatening low blood pressure (hypotension)",
+      "mechanism": "Stimulates alpha and beta-1 adrenergic receptors; produces inotropic and vasopressor effects",
+      "medicationId": 17,
+      "userId": 13,
+      "id": 50
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 7,
+      "id": 52
     }
   ],
   "notes": [
@@ -454,6 +483,36 @@
       "medicationId": 19,
       "note": "this is vasopressin yes it is",
       "id": 58
+    },
+    {
+      "userId": "13",
+      "medicationId": 16,
+      "note": "patient got tooooo sleeepy. I gave too much. I broke the law.",
+      "id": 59
+    },
+    {
+      "note": "this raised the blood pressure",
+      "medicationId": 17,
+      "userId": 13,
+      "id": 60
+    },
+    {
+      "note": "is this tacro",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 61
+    },
+    {
+      "userId": "7",
+      "medicationId": 16,
+      "note": "this killed michael jackson. but he did it to himself",
+      "id": 63
+    },
+    {
+      "userId": "1",
+      "medicationId": 19,
+      "note": "this better be vasopressin and it is babyyyyy",
+      "id": 64
     }
   ],
   "unit": [

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
 import AddNoteToProfileModal from "./AddNoteToProfileModal";
+import "./userProfile.css"
 
 export default class UserProfileMedCard extends Component {
   
@@ -28,6 +29,7 @@ export default class UserProfileMedCard extends Component {
                 <h6>Indication: {this.props.medication.indications}</h6>
                 <h6>Mechanism of Action: {this.props.medication.mechanism}</h6>
                 <h6 />
+                <div className="bothButtons">
                 <Button
                   className="mr-2"
                   onClick={() =>
@@ -40,6 +42,7 @@ export default class UserProfileMedCard extends Component {
                 
                 
                   <AddNoteToProfileModal toggle={this.props.toggle} notes={this.props.notes} deleteNoteFromProfile={this.props.deleteNoteFromProfile} editNewNote={this.props.editNewNote} {...this.props} />
+                  </div>
               </CardBody>
             </Card>
           </div>
