@@ -262,16 +262,16 @@
       "id": 34
     },
     {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
+      "name": "vasopressin",
+      "class": "anti-diuretic hormone",
+      "route": "IV",
+      "dosage": "0.01-0.04 units/min",
+      "frequency": "Continuous",
+      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
+      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
+      "medicationId": 19,
       "userId": 1,
-      "id": 35
+      "id": 44
     }
   ],
   "notes": [
@@ -384,11 +384,6 @@
       "id": 43
     },
     {
-      "userId": "1",
-      "note": "nooooo",
-      "id": 48
-    },
-    {
       "userId": "6",
       "medicationId": 4,
       "note": "i cant do this",
@@ -405,6 +400,12 @@
       "medicationId": 1,
       "note": "it is!",
       "id": 51
+    },
+    {
+      "note": "hellooooo",
+      "medicationId": 6,
+      "userId": 1,
+      "id": 52
     }
   ],
   "unit": [

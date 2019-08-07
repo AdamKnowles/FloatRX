@@ -11,17 +11,17 @@ class UserProfile extends Component {
           User Profile
         </h2>
 
-        <Button
-          body
-          className="text-center"
+        <div><Button
+          
+           className="text-center"
           type="button"
           onClick={() => this.props.history.push("/medicationlist")}
         >
           Add Medication
         </Button>
-        <Button className="text-right" onClick={this.props.logout}>
+        <Button className="float-right" onClick={this.props.logout}>
           Logout
-        </Button>
+        </Button></div>
 
         <div>
           {this.props.userProfile.map(medication => (
