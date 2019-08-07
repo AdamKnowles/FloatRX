@@ -73,7 +73,7 @@ export default class AddNoteModal extends Component {
                       <u>{this.props.medication.name}</u>
                     </h1>
                     <h4>{this.props.medication.class}</h4>
-                    <input
+                    <textarea
               onChange={this.handleFieldChange}
               type="text"
               id="note"
@@ -81,6 +81,7 @@ export default class AddNoteModal extends Component {
               required
               autoFocus=""
               className="form-control mb-2"
+              rows="8"
             />
                   </CardBody>
                 </Card>
