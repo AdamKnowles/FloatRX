@@ -284,6 +284,30 @@
       "medicationId": 6,
       "userId": 2,
       "id": 46
+    },
+    {
+      "name": "mycophenolate mofetil",
+      "class": "inosine monophosphateh dehydrogenase inhibitor",
+      "route": "PO",
+      "dosage": "1.5 mg",
+      "frequency": "Every 12 Hours",
+      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
+      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
+      "medicationId": 2,
+      "userId": 1,
+      "id": 47
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 48
     }
   ],
   "notes": [
@@ -414,10 +438,22 @@
       "id": 51
     },
     {
-      "note": "hellooooo",
-      "medicationId": 6,
-      "userId": 1,
-      "id": 52
+      "userId": "1",
+      "medicationId": 2,
+      "note": "this is cellcept oh yeah",
+      "id": 56
+    },
+    {
+      "userId": "1",
+      "medicationId": 1,
+      "note": "this is tacro yup",
+      "id": 57
+    },
+    {
+      "userId": "1",
+      "medicationId": 19,
+      "note": "this is vasopressin yes it is",
+      "id": 58
     }
   ],
   "unit": [
