@@ -48,7 +48,7 @@ export default class NoteEditFormModal extends Component {
         APImanager.get("notes", this.props.note.id).then(note => {
           this.setState({
             id:note.id,
-            notes:note.note
+            note:note.note
             
           });
         });
@@ -87,14 +87,15 @@ export default class NoteEditFormModal extends Component {
                     </h1>
                     <h4>{this.props.medication.class}</h4>
                     
-                    <input
+                    <textarea
               onChange={this.handleFieldChange}
-              type="textarea"
+              type="text"
               id="note"
-              placeholder={this.state.notes}
+              value={this.state.note}
               required
               autoFocus=""
               className="form-control mb-2"
+              rows="8"
             />
                   </CardBody>
                 </Card>
