@@ -56,7 +56,7 @@ export default class MedicationCard extends Component {
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
                 <Card
                   body
-                  className="text-center"
+                  className="text-center "
                   body
                   inverse
                   style={{
@@ -65,7 +65,7 @@ export default class MedicationCard extends Component {
                     color: "#93E9BE"
                   }}
                 >
-                  <CardBody className="text-dark">
+                  <CardBody className="text-dark ">
                     <h1>
                       <u>{this.props.medication.medication.name}</u>
                     </h1>
@@ -84,7 +84,7 @@ export default class MedicationCard extends Component {
 
                 <ModalFooter>
                   <Button
-                    color="secondary"
+                    color="danger"
                     onClick={this.toggle}
                     onClick={this.addNewMed}
                   >
@@ -108,7 +108,7 @@ export default class MedicationCard extends Component {
                   <u>{this.props.medication.medication.name}</u>
                 </h1>
                 <h4>{this.props.medication.medication.class}</h4>
-                <Button body className="text-center" onClick={this.addNewMed}>
+                <Button color="danger" body className="text-center" onClick={this.addNewMed}>
                   Add to Profile
                 </Button>
               </CardBody>

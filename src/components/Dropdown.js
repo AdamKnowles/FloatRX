@@ -41,9 +41,10 @@ export default class MedDropdown extends Component {
               className="text-center"
               isOpen={this.state.dropdownOpen}
               toggle={this.toggle}
+              
             >
-              <DropdownToggle> {this.state.value} Unit</DropdownToggle>
-              <DropdownMenu>
+              <DropdownToggle className="text-center"color="secondary"> {this.state.value} Unit</DropdownToggle>
+              <DropdownMenu >
                 {this.props.units.map(unit => (
                   <DropdownItem
                     onClick={this.toggle_modal}

@@ -14,7 +14,7 @@ class MedicationList extends Component {
           <h2 body className="text-center">
             Unit Specific Medication List
           </h2>
-          <Button className="text-right" onClick={this.props.logout}>
+          <Button  onClick={this.props.logout}>
           Logout
         </Button>
           <div>

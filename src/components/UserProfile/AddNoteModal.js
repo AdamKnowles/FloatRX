@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
-import APImanager from "../../modules/APImanager"
 
-export default class NoteEditFormModal extends Component {
+export default class AddNoteModal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          userId: sessionStorage.getItem("userId"),
           modal: false,
           id: "",
-          note: "",
-          medicationId: ""
+          medicationId:this.props.medication.medicationId,
+          note: ""
           
         };
     
@@ -19,50 +17,39 @@ export default class NoteEditFormModal extends Component {
     
       toggle() {
         this.setState(prevState => ({
-          modal: !prevState.modal,
-           
+          modal: !prevState.modal
         }));
       }
-
+    
+    
+      
+    
       handleFieldChange = (evt) => {
         const stateToChange = {};
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
         console.log(stateToChange)
-      }
-      editNote = evt => {
+      };
+      addNewNoteToDatabase = evt => {
         evt.preventDefault();
-        const note = {
-          userId: this.state.userId,
-          medicationId:this.props.note.medicationId,
-          note: this.state.note,
-          id: this.props.note.id
-        };
-        console.log(note)
-    
-        this.props.editNewNote(note)
-        this.state.modal=false
-    }
-    componentDidMount() {
+        console.log("New note added");
         
-        APImanager.get("notes", this.props.note.id).then(note => {
-          this.setState({
-            id:note.id,
-            notes:note.note
-            
-          });
-        });
+        const note = {
+          note:this.state.note,
+          medicationId: this.state.medicationId,
+          userId: Number(sessionStorage.getItem("userId"))
+        };
+    
+        this.props
+          .addNote(note)
+          this.state.modal=false
       }
-    
-    
     render() {
-        console.log(this.props.note.id)
         return (
-            <React.Fragment>
             <div>
-                <Button color="primary" size="sm" onClick={this.toggle}>Edit</Button>
-            </div>
-            <div>
+                <Button color="primary" block  onClick={this.toggle} >
+                    Add Note
+                  </Button>
                 <Modal
                 isOpen={this.state.modal}
                 toggle={this.toggle}
@@ -81,17 +68,16 @@ export default class NoteEditFormModal extends Component {
                   }}
                 >
                   <CardBody className="text-dark">
-                      <h1>Edit Note </h1>
-                  <h1>
+                      <h1>Add Note</h1>
+                    <h1>
                       <u>{this.props.medication.name}</u>
                     </h1>
                     <h4>{this.props.medication.class}</h4>
-                    
                     <input
               onChange={this.handleFieldChange}
-              type="textarea"
+              type="text"
               id="note"
-              placeholder={this.state.notes}
+              placeholder="Add Note"
               required
               autoFocus=""
               className="form-control mb-2"
@@ -102,20 +88,19 @@ export default class NoteEditFormModal extends Component {
                 <ModalFooter>
                   <Button
                     color="secondary"
-                    onClick={this.toggle} onClick={this.editNote}
-                    
+                    onClick={this.toggle}
+                    onClick={this.addNewNoteToDatabase}
                     
                   >
-                    Save 
+                    Save
                   </Button>
-                  <Button color="secondary" onClick={this.toggle}>
+                  <Button className="btn btn-primary" onClick={this.toggle}>
                     Cancel
                   </Button>
                 </ModalFooter>
               </Modal>
                 
             </div>
-            </React.Fragment>
         )
     }
 }

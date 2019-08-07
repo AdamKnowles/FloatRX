@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
 import NoteEditFormModal from "./NoteEditFormModal";
+import AddNoteModal from "./AddNoteModal";
 
 export default class AddNoteToProfileModal extends Component {
   constructor(props) {
@@ -32,34 +33,38 @@ export default class AddNoteToProfileModal extends Component {
     return (
       
       <section className="medication">
-      <Button onClick={this.toggle}>View Notes</Button>
+      <Button color="danger" onClick={this.toggle}>View Notes</Button>
       {
-          <div key={this.props.notes.id} className="card">
-          <Modal isOpen={this.state.modal}
+        <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
                 className={this.props.className}>
+                  <div key={this.props.notes.id} className="card">
           <Card
               body
               className="text-center"
               body
               inverse
-              style={{ backgroundColor: "#CADEDF", borderColor: "#0C2D48" }}
+              style={{ backgroundColor: "#8E8F9C", borderColor: "#8E8F9C" }}
             ><h3 color="secondary">Notes</h3>
-              <CardBody className="text-dark card">
+              
+              <AddNoteModal {...this.props} />
                 
                 <div>
-                {this.props.notes.map( note =>(<React.Fragment><div className="card-body border border-dark"><h4>{note.note}</h4><NoteEditFormModal toggle={this.toggle} editNewNote={this.props.editNewNote} notes={this.props.notes} note={note} {...this.props} /> <Button onClick={() =>this.props.deleteNoteFromProfile(note.id)} color="secondary">
+                {this.props.notes.map( note =>(<React.Fragment><CardBody className="text-dark card card-body border border-dark " body
+              inverse
+              style={{ backgroundColor: "#93E9BE", borderColor: "#93E9BE" }}><div ><h4>{note.note}</h4><NoteEditFormModal toggle={this.toggle} editNewNote={this.props.editNewNote} notes={this.props.notes} note={note} {...this.props} /> <Button color="danger" size="sm" onClick={() =>this.props.deleteNoteFromProfile(note.id)}>
                     Delete
-                  </Button></div></React.Fragment>))}</div>
-                  <Button onClick={this.toggle} className="btn">
+                  </Button></div></CardBody></React.Fragment>))}</div>
+                   
+                  <Button  onClick={this.toggle} className="btn btn-primary">
                     cancel
                   </Button>
                 
                 
-              </CardBody>
+              
             </Card>
-        </Modal>
             </div>
+        </Modal>
         }
             </section>
         
