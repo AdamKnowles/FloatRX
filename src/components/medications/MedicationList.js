@@ -20,12 +20,13 @@ class MedicationList extends Component {
           <h2 body className="text-center">
              Medication List
           </h2>
+          <div className="showAllMeds">
           <Button  onClick={this.props.logout}>
           Logout
         </Button>
-          <Button  onClick={this.props.showAllMeds}>
+          <Button  onClick={this.props.showAllMeds} >
           Show All Medications
-        </Button>
+        </Button></div>
           
           
          
@@ -60,7 +61,7 @@ class MedicationList extends Component {
         <React.Fragment>
           <div className="container">
             <h2 className="text-center">Medication List</h2>
-            <Button  onClick={this.props.logout}>
+            <Button  onClick={this.props.logout} >
           Logout
         </Button>
             <MedDropdown
@@ -83,20 +84,7 @@ class MedicationList extends Component {
         </React.Fragment>
       );
     }
-    // return (
-    //     <React.Fragment>
-
-    //     <div>
-
-    //         {
-    //             this.props.medications
-    //         .map(medication => <MedicationCard key={medication.id} medication={medication} {...this.props} />)
-
-    //         }
-
-    //     </div>
-    //     </React.Fragment>
-    // )
+    
   }
 }
 

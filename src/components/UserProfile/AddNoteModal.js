@@ -47,7 +47,7 @@ export default class AddNoteModal extends Component {
     render() {
         return (
             <div>
-                <Button color="primary" block  onClick={this.toggle} >
+                <Button className="addNoteBtn" color="primary" size="lg"  onClick={this.toggle} >
                     Add New Note
                   </Button>
                 <Modal

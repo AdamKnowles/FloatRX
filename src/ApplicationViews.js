@@ -18,18 +18,18 @@ class ApplicationViews extends Component {
     unitParam: ""
   };
   componentDidMount() {
-    let currentUserId = sessionStorage.getItem("userId");
     const newState = {}
+    let currentUserId = sessionStorage.getItem("userId");
     APImanager.getAllUnitMedications().then(
       medications => (newState.medications = medications))
-    APImanager.getAll("unit").then(units => (newState.units = units));
-    APImanager.getUserMeds("userProfile", currentUserId)
+      APImanager.getAll("unit").then(units => (newState.units = units));
+      APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
-    APImanager.getUserNotes("notes", currentUserId)
+      APImanager.getUserNotes("notes", currentUserId)
       .then(notes => (newState.notes = notes))
       .then(() => this.setState(newState));
       
-  }
+    }
   
  
 

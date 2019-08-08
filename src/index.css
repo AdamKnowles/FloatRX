@@ -23,3 +23,21 @@ margin-right: 50px;
 .card-body{
   padding: 8px 20px !important
 }
+.showAllMeds{
+display: flex;
+justify-content: space-between
+}
+
+.editDeleteButtons {
+  display: flex;
+  
+  
+}
+
+.edit{
+  margin-right: 8px;
+}
+
+.addNoteBtn{
+  margin-top: 20px;
+}
