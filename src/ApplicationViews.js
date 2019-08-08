@@ -19,11 +19,9 @@ class ApplicationViews extends Component {
   };
   componentDidMount() {
     let currentUserId = sessionStorage.getItem("userId");
-    const newState = {};
-
-    this.getAllUnitMeds().then(
-      medications => (newState.medications = medications)
-    );
+    const newState = {}
+    APImanager.getAllUnitMedications().then(
+      medications => (newState.medications = medications))
     APImanager.getAll("unit").then(units => (newState.units = units));
     APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
@@ -42,6 +40,11 @@ class ApplicationViews extends Component {
   getAllUnitMeds = () => {
     return APImanager.getAllUnitMedications();
   };
+  showAllMeds = () => {
+    console.log("clicked")
+   this.setState({unitParam: ""})
+  }
+  
 
   logout = () => {
     console.log("hey");
@@ -54,6 +57,7 @@ class ApplicationViews extends Component {
   searchParam = unitId => {
     this.setState({ unitParam: unitId });
   };
+  
 
   addMedicationToProfile = medication => {
     let currentUserId = sessionStorage.getItem("userId");
@@ -140,6 +144,9 @@ class ApplicationViews extends Component {
     this.userData(this.state.userId)
   };
 
+  
+  
+
   isAuthenticated = () => sessionStorage.getItem("userId") !== null;
   
 
@@ -174,6 +181,11 @@ class ApplicationViews extends Component {
                 addMedicationToProfile={this.addMedicationToProfile}
                 searchParam={this.searchParam}
                 logout={this.logout}
+                showAllMeds={this.showAllMeds}
+                
+                
+                
+                
                 
                 {...props}
                 // transplantMedications={this.state.transplantMedications}

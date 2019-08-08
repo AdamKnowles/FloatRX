@@ -69,6 +69,11 @@
       "username": "jerodis",
       "password": "williams",
       "id": 14
+    },
+    {
+      "username": "christi",
+      "password": "galy",
+      "id": 15
     }
   ],
   "userMedications": [
@@ -272,18 +277,6 @@
       "id": 46
     },
     {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 48
-    },
-    {
       "name": "norepinephrine",
       "class": " Catecholamines",
       "route": "IV",
@@ -330,18 +323,6 @@
       "medicationId": 21,
       "userId": 14,
       "id": 55
-    },
-    {
-      "name": "flavoxate",
-      "class": "anticholinergic",
-      "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3-4 times a day",
-      "indications": "Bladder Spasms",
-      "mechanism": "Antagonizes acetylcholine receptors (anticholinergic)",
-      "medicationId": 22,
-      "userId": 1,
-      "id": 58
     },
     {
       "name": "finasteride",
@@ -414,6 +395,42 @@
       "medicationId": 4,
       "userId": 7,
       "id": 64
+    },
+    {
+      "name": "vasopressin",
+      "class": "anti-diuretic hormone",
+      "route": "IV",
+      "dosage": "0.01-0.04 units/min",
+      "frequency": "Continuous",
+      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
+      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
+      "medicationId": 19,
+      "userId": 15,
+      "id": 65
+    },
+    {
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
+      "userId": 15,
+      "id": 66
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 67
     }
   ],
   "notes": [
@@ -568,12 +585,6 @@
       "id": 60
     },
     {
-      "note": "is this tacro",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 61
-    },
-    {
       "userId": "7",
       "medicationId": 16,
       "note": "this killed michael jackson. but he did it to himself",
@@ -650,6 +661,18 @@
       "medicationId": 16,
       "userId": 5,
       "id": 75
+    },
+    {
+      "note": "this saves lives",
+      "medicationId": 19,
+      "userId": 15,
+      "id": 76
+    },
+    {
+      "note": "it really does",
+      "medicationId": 19,
+      "userId": 15,
+      "id": 77
     }
   ],
   "unit": [
