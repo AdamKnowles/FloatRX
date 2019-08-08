@@ -8,14 +8,14 @@ class UserProfile extends Component {
     return (
       <React.Fragment>
         <div className="container">
-        <h2 body className="text-center">
+        <h2 body className="text-center p-1 mb-4 bg-secondary text-white">
           User Profile
         </h2>
 
         <div><Button
           
            className="text-center"
-          type="button"
+          type="button" color="success"
           onClick={() => this.props.history.push("/medicationlist")}
         >
           Add Medication

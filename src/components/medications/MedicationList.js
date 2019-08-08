@@ -17,14 +17,14 @@ class MedicationList extends Component {
       return (
         <React.Fragment>
           <div className="container">
-          <h2 body className="text-center">
+          <h2 className="text-center p-1 mb-4 bg-secondary text-white">
              Medication List
           </h2>
           <div className="showAllMeds">
           <Button  onClick={this.props.logout}>
           Logout
         </Button>
-          <Button  onClick={this.props.showAllMeds} >
+          <Button color="info" onClick={this.props.showAllMeds} >
           Show All Medications
         </Button></div>
           
@@ -60,7 +60,9 @@ class MedicationList extends Component {
       return (
         <React.Fragment>
           <div className="container">
-            <h2 className="text-center">Medication List</h2>
+          <h2 className="text-center p-1 mb-4 bg-secondary text-white">
+             Medication List
+          </h2>
             <Button  onClick={this.props.logout} >
           Logout
         </Button>

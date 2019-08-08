@@ -8,7 +8,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 export default class NavBar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-light bg-medium d-flex justify-content-center p-0 shadow">
+            <nav className="navbar navbar-light bg-medium d-flex justify-content-start p-0 shadow">
+                <div className="d-flex justify-content-end"><h4>FloatRX</h4>
                 <ul className="nav nav-pills nav-fill">
                     <li className="nav-item">
                         <Link className="nav-link" to="/medicationlist">Medication List</Link>
@@ -19,6 +20,7 @@ export default class NavBar extends Component {
                     
                     
                 </ul>
+                </div>
             </nav>
         )
     }

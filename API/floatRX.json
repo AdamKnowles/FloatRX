@@ -431,6 +431,18 @@
       "medicationId": 16,
       "userId": 2,
       "id": 74
+    },
+    {
+      "name": "cisplatin",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "20-70 mg",
+      "frequency": "Once a day for 5 Days",
+      "indications": "Testicular and Ovarian Carcinoma",
+      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
+      "medicationId": 6,
+      "userId": 1,
+      "id": 75
     }
   ],
   "notes": [
