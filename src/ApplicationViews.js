@@ -46,6 +46,7 @@ class ApplicationViews extends Component {
   logout = () => {
     console.log("hey");
     sessionStorage.clear();
+    this.state.unitParam = ""
     this.props.history.push("/");
     
   };

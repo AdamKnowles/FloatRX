@@ -53,6 +53,7 @@ export default class MedicationCard extends Component {
                 isOpen={this.state.modal}
                 toggle={this.toggle}
                 className={this.props.className}
+                size="lg"
               >
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
                 <Card
