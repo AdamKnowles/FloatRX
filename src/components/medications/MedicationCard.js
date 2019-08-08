@@ -74,6 +74,7 @@ export default class MedicationCard extends Component {
                     <h4>{this.props.medication.medication.class}</h4>
                     <h6>Route: {this.props.medication.medication.route}</h6>
                     <h6>Dosage: {this.props.medication.medication.dosage}</h6>
+                    <h6>Frequency: {this.props.medication.medication.frequency}</h6>
                     <h6>
                       Indication: {this.props.medication.medication.indications}
                     </h6>

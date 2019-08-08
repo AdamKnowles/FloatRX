@@ -61,7 +61,7 @@ export default class NoteEditFormModal extends Component {
         return (
             <React.Fragment>
             <div>
-                <Button color="primary" size="sm" onClick={this.toggle}>Edit</Button>
+                <Button className="edit" color="primary" size=""  onClick={this.toggle}>Edit</Button>
             </div>
             <div>
                 <Modal

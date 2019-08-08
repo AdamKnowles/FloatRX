@@ -26,6 +26,7 @@ export default class UserProfileMedCard extends Component {
                 <h4>{this.props.medication.class}</h4>
                 <h6>Route: {this.props.medication.route}</h6>
                 <h6>Dosage: {this.props.medication.dosage}</h6>
+                <h6>Frequency: {this.props.medication.frequency}</h6>
                 <h6>Indication: {this.props.medication.indications}</h6>
                 <h6>Mechanism of Action: {this.props.medication.mechanism}</h6>
                 <h6 />

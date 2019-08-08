@@ -43,7 +43,7 @@ export default class MedDropdown extends Component {
               toggle={this.toggle}
               
             >
-              <DropdownToggle className="text-center"color="secondary"> {this.state.value} Unit</DropdownToggle>
+              <DropdownToggle className="text-center"color="danger"> {this.state.value} Unit</DropdownToggle>
               <DropdownMenu >
                 {this.props.units.map(unit => (
                   <DropdownItem

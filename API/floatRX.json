@@ -69,6 +69,11 @@
       "username": "jerodis",
       "password": "williams",
       "id": 14
+    },
+    {
+      "username": "christi",
+      "password": "galy",
+      "id": 15
     }
   ],
   "userMedications": [
@@ -236,30 +241,6 @@
       "id": 34
     },
     {
-      "name": "vasopressin",
-      "class": "anti-diuretic hormone",
-      "route": "IV",
-      "dosage": "0.01-0.04 units/min",
-      "frequency": "Continuous",
-      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
-      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
-      "medicationId": 19,
-      "userId": 1,
-      "id": 44
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 45
-    },
-    {
       "name": "cisplatin",
       "class": "antineoplastics",
       "route": "IV",
@@ -270,18 +251,6 @@
       "medicationId": 6,
       "userId": 2,
       "id": 46
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 48
     },
     {
       "name": "norepinephrine",
@@ -330,30 +299,6 @@
       "medicationId": 21,
       "userId": 14,
       "id": 55
-    },
-    {
-      "name": "flavoxate",
-      "class": "anticholinergic",
-      "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3-4 times a day",
-      "indications": "Bladder Spasms",
-      "mechanism": "Antagonizes acetylcholine receptors (anticholinergic)",
-      "medicationId": 22,
-      "userId": 1,
-      "id": 58
-    },
-    {
-      "name": "finasteride",
-      "class": "5-alpha reductase inhibitor",
-      "route": "PO",
-      "dosage": "5 mg",
-      "frequency": "daily",
-      "indications": "Used to treat symptoms of benign prostatic hyperplasia (BPH) in men with an enlarged prostate",
-      "mechanism": "Inhibits type II 5-alpha-reductase, interfering w/ conversion of testosterone to 5-alpha-dihydrotestosterone",
-      "medicationId": 24,
-      "userId": 2,
-      "id": 59
     },
     {
       "name": "propofol",
@@ -414,6 +359,90 @@
       "medicationId": 4,
       "userId": 7,
       "id": 64
+    },
+    {
+      "name": "vasopressin",
+      "class": "anti-diuretic hormone",
+      "route": "IV",
+      "dosage": "0.01-0.04 units/min",
+      "frequency": "Continuous",
+      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
+      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
+      "medicationId": 19,
+      "userId": 15,
+      "id": 65
+    },
+    {
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
+      "userId": 15,
+      "id": 66
+    },
+    {
+      "name": "oxytocin",
+      "class": "polypeptide hormone",
+      "route": "IV",
+      "dosage": "0.5-2 milliunits/min",
+      "frequency": "Every 15-40 min",
+      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
+      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
+      "medicationId": 11,
+      "userId": 1,
+      "id": 71
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 72
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 4,
+      "id": 73
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 2,
+      "id": 74
+    },
+    {
+      "name": "cisplatin",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "20-70 mg",
+      "frequency": "Once a day for 5 Days",
+      "indications": "Testicular and Ovarian Carcinoma",
+      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
+      "medicationId": 6,
+      "userId": 1,
+      "id": 75
     }
   ],
   "notes": [
@@ -545,12 +574,6 @@
     },
     {
       "userId": "1",
-      "medicationId": 1,
-      "note": "this is tacro yup",
-      "id": 57
-    },
-    {
-      "userId": "1",
       "medicationId": 19,
       "note": "this is vasopressin yes it is",
       "id": 58
@@ -566,12 +589,6 @@
       "medicationId": 17,
       "userId": 13,
       "id": 60
-    },
-    {
-      "note": "is this tacro",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 61
     },
     {
       "userId": "7",
@@ -592,15 +609,15 @@
       "id": 65
     },
     {
-      "note": "rrrrrrrrrr",
+      "userId": "4",
       "medicationId": 16,
-      "userId": 4,
+      "note": "User profile will display each medication that you have added from the unit specific medication list. Will be able to add comments/notes on each medication by clicking the “add notes” button. Will then be able to edit those comments by clicking the “edit note” button. Will be able to then delete that whole note with the “delete note” button. ",
       "id": 66
     },
     {
-      "note": "bbbbbbbbbbbbb",
+      "userId": "4",
       "medicationId": 16,
-      "userId": 4,
+      "note": "Create login page with session storage. When user inputs their information and clicks submit, user, if the information is correct, is taken to their user profile. \nCreate Navigation bar that toggles between Medication List and User Profile.\n",
       "id": 67
     },
     {
@@ -650,6 +667,60 @@
       "medicationId": 16,
       "userId": 5,
       "id": 75
+    },
+    {
+      "note": "this saves lives",
+      "medicationId": 19,
+      "userId": 15,
+      "id": 76
+    },
+    {
+      "note": "it really does",
+      "medicationId": 19,
+      "userId": 15,
+      "id": 77
+    },
+    {
+      "note": "okay",
+      "medicationId": 4,
+      "userId": 1,
+      "id": 79
+    },
+    {
+      "userId": "1",
+      "medicationId": 1,
+      "note": "Create page that displays each unit’s specific medication list.(Will be able to toggle between each unit with a dropdown list). When a unit’s dropdown is selected, that units Medication list will populate. Each medication will have an “add to profile” button. Each medication will have its name and its related information, first in a condensed card with the name of the medication, the class of the medication, and the “add to profile” button. \n",
+      "id": 80
+    },
+    {
+      "note": "this is def tacro",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 81
+    },
+    {
+      "note": "In a hospital, there are many different units. Cardiac, Transplant, Neuro, Oncology, Orthopedic. These units all use many common medications that they administer. But ALL of them use medications that are specific ONLY to that unit, and that only they administer. I want to create an app that can look up any medication from a database, and add those specific medications to a UNIT SPECIFIC list within the app",
+      "medicationId": 1,
+      "userId": 1,
+      "id": 82
+    },
+    {
+      "note": "It this actually working",
+      "medicationId": 1,
+      "userId": 4,
+      "id": 83
+    },
+    {
+      "note": "Create page that displays each unit’s specific medication list.(Will be able to toggle between each unit with a dropdown list). When a unit’s dropdown is selected, that units Medication list will populate. Each medication will have an “add to profile” button. Each medication will have its name and its related information, first in a condensed card with the name of the medication, the class of the medication, and the “add to profile” button",
+      "medicationId": 16,
+      "userId": 4,
+      "id": 84
+    },
+    {
+      "note": "This is pretty cool i think im gonna be doing this for a long time to come you know what i mean?",
+      "medicationId": 16,
+      "userId": 2,
+      "id": 85
     }
   ],
   "unit": [

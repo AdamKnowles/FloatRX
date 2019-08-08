@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
+import { Card, CardBody, CardFooter, Button,Modal, ModalFooter } from "reactstrap";
 import NoteEditFormModal from "./NoteEditFormModal";
 import AddNoteModal from "./AddNoteModal";
 
@@ -38,14 +38,17 @@ export default class AddNoteToProfileModal extends Component {
         <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
                 className={this.props.className} size="lg">
-                  <div key={this.props.notes.id} className="card">
+                  <div key={this.props.notes.id} >
           <Card
-              body
+              
               className="text-center"
               body
               inverse
-              style={{ backgroundColor: "#8E8F9C", borderColor: "#8E8F9C" }}
-            ><h3 color="secondary">Notes</h3>
+              style={{ backgroundColor: "#93E9BE", borderColor: "#93E9BE" }}
+            ><div className="text-dark"><h1>
+            <u>{this.props.medication.name}</u>
+          </h1>
+          <h4>{this.props.medication.class}</h4></div>
               
               <AddNoteModal {...this.props} />
                 
@@ -53,14 +56,16 @@ export default class AddNoteToProfileModal extends Component {
                 {this.props.notes.filter(
                 note =>
                   note.medicationId === this.props.medication.medicationId).
-              map( note =>(<React.Fragment><CardBody className="text-dark card card-body border border-dark " body
+              map( note =>(<React.Fragment><CardBody className="text-dark mt-4" 
               inverse
-              style={{ backgroundColor: "#93E9BE", borderColor: "#93E9BE" }}><div ><h6>{note.note}</h6><div className="editDeleteButtons"><NoteEditFormModal toggle={this.toggle} editNewNote={this.props.editNewNote} notes={this.props.notes} note={note} {...this.props} /> <Button color="danger" size="sm" onClick={() =>this.props.deleteNoteFromProfile(note.id)}>
+              style={{ backgroundColor: "#93E9BE", borderColor: "#FFF4EF" }}><div ><CardBody className="text-dark border border-dark" 
+              inverse
+              style={{ backgroundColor: "#FFF4EF", borderColor: "#FFF4EF" }}><h6 className="mt-0">{note.note}</h6></CardBody><div className="editDeleteButtons" > <NoteEditFormModal toggle={this.toggle} editNewNote={this.props.editNewNote} notes={this.props.notes} note={note} {...this.props} /> <Button color="danger" size="" onClick={() =>this.props.deleteNoteFromProfile(note.id)}>
                     Delete
                   </Button></div></div></CardBody></React.Fragment>))}</div>
                    
-                  <Button  onClick={this.toggle} className="btn btn-primary">
-                    cancel
+                  <Button  onClick={this.toggle} className=" btn mt-4">
+                    Cancel
                   </Button>
                 
                 
