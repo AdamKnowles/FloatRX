@@ -164,18 +164,6 @@
       "id": 19
     },
     {
-      "name": "cyclosporine",
-      "class": "calcineurin inhibitor",
-      "route": "PO",
-      "dosage": " 7-9 mg/kg/day",
-      "frequency": "Twice a day",
-      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
-      "medicationId": 4,
-      "userId": 6,
-      "id": 20
-    },
-    {
       "name": "nitroprusside",
       "class": "nitrate",
       "route": "IV",
@@ -284,18 +272,6 @@
       "id": 46
     },
     {
-      "name": "mycophenolate mofetil",
-      "class": "inosine monophosphateh dehydrogenase inhibitor",
-      "route": "PO",
-      "dosage": "1.5 mg",
-      "frequency": "Every 12 Hours",
-      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
-      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
-      "medicationId": 2,
-      "userId": 1,
-      "id": 47
-    },
-    {
       "name": "tacrolimus",
       "class": "Calcineurin Inhibitors",
       "route": "PO",
@@ -318,18 +294,6 @@
       "medicationId": 17,
       "userId": 13,
       "id": 50
-    },
-    {
-      "name": "propofol",
-      "class": "general anesthetic",
-      "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
-      "userId": 7,
-      "id": 52
     },
     {
       "name": "propofol",
@@ -368,6 +332,30 @@
       "id": 55
     },
     {
+      "name": "flavoxate",
+      "class": "anticholinergic",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3-4 times a day",
+      "indications": "Bladder Spasms",
+      "mechanism": "Antagonizes acetylcholine receptors (anticholinergic)",
+      "medicationId": 22,
+      "userId": 1,
+      "id": 58
+    },
+    {
+      "name": "finasteride",
+      "class": "5-alpha reductase inhibitor",
+      "route": "PO",
+      "dosage": "5 mg",
+      "frequency": "daily",
+      "indications": "Used to treat symptoms of benign prostatic hyperplasia (BPH) in men with an enlarged prostate",
+      "mechanism": "Inhibits type II 5-alpha-reductase, interfering w/ conversion of testosterone to 5-alpha-dihydrotestosterone",
+      "medicationId": 24,
+      "userId": 2,
+      "id": 59
+    },
+    {
       "name": "propofol",
       "class": "general anesthetic",
       "route": "IV",
@@ -376,20 +364,56 @@
       "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
       "mechanism": "Induces hypnosis",
       "medicationId": 16,
-      "userId": 1,
-      "id": 56
+      "userId": 6,
+      "id": 60
     },
     {
-      "name": "cisplatin",
-      "class": "antineoplastics",
+      "name": "sirolimus",
+      "class": "immunosuppressant",
+      "route": "PO",
+      "dosage": "1-5 mg",
+      "frequency": "Once a Day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
+      "medicationId": 5,
+      "userId": 6,
+      "id": 61
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 6,
+      "id": 62
+    },
+    {
+      "name": "dexmedetomidine",
+      "class": "alpha-2 agonist",
       "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
-      "userId": 2,
-      "id": 57
+      "dosage": " 1 mcg/kg",
+      "frequency": "Continuous",
+      "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
+      "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
+      "medicationId": 20,
+      "userId": 6,
+      "id": 63
+    },
+    {
+      "name": "cyclosporine",
+      "class": "calcineurin inhibitor",
+      "route": "PO",
+      "dosage": " 7-9 mg/kg/day",
+      "frequency": "Twice a day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
+      "medicationId": 4,
+      "userId": 7,
+      "id": 64
     }
   ],
   "notes": [
@@ -502,12 +526,6 @@
       "id": 43
     },
     {
-      "userId": "6",
-      "medicationId": 4,
-      "note": "i cant do this",
-      "id": 49
-    },
-    {
       "userId": "12",
       "medicationId": 1,
       "note": "you are wrong",
@@ -608,6 +626,30 @@
       "medicationId": 1,
       "userId": 2,
       "id": 71
+    },
+    {
+      "note": "what what",
+      "medicationId": 24,
+      "userId": 2,
+      "id": 72
+    },
+    {
+      "userId": "6",
+      "medicationId": 16,
+      "note": "this is propofol, nice",
+      "id": 73
+    },
+    {
+      "note": "gggggggggggggg",
+      "medicationId": 5,
+      "userId": 6,
+      "id": 74
+    },
+    {
+      "note": "but why would i do this",
+      "medicationId": 16,
+      "userId": 5,
+      "id": 75
     }
   ],
   "unit": [

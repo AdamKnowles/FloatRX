@@ -48,12 +48,24 @@ class MedicationList extends Component {
         <React.Fragment>
           <div className="container">
             <h2 className="text-center">Select a Unit</h2>
+            <Button  onClick={this.props.logout}>
+          Logout
+        </Button>
             <MedDropdown
               units={this.props.units}
               {...this.props}
               searchParam={this.props.searchParam}
               unitParam={this.props.unitParam}
             />
+             {this.props.medications
+              .map(medication => (
+                <MedicationCard
+                  key={medication.id}
+                  addMedicationToProfile={this.props.addMedicationToProfile}
+                  medication={medication}
+                  {...this.props}
+                />
+              ))}
           </div>
         </React.Fragment>
       );
