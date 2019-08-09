@@ -28,8 +28,7 @@ export default class AddNoteToProfileModal extends Component {
   
 
   render() {
-    console.log("Add Note Form");
-    console.log(this.props.notes)
+    
     return (
       
       <section className="medication">

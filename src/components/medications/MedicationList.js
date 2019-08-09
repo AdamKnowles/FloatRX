@@ -22,7 +22,7 @@ class MedicationList extends Component {
           </h2>
           <div className="showAllMeds">
           
-          <Button color="info" onClick={this.props.showAllMeds} >
+          <Button className="match" color="info" onClick={this.props.showAllMeds} >
           Show All Medications
         </Button></div>
           

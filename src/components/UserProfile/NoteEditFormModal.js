@@ -29,7 +29,7 @@ export default class NoteEditFormModal extends Component {
         const stateToChange = {};
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
-        console.log(stateToChange)
+        
       }
       editNote = evt => {
         evt.preventDefault();
@@ -39,7 +39,7 @@ export default class NoteEditFormModal extends Component {
           note: this.state.note,
           id: this.props.note.id
         };
-        console.log(note)
+        
     
         this.props.editNewNote(note)
         this.state.modal=false
@@ -57,7 +57,7 @@ export default class NoteEditFormModal extends Component {
     
     
     render() {
-        console.log(this.props.note.id)
+        
         return (
             <React.Fragment>
             <div>

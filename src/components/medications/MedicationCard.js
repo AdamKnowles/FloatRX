@@ -26,7 +26,6 @@ export default class MedicationCard extends Component {
 
   addNewMed = evt => {
     evt.preventDefault();
-    console.log("clicked add to profile button");
     const medication = {
       name: this.state.name,
       class: this.state.class,
