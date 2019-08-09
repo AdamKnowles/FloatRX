@@ -43,5 +43,9 @@ justify-content: space-between
 }
 
 .logout{
-  margin-right: 470px;
+  margin-right: 1030px;
+}
+
+.match{
+  margin-bottom: 2px
 }

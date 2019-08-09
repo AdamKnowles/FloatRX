@@ -289,18 +289,6 @@
       "id": 55
     },
     {
-      "name": "propofol",
-      "class": "general anesthetic",
-      "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
-      "userId": 6,
-      "id": 60
-    },
-    {
       "name": "sirolimus",
       "class": "immunosuppressant",
       "route": "PO",
@@ -385,18 +373,6 @@
       "id": 73
     },
     {
-      "name": "propofol",
-      "class": "general anesthetic",
-      "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
-      "userId": 2,
-      "id": 74
-    },
-    {
       "name": "phenazopyridine",
       "class": " Alpha1 Agonist",
       "route": "PO",
@@ -421,30 +397,6 @@
       "id": 77
     },
     {
-      "name": "oxytocin",
-      "class": "polypeptide hormone",
-      "route": "IV",
-      "dosage": "0.5-2 milliunits/min",
-      "frequency": "Every 15-40 min",
-      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
-      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
-      "medicationId": 11,
-      "userId": 2,
-      "id": 78
-    },
-    {
-      "name": "phenazopyridine",
-      "class": " Alpha1 Agonist",
-      "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3 times a day",
-      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
-      "mechanism": "Produces topical analgesia",
-      "medicationId": 21,
-      "userId": 2,
-      "id": 80
-    },
-    {
       "name": "norepinephrine",
       "class": " Catecholamines",
       "route": "IV",
@@ -455,290 +407,62 @@
       "medicationId": 17,
       "userId": 1,
       "id": 81
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 6,
+      "id": 82
+    },
+    {
+      "name": "propofol",
+      "class": "general anesthetic",
+      "route": "IV",
+      "dosage": "5 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
+      "mechanism": "Induces hypnosis",
+      "medicationId": 16,
+      "userId": 6,
+      "id": 83
+    },
+    {
+      "name": "vasopressin",
+      "class": "anti-diuretic hormone",
+      "route": "IV",
+      "dosage": "0.01-0.04 units/min",
+      "frequency": "Continuous",
+      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
+      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
+      "medicationId": 19,
+      "userId": 6,
+      "id": 84
+    },
+    {
+      "name": "dexmedetomidine",
+      "class": "alpha-2 agonist",
+      "route": "IV",
+      "dosage": " 1 mcg/kg",
+      "frequency": "Continuous",
+      "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
+      "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
+      "medicationId": 20,
+      "userId": 1,
+      "id": 85
     }
   ],
   "notes": [
     {
-      "note": "hello med should be 6 and new user melanie id high",
-      "medicationId": 6,
-      "userId": 7,
-      "id": 9
-    },
-    {
-      "note": "nope",
-      "medicationId": 6,
-      "userId": 4,
-      "id": 10
-    },
-    {
-      "note": "okay",
-      "medicationId": 1,
-      "userId": 8,
-      "id": 21
-    },
-    {
-      "note": "okay",
-      "medicationId": 11,
-      "userId": 8,
-      "id": 22
-    },
-    {
-      "note": "i dont wanna",
-      "medicationId": 12,
-      "userId": 6,
-      "id": 24
-    },
-    {
-      "note": "kjsldjf",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 26
-    },
-    {
-      "note": "ff",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 27
-    },
-    {
-      "note": "",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 28
-    },
-    {
-      "note": "ffff",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 29
-    },
-    {
-      "note": "",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 30
-    },
-    {
-      "note": "",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 31
-    },
-    {
-      "note": "kuosjf",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 32
-    },
-    {
-      "note": "Thank you Sam",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 33
-    },
-    {
-      "note": "okay",
-      "medicationId": 4,
-      "userId": 6,
-      "id": 38
-    },
-    {
-      "note": "kdkd",
-      "medicationId": 4,
-      "userId": 6,
-      "id": 39
-    },
-    {
-      "note": "thissl kill ya!",
-      "medicationId": 18,
-      "userId": 10,
-      "id": 40
-    },
-    {
-      "note": "this killed someone dont use it",
-      "medicationId": 21,
-      "userId": 11,
-      "id": 41
-    },
-    {
-      "userId": "2",
-      "medicationId": 1,
-      "note": "is this tacrolimus",
-      "id": 43
-    },
-    {
-      "userId": "12",
-      "medicationId": 1,
-      "note": "you are wrong",
-      "id": 50
-    },
-    {
-      "userId": "5",
-      "medicationId": 1,
-      "note": "it is!",
-      "id": 51
-    },
-    {
-      "userId": "1",
-      "medicationId": 2,
-      "note": "this is cellcept oh yeah",
-      "id": 56
-    },
-    {
-      "userId": "1",
-      "medicationId": 19,
-      "note": "this is vasopressin yes it is",
-      "id": 58
-    },
-    {
-      "userId": "13",
-      "medicationId": 16,
-      "note": "patient got tooooo sleeepy. I gave too much. I broke the law.",
-      "id": 59
-    },
-    {
-      "note": "this raised the blood pressure",
-      "medicationId": 17,
-      "userId": 13,
-      "id": 60
-    },
-    {
-      "userId": "7",
-      "medicationId": 16,
-      "note": "this killed michael jackson. but he did it to himself",
-      "id": 63
-    },
-    {
-      "userId": "1",
-      "medicationId": 19,
-      "note": "this better be vasopressin and it is babyyyyy",
-      "id": 64
-    },
-    {
-      "note": "is this cisplatin",
-      "medicationId": 6,
-      "userId": 2,
-      "id": 65
-    },
-    {
-      "userId": "4",
-      "medicationId": 16,
-      "note": "User profile will display each medication that you have added from the unit specific medication list. Will be able to add comments/notes on each medication by clicking the “add notes” button. Will then be able to edit those comments by clicking the “edit note” button. Will be able to then delete that whole note with the “delete note” button. ",
-      "id": 66
-    },
-    {
-      "userId": "4",
-      "medicationId": 16,
-      "note": "Create login page with session storage. When user inputs their information and clicks submit, user, if the information is correct, is taken to their user profile. \nCreate Navigation bar that toggles between Medication List and User Profile.\n",
-      "id": 67
-    },
-    {
-      "note": "heyyyy",
-      "medicationId": 17,
-      "userId": 4,
-      "id": 68
-    },
-    {
-      "note": "hdhdhdhd",
-      "medicationId": 21,
-      "userId": 14,
-      "id": 69
-    },
-    {
-      "note": "this will kill you",
-      "medicationId": 16,
-      "userId": 1,
-      "id": 70
-    },
-    {
-      "note": "whatttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 71
-    },
-    {
-      "note": "what what",
-      "medicationId": 24,
-      "userId": 2,
-      "id": 72
-    },
-    {
-      "userId": "6",
-      "medicationId": 16,
-      "note": "this is propofol, nice",
-      "id": 73
-    },
-    {
-      "note": "gggggggggggggg",
-      "medicationId": 5,
-      "userId": 6,
-      "id": 74
-    },
-    {
-      "note": "but why would i do this",
-      "medicationId": 16,
-      "userId": 5,
-      "id": 75
-    },
-    {
-      "note": "this saves lives",
-      "medicationId": 19,
-      "userId": 15,
-      "id": 76
-    },
-    {
-      "note": "it really does",
-      "medicationId": 19,
-      "userId": 15,
-      "id": 77
-    },
-    {
-      "note": "okay",
-      "medicationId": 4,
-      "userId": 1,
-      "id": 79
-    },
-    {
-      "userId": "1",
-      "medicationId": 1,
-      "note": "Create page that displays each unit’s specific medication list.(Will be able to toggle between each unit with a dropdown list). When a unit’s dropdown is selected, that units Medication list will populate. Each medication will have an “add to profile” button. Each medication will have its name and its related information, first in a condensed card with the name of the medication, the class of the medication, and the “add to profile” button. \n",
-      "id": 80
-    },
-    {
-      "note": "In a hospital, there are many different units. Cardiac, Transplant, Neuro, Oncology, Orthopedic. These units all use many common medications that they administer. But ALL of them use medications that are specific ONLY to that unit, and that only they administer. I want to create an app that can look up any medication from a database, and add those specific medications to a UNIT SPECIFIC list within the app",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 82
-    },
-    {
-      "note": "It this actually working",
-      "medicationId": 1,
-      "userId": 4,
-      "id": 83
-    },
-    {
-      "note": "Create page that displays each unit’s specific medication list.(Will be able to toggle between each unit with a dropdown list). When a unit’s dropdown is selected, that units Medication list will populate. Each medication will have an “add to profile” button. Each medication will have its name and its related information, first in a condensed card with the name of the medication, the class of the medication, and the “add to profile” button",
-      "medicationId": 16,
-      "userId": 4,
-      "id": 84
-    },
-    {
-      "note": "hggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "note": "this",
       "medicationId": 20,
-      "userId": 6,
-      "id": 86
-    },
-    {
-      "userId": "1",
-      "medicationId": 10,
-      "note": "kljlk;fjalskdjflksdjflsdjflkjflkjsdf",
-      "id": 87
-    },
-    {
-      "userId": "2",
-      "medicationId": 11,
-      "note": "what oh yeah hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-      "id": 88
+      "userId": 1,
+      "id": 1
     }
   ],
   "unit": [

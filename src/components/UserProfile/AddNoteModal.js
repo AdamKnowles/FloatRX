@@ -28,11 +28,11 @@ export default class AddNoteModal extends Component {
         const stateToChange = {};
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
-        console.log(stateToChange)
+        
       };
       addNewNoteToDatabase = evt => {
         evt.preventDefault();
-        console.log("New note added");
+        
         
         const note = {
           note:this.state.note,

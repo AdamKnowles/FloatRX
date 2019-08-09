@@ -42,13 +42,11 @@ class ApplicationViews extends Component {
     return APImanager.getAllUnitMedications();
   };
   showAllMeds = () => {
-    console.log("clicked")
    this.setState({unitParam: ""})
   }
   
 
   logout = () => {
-    console.log("hey");
     sessionStorage.clear()
     this.state.unitParam = ""
     this.props.history.push("/");
