@@ -6,7 +6,7 @@ export default class FloatRX extends Component {
     render() {
         return (
             <React.Fragment>
-        <NavBar  />
+        {/* <NavBar  /> */}
         <ApplicationViews />
       </React.Fragment>
         )

@@ -5,6 +5,7 @@ import { withRouter } from "react-router";
 import { Route, Redirect } from "react-router-dom";
 import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
+import NavBar from "./components/nav/NavBar"
 
 import Login from "./components/Login/login";
 
@@ -48,7 +49,7 @@ class ApplicationViews extends Component {
 
   logout = () => {
     console.log("hey");
-    sessionStorage.clear();
+    sessionStorage.clear()
     this.state.unitParam = ""
     this.props.history.push("/");
     
@@ -153,6 +154,7 @@ class ApplicationViews extends Component {
   render() {
     return (
       <React.Fragment>
+        <NavBar logout={this.logout} {...this.props} />
         <Route
           exact
           path="/"

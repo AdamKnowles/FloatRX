@@ -241,18 +241,6 @@
       "id": 34
     },
     {
-      "name": "cisplatin",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
-      "userId": 2,
-      "id": 46
-    },
-    {
       "name": "norepinephrine",
       "class": " Catecholamines",
       "route": "IV",
@@ -385,30 +373,6 @@
       "id": 66
     },
     {
-      "name": "oxytocin",
-      "class": "polypeptide hormone",
-      "route": "IV",
-      "dosage": "0.5-2 milliunits/min",
-      "frequency": "Every 15-40 min",
-      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
-      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
-      "medicationId": 11,
-      "userId": 1,
-      "id": 71
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 72
-    },
-    {
       "name": "tacrolimus",
       "class": "Calcineurin Inhibitors",
       "route": "PO",
@@ -433,16 +397,64 @@
       "id": 74
     },
     {
-      "name": "cisplatin",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
       "userId": 1,
-      "id": 75
+      "id": 76
+    },
+    {
+      "name": "etoposide",
+      "class": "DNA topoisomerase II inhibitor",
+      "route": "IV",
+      "dosage": "50-100 mg",
+      "frequency": "Once a day",
+      "indications": "Used to treat small cell lung cancer. It is usually given in combination with other cancer medicines",
+      "mechanism": "Affects cell cycle G2, lysing cells entering mitosis and inhibiting cells from entering prophase",
+      "medicationId": 10,
+      "userId": 1,
+      "id": 77
+    },
+    {
+      "name": "oxytocin",
+      "class": "polypeptide hormone",
+      "route": "IV",
+      "dosage": "0.5-2 milliunits/min",
+      "frequency": "Every 15-40 min",
+      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
+      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
+      "medicationId": 11,
+      "userId": 2,
+      "id": 78
+    },
+    {
+      "name": "phenazopyridine",
+      "class": " Alpha1 Agonist",
+      "route": "PO",
+      "dosage": "100-200 mg",
+      "frequency": "3 times a day",
+      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
+      "mechanism": "Produces topical analgesia",
+      "medicationId": 21,
+      "userId": 2,
+      "id": 80
+    },
+    {
+      "name": "norepinephrine",
+      "class": " Catecholamines",
+      "route": "IV",
+      "dosage": "0.02-1 mcg/kg/min",
+      "frequency": "Continuous",
+      "indications": "Used to treat life-threatening low blood pressure (hypotension)",
+      "mechanism": "Stimulates alpha and beta-1 adrenergic receptors; produces inotropic and vasopressor effects",
+      "medicationId": 17,
+      "userId": 1,
+      "id": 81
     }
   ],
   "notes": [
@@ -693,12 +705,6 @@
       "id": 80
     },
     {
-      "note": "this is def tacro",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 81
-    },
-    {
       "note": "In a hospital, there are many different units. Cardiac, Transplant, Neuro, Oncology, Orthopedic. These units all use many common medications that they administer. But ALL of them use medications that are specific ONLY to that unit, and that only they administer. I want to create an app that can look up any medication from a database, and add those specific medications to a UNIT SPECIFIC list within the app",
       "medicationId": 1,
       "userId": 1,
@@ -717,16 +723,22 @@
       "id": 84
     },
     {
-      "note": "This is pretty cool i think im gonna be doing this for a long time to come you know what i mean?",
-      "medicationId": 16,
-      "userId": 2,
-      "id": 85
-    },
-    {
       "note": "hggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
       "medicationId": 20,
       "userId": 6,
       "id": 86
+    },
+    {
+      "userId": "1",
+      "medicationId": 10,
+      "note": "kljlk;fjalskdjflksdjflsdjflkjflkjsdf",
+      "id": 87
+    },
+    {
+      "userId": "2",
+      "medicationId": 11,
+      "note": "what oh yeah hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+      "id": 88
     }
   ],
   "unit": [

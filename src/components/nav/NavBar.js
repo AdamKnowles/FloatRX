@@ -8,19 +8,24 @@ import "bootstrap/dist/css/bootstrap.min.css"
 export default class NavBar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-light bg-medium d-flex justify-content-start p-0 shadow">
-                <div className="d-flex justify-content-end"><h4>FloatRX</h4>
+            <nav className="navbar navbar navbar-dark bg-dark d-flex justify-content-start p-0 fixed-top  " >
+                
+                <div className="d-flex justify-content-end"><h4 className="text-white">FloatRX</h4>
                 <ul className="nav nav-pills nav-fill">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/medicationlist">Medication List</Link>
+                        <Link className="nav-link text-white ml-3" to="/medicationlist" >Medication List</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/profile">User Profile</Link>
+                    <li className="logout">
+                        <Link className="nav-link text-white " to="/profile">User Profile</Link>
                     </li>
+                    <Button  onClick={this.props.logout}>
+          Logout
+        </Button>
                     
                     
                 </ul>
                 </div>
+                
             </nav>
         )
     }

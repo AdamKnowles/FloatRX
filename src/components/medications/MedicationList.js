@@ -16,14 +16,12 @@ class MedicationList extends Component {
     if (this.props.unitParam !== "") {
       return (
         <React.Fragment>
-          <div className="container">
-          <h2 className="text-center p-1 mb-4 bg-secondary text-white">
+          <div className="container" >
+          <h2 className="text-center p-1 mb-4 bg-secondary text-white mt-5 ">
              Medication List
           </h2>
           <div className="showAllMeds">
-          <Button  onClick={this.props.logout}>
-          Logout
-        </Button>
+          
           <Button color="info" onClick={this.props.showAllMeds} >
           Show All Medications
         </Button></div>
@@ -60,12 +58,11 @@ class MedicationList extends Component {
       return (
         <React.Fragment>
           <div className="container">
-          <h2 className="text-center p-1 mb-4 bg-secondary text-white">
+          <h2 className="text-center p-1 mb-3 bg-secondary text-white mt-5">
              Medication List
           </h2>
-            <Button  onClick={this.props.logout} >
-          Logout
-        </Button>
+            <br></br>
+            <br></br>
             <MedDropdown
               units={this.props.units}
               {...this.props}
