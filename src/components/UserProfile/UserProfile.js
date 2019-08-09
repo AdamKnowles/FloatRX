@@ -8,21 +8,19 @@ class UserProfile extends Component {
     return (
       <React.Fragment>
         <div className="container">
-        <h2 body className="text-center p-1 mb-4 bg-secondary text-white">
+        <h2 body className="text-center p-1 mb-4 bg-secondary text-white mt-5">
           User Profile
         </h2>
 
-        <div><Button
+        <div className="d-flex justify-content-center"><Button
           
-           className="text-center"
+           
           type="button" color="success"
           onClick={() => this.props.history.push("/medicationlist")}
         >
           Add Medication
         </Button>
-        <Button className="float-right" onClick={this.props.logout}>
-          Logout
-        </Button></div>
+        </div>
 
         <div>
           {this.props.userProfile.map(medication => (
