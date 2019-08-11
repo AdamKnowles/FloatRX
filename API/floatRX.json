@@ -301,30 +301,6 @@
       "id": 61
     },
     {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 6,
-      "id": 62
-    },
-    {
-      "name": "dexmedetomidine",
-      "class": "alpha-2 agonist",
-      "route": "IV",
-      "dosage": " 1 mcg/kg",
-      "frequency": "Continuous",
-      "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
-      "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
-      "medicationId": 20,
-      "userId": 6,
-      "id": 63
-    },
-    {
       "name": "cyclosporine",
       "class": "calcineurin inhibitor",
       "route": "PO",
@@ -381,90 +357,59 @@
       "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
       "mechanism": "Produces topical analgesia",
       "medicationId": 21,
-      "userId": 1,
-      "id": 76
-    },
-    {
-      "name": "etoposide",
-      "class": "DNA topoisomerase II inhibitor",
-      "route": "IV",
-      "dosage": "50-100 mg",
-      "frequency": "Once a day",
-      "indications": "Used to treat small cell lung cancer. It is usually given in combination with other cancer medicines",
-      "mechanism": "Affects cell cycle G2, lysing cells entering mitosis and inhibiting cells from entering prophase",
-      "medicationId": 10,
-      "userId": 1,
-      "id": 77
-    },
-    {
-      "name": "norepinephrine",
-      "class": " Catecholamines",
-      "route": "IV",
-      "dosage": "0.02-1 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to treat life-threatening low blood pressure (hypotension)",
-      "mechanism": "Stimulates alpha and beta-1 adrenergic receptors; produces inotropic and vasopressor effects",
-      "medicationId": 17,
-      "userId": 1,
-      "id": 81
-    },
-    {
-      "name": "propofol",
-      "class": "general anesthetic",
-      "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
       "userId": 6,
-      "id": 82
+      "id": 86
     },
     {
-      "name": "propofol",
-      "class": "general anesthetic",
-      "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
-      "userId": 6,
-      "id": 83
-    },
-    {
-      "name": "vasopressin",
-      "class": "anti-diuretic hormone",
-      "route": "IV",
-      "dosage": "0.01-0.04 units/min",
-      "frequency": "Continuous",
-      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
-      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
-      "medicationId": 19,
-      "userId": 6,
-      "id": 84
-    },
-    {
-      "name": "dexmedetomidine",
-      "class": "alpha-2 agonist",
-      "route": "IV",
-      "dosage": " 1 mcg/kg",
-      "frequency": "Continuous",
-      "indications": " A sedative that is used to sedate a patient who is under intensive medical care and needs a mechanical ventilator",
-      "mechanism": "Produces centrally mediated sympatholytic, sedative and analgesic effects (selective alpha-2 adrenergic agonist)",
-      "medicationId": 20,
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
       "userId": 1,
-      "id": 85
+      "id": 87
+    },
+    {
+      "name": "sirolimus",
+      "class": "immunosuppressant",
+      "route": "PO",
+      "dosage": "1-5 mg",
+      "frequency": "Once a Day",
+      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
+      "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
+      "medicationId": 5,
+      "userId": 1,
+      "id": 88
+    },
+    {
+      "name": "methotrexate",
+      "class": "antineoplastics",
+      "route": "IV",
+      "dosage": "40 mg",
+      "frequency": "Once a day for 28 days",
+      "indications": "Used to treat leukemia and certain types of cancer of the breast, skin, head and neck, or lung",
+      "mechanism": "Inhibits dihydrofolate reductase; inhibits lymphocyte proliferation (folate antagonist)",
+      "medicationId": 7,
+      "userId": 1,
+      "id": 89
+    },
+    {
+      "name": "tacrolimus",
+      "class": "Calcineurin Inhibitors",
+      "route": "PO",
+      "dosage": "0.1-0.2 mg/kg/day",
+      "frequency": "Every 12 Hours",
+      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
+      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
+      "medicationId": 1,
+      "userId": 2,
+      "id": 90
     }
   ],
-  "notes": [
-    {
-      "note": "this",
-      "medicationId": 20,
-      "userId": 1,
-      "id": 1
-    }
-  ],
+  "notes": [],
   "unit": [
     {
       "id": 1,
