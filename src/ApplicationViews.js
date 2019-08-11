@@ -6,6 +6,7 @@ import { Route, Redirect } from "react-router-dom";
 import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
 import NavBar from "./components/nav/NavBar"
+import Admin from "./components/Admin/Admin"
 
 import Login from "./components/Login/login";
 
@@ -147,6 +148,7 @@ class ApplicationViews extends Component {
   
 
   isAuthenticated = () => sessionStorage.getItem("userId") !== null;
+  adminAuthenticated = () => sessionStorage.getItem("userId") == 1;
   
 
   render() {
@@ -214,6 +216,25 @@ class ApplicationViews extends Component {
                 {...props}
               />
             );}
+            else {
+              return <Redirect to="/" />
+          }}}
+        />
+        <Route
+          exact
+          path="/admin"
+          render={props => {
+            if(this.isAuthenticated() & this.adminAuthenticated()){
+            return (
+              <Admin />
+            );}
+            else if(this.isAuthenticated()){
+              return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>
+                
+                
+              
+            
+            }
             else {
               return <Redirect to="/" />
           }}}

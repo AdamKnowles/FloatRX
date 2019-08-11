@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css"
+import Admin from "../Admin/Admin"
 
 
 
@@ -15,8 +16,11 @@ export default class NavBar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link text-white ml-3" to="/medicationlist" >Medication List</Link>
                     </li>
-                    <li className="logout">
+                    <li className="">
                         <Link className="nav-link text-white " to="/profile">User Profile</Link>
+                    </li>
+                    <li className="logout">
+                        <Link className="nav-link text-white ml-3" to="/admin" >Administrator</Link>
                     </li>
                     <Button  onClick={this.props.logout}>
           Logout
