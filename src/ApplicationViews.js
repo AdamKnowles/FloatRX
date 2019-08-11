@@ -7,6 +7,7 @@ import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
 import NavBar from "./components/nav/NavBar"
 import Admin from "./components/Admin/Admin"
+import ProcedureList from "./components/procedures/ProcedureList"
 
 import Login from "./components/Login/login";
 
@@ -16,6 +17,7 @@ class ApplicationViews extends Component {
     users: [],
     units: [],
     userProfile: [],
+    procedures: [],
     notes:[],
     unitParam: ""
   };
@@ -25,6 +27,7 @@ class ApplicationViews extends Component {
     APImanager.getAllUnitMedications().then(
       medications => (newState.medications = medications))
       APImanager.getAll("unit").then(units => (newState.units = units));
+      APImanager.getAll("procedures").then(procedures => (newState.procedures = procedures));
       APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
       APImanager.getUserNotes("notes", currentUserId)
@@ -44,6 +47,10 @@ class ApplicationViews extends Component {
   };
   showAllMeds = () => {
    this.setState({unitParam: ""})
+  }
+
+  getProcedures = () => {
+    APImanager.getAll("procedures")
   }
   
 
@@ -191,6 +198,28 @@ class ApplicationViews extends Component {
                 
                 {...props}
                 // transplantMedications={this.state.transplantMedications}
+              />
+            
+            );}
+            else {
+              return <Redirect to="/" />
+          }}}
+        />
+        <Route
+          exact
+          path="/procedures"
+          render={props => {
+            if(this.isAuthenticated()){
+            return (
+              <ProcedureList procedures={this.state.procedures}
+                
+                
+                
+                
+                
+                
+                {...props}
+                
               />
             
             );}

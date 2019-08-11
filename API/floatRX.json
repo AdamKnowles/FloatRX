@@ -409,6 +409,16 @@
       "id": 90
     }
   ],
+  "procedures": [
+    {
+      "id": 1,
+      "name": "Kidney Biopsy",
+      "indications": "Hematuria: Presence of acanthocytes or red blood cell casts with an elevated Scr level or proteinuria. Proteinuria: Proteinuria > 1 g/d as measured on multiple visits with no clear comorbidity; proteinuria > 3 g/d in the absence of diabetes or a rapid increase in proteinuria even with diabetes; proteinuria < 3 g/d with an elevated Scr level with no clear comorbid conditions such as diabetes or hypertension. AKI: In the setting of ATI, persistent injury despite reversal of cause or if Scr did not return to baseline with 7-14 d of injury onset; in the setting of presumptive AIN, if there has been no resolution of injury despite removal of culprit medication. CKD: Rapid elevation in Scr level or new-onset hematuria or proteinuria",
+      "method": "Ultrasound- and CT-guided biopsies are performed with the patient in the prone position. Patients who cannot remain prone (due to immobility issues, abdominal distension or ascites, or intubation) should be positioned in the lateral decubitus or sitting position. Percutaneous ultrasound-guided kidney biopsy is usually performed on the inferior pole of the left or right kidney. The left kidney is visible without other organs impeding acquisition of the tissue; however, in the case of splenomegaly, injury to the spleen can be significant.",
+      "complications": "Bleeding"
+    }
+
+  ],
   "notes": [],
   "unit": [
     {
