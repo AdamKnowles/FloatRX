@@ -20,7 +20,7 @@ export default class NavBar extends Component {
                         <Link className="nav-link text-white " to="/profile">User Profile</Link>
                     </li>
                     <li className="logout">
-                        <Link className="nav-link text-white ml-3" to="/admin" >Admin</Link>
+                        <Link className="nav-link text-white ml-3" to="/admin" >Administrator</Link>
                     </li>
                     <Button  onClick={this.props.logout}>
           Logout

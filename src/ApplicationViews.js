@@ -229,7 +229,7 @@ class ApplicationViews extends Component {
               <Admin />
             );}
             else if(this.isAuthenticated()){
-              return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Admin Privileges</h3></React.Fragment>
+              return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>
                 
                 
               
