@@ -94,10 +94,34 @@
       "id": 1
     },
     {
+      "name": "Paracentesis",
+      "procedureId": 3,
+      "userId": 7,
+      "id": 4
+    },
+    {
+      "name": "Paracentesis",
+      "procedureId": 3,
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "CRRT",
+      "procedureId": 4,
+      "userId": 2,
+      "id": 6
+    },
+    {
       "name": "Liver Biopsy",
       "procedureId": 2,
-      "userId": 1,
-      "id": 2
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "name": "Liver Biopsy",
+      "procedureId": 2,
+      "userId": 4,
+      "id": 8
     }
   ],
   "userProfile": [
@@ -400,6 +424,30 @@
       "medicationId": 4,
       "userId": 1,
       "id": 94
+    },
+    {
+      "name": "mycophenolate mofetil",
+      "class": "inosine monophosphateh dehydrogenase inhibitor",
+      "route": "PO",
+      "dosage": "1.5 mg",
+      "frequency": "Every 12 Hours",
+      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
+      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
+      "medicationId": 2,
+      "userId": 2,
+      "id": 95
+    },
+    {
+      "name": "tamsulosin",
+      "class": "alpha-1 blocker, selective",
+      "route": "PO",
+      "dosage": "0.4 mg",
+      "frequency": "Daily",
+      "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
+      "mechanism": "Selectively antagonizes prostate alpha-1a adrenergic receptors, relaxing smooth muscle and improving urine flow (peripherally-acting alpha blocker)",
+      "medicationId": 25,
+      "userId": 2,
+      "id": 96
     }
   ],
   "procedures": [
@@ -435,12 +483,6 @@
       "id": 2
     },
     {
-      "note": "crrt",
-      "procedureId": 10,
-      "userId": 1,
-      "id": 3
-    },
-    {
       "note": "kidney",
       "userId": 1,
       "id": 4
@@ -459,12 +501,6 @@
       "note": "hdfskjdlk",
       "userId": 1,
       "id": 7
-    },
-    {
-      "note": "kidney",
-      "procedureId": 8,
-      "userId": 1,
-      "id": 8
     },
     {
       "note": "biopsy",
@@ -512,22 +548,28 @@
       "id": 17
     },
     {
-      "note": "jhskdfhkjsdfjdflkjdslfjlksdjflsdjflsdfj",
-      "procedureId": 7,
-      "userId": 1,
-      "id": 18
-    },
-    {
-      "note": "kljflkjflkjsdlf",
-      "procedureId": 1,
-      "userId": 1,
-      "id": 19
-    },
-    {
       "note": "jfljlsdkjflsjdlfkjsd",
       "procedureId": 2,
       "userId": 1,
       "id": 20
+    },
+    {
+      "note": "idjdjdjd",
+      "procedureId": 4,
+      "userId": 2,
+      "id": 21
+    },
+    {
+      "userId": "1",
+      "prcedureId": 1,
+      "note": "nkdsnfkjdsnf jkflksadlfjlkds",
+      "id": 22
+    },
+    {
+      "userId": "1",
+      "prcedureId": 1,
+      "note": "nkjsdhflkdsjflkjds fffffffffffffffffffffffffffffffffffffffffff",
+      "id": 23
     }
   ],
   "unit": [
