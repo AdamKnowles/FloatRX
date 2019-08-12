@@ -31,6 +31,12 @@ export default Object.create(null, {
     .then(e => e.json())}
     
   },
+  getUserProcedures:{
+    value:function(resource, id) {
+    return fetch(`${remoteURL}/${resource}?userId=${id}`)
+    .then(e => e.json())}
+    
+  },
   getUserNotes:{
     value:function(resource, id) {
     return fetch(`${remoteURL}/${resource}?userId=${id}`)

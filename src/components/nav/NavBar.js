@@ -16,6 +16,9 @@ export default class NavBar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link text-white ml-3" to="/medicationlist" >Medication List</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link text-white ml-3" to="/procedures" >Procedure List</Link>
+                    </li>
                     <li className="">
                         <Link className="nav-link text-white " to="/profile">User Profile</Link>
                     </li>

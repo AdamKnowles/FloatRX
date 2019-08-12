@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router";
 import MedicationCard from "../medications/MedicationCard";
 import UserProfileMedCard from "./UserProfileMedCard";
+import UserProfileProcedureCard from "./UserProfileProcedureCard"
 import { Button } from "reactstrap";
 class UserProfile extends Component {
   render() {
@@ -16,9 +17,17 @@ class UserProfile extends Component {
           
            
           type="button" color="success"
-          onClick={() => this.props.history.push("/medicationlist")}
+          onClick={() => this.props.history.push("/medicationlist")} className="mr-2"
         >
           Add Medication
+        </Button>
+        <Button
+          
+           
+          type="button" color="success"
+          onClick={() => this.props.history.push("/procedures")}
+        >
+          Add Procedure
         </Button>
         </div>
 
@@ -36,6 +45,26 @@ class UserProfile extends Component {
               {...this.props}
             />
           ))}
+          
+        </div>
+        <div>
+          {this.props.userProfileProcedure.map(procedure => (
+            <UserProfileProcedureCard
+              key={procedure.id}
+              procedure={procedure}
+              procedures={this.props.procedures}
+              addProcedureToProfile={this.props.addProcedureToProfile}
+              deleteProcedureFromProfile={this.props.deleteProcedureFromProfile}
+              deleteMedFromProfile={this.props.deleteMedFromProfile}
+              addNote={this.props.addNote}
+              notes={this.props.notes}
+              toggle={this.props.toggle}
+              deleteNoteFromProfile={this.props.deleteNoteFromProfile}
+              editNewNote={this.props.editNewNote}
+              {...this.props}
+            />
+          ))}
+          
         </div>
         </div>
       </React.Fragment>

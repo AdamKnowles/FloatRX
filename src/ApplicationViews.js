@@ -7,6 +7,7 @@ import APImanager from "./modules/APImanager";
 import MedicationCard from "./components/medications/MedicationCard";
 import NavBar from "./components/nav/NavBar"
 import Admin from "./components/Admin/Admin"
+import ProcedureList from "./components/procedures/ProcedureList"
 
 import Login from "./components/Login/login";
 
@@ -16,6 +17,8 @@ class ApplicationViews extends Component {
     users: [],
     units: [],
     userProfile: [],
+    userProfileProcedure:[],
+    procedures: [],
     notes:[],
     unitParam: ""
   };
@@ -25,8 +28,11 @@ class ApplicationViews extends Component {
     APImanager.getAllUnitMedications().then(
       medications => (newState.medications = medications))
       APImanager.getAll("unit").then(units => (newState.units = units));
+      APImanager.getAll("procedures").then(procedures => (newState.procedures = procedures));
       APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
+      APImanager.getUserProcedures("userProfileProcedure", currentUserId)
+      .then(userProfileProcedure => (newState.userProfileProcedure = userProfileProcedure))
       APImanager.getUserNotes("notes", currentUserId)
       .then(notes => (newState.notes = notes))
       .then(() => this.setState(newState));
@@ -45,11 +51,16 @@ class ApplicationViews extends Component {
   showAllMeds = () => {
    this.setState({unitParam: ""})
   }
+
+  getProcedures = () => {
+    APImanager.getAll("procedures")
+  }
   
 
   logout = () => {
     sessionStorage.clear()
     this.state.unitParam = ""
+    this.state.userProfileProcedure =[]
     this.props.history.push("/");
     
   };
@@ -69,7 +80,18 @@ class ApplicationViews extends Component {
         })
       );
   };
+  addProcedureToProfile = procedure => {
+    let currentUserId = sessionStorage.getItem("userId");
+    return APImanager.post("userProfileProcedure", procedure)
+      .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
+      .then(procedure =>
+        this.setState({
+          userProfileProcedure: procedure
+        })
+      );
+  };
   addNote = note => {
+    
     let currentUserId = sessionStorage.getItem("userId");
     
     return APImanager.post("notes", note)
@@ -93,6 +115,14 @@ class ApplicationViews extends Component {
         this.setState({ userProfile: medication });
       });
   };
+  deleteProcedureFromProfile = id => {
+    let currentUserId = sessionStorage.getItem("userId");
+    return APImanager.delete("userProfileProcedure", id)
+      .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
+      .then(procedure => {
+        this.setState({ userProfileProcedure: procedure });
+      });
+  };
   deleteNoteFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
     return APImanager.delete("notes", id)
@@ -102,10 +132,15 @@ class ApplicationViews extends Component {
       });
   };
   userData = currentUserId => {
+    
     const newState = {};
     APImanager.getUserMeds("userProfile", currentUserId)
       .then(medications => {
         return (newState.userProfile = medications);
+      })
+    APImanager.getUserProcedures("userProfileProcedure", currentUserId)
+      .then(procedures => {
+        return (newState.userProfileProcedure = procedures);
       })
     APImanager.getUserNotes("notes", currentUserId)
       .then(notes => {
@@ -200,12 +235,39 @@ class ApplicationViews extends Component {
         />
         <Route
           exact
+          path="/procedures"
+          render={props => {
+            if(this.isAuthenticated()){
+            return (
+              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile}
+                
+                
+                
+                
+                
+                
+                {...props}
+                
+              />
+            
+            );}
+            else {
+              return <Redirect to="/" />
+          }}}
+        />
+        <Route
+          exact
           path="/profile"
           render={props => {
             if(this.isAuthenticated()){
             return (
               <UserProfile
                 userProfile={this.state.userProfile}
+                userProfileProcedure={this.state.userProfileProcedure}
+                addProcedureToProfile={this.addProcedureToProfile}
+                deleteProcedureFromProfile={this.deleteProcedureFromProfile}
+                procedures={this.state.procedures}
+                
                 units={this.state.units}
                 deleteMedFromProfile={this.deleteMedFromProfile}
                 logout={this.logout}
