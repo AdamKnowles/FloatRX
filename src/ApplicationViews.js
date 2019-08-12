@@ -31,7 +31,7 @@ class ApplicationViews extends Component {
       APImanager.getAll("procedures").then(procedures => (newState.procedures = procedures));
       APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
-      APImanager.getUserMeds("userProfileProcedure", currentUserId)
+      APImanager.getUserProcedures("userProfileProcedure", currentUserId)
       .then(userProfileProcedure => (newState.userProfileProcedure = userProfileProcedure))
       APImanager.getUserNotes("notes", currentUserId)
       .then(notes => (newState.notes = notes))
@@ -60,6 +60,7 @@ class ApplicationViews extends Component {
   logout = () => {
     sessionStorage.clear()
     this.state.unitParam = ""
+    this.state.userProfileProcedure =[]
     this.props.history.push("/");
     
   };
@@ -113,6 +114,14 @@ class ApplicationViews extends Component {
         this.setState({ userProfile: medication });
       });
   };
+  deleteProcedureFromProfile = id => {
+    let currentUserId = sessionStorage.getItem("userId");
+    return APImanager.delete("userProfileProcedure", id)
+      .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
+      .then(procedure => {
+        this.setState({ userProfileProcedure: procedure });
+      });
+  };
   deleteNoteFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
     return APImanager.delete("notes", id)
@@ -122,10 +131,15 @@ class ApplicationViews extends Component {
       });
   };
   userData = currentUserId => {
+    
     const newState = {};
     APImanager.getUserMeds("userProfile", currentUserId)
       .then(medications => {
         return (newState.userProfile = medications);
+      })
+    APImanager.getUserProcedures("userProfileProcedure", currentUserId)
+      .then(procedures => {
+        return (newState.userProfileProcedure = procedures);
       })
     APImanager.getUserNotes("notes", currentUserId)
       .then(notes => {
@@ -250,6 +264,7 @@ class ApplicationViews extends Component {
                 userProfile={this.state.userProfile}
                 userProfileProcedure={this.state.userProfileProcedure}
                 addProcedureToProfile={this.addProcedureToProfile}
+                deleteProcedureFromProfile={this.deleteProcedureFromProfile}
                 
                 units={this.state.units}
                 deleteMedFromProfile={this.deleteMedFromProfile}

@@ -53,7 +53,7 @@ export default class ProcedureCard extends Component {
                   <u>{this.props.procedure.name}</u>
                 </h1>
                 
-              <ProcedureListModal  procedures={ this.props.procedures} procedure={this.props.procedure} toggle={this.toggle}  />
+              <ProcedureListModal  procedures={ this.props.procedures} procedure={this.props.procedure} toggle={this.toggle} addNewProcedure={this.addNewProcedure}  />
                 <Button color="danger" body className="text-center" onClick={this.addNewProcedure}>
                   Add to Profile
                 </Button>

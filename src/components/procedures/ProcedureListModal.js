@@ -53,7 +53,7 @@ export default class ProcedureListModal extends Component {
                 <ModalFooter>
                   <Button
                     color="danger"
-                    onClick={this.toggle}
+                    onClick={this.toggle} onClick={this.props.addNewProcedure}
                     
                   >
                     Add To Profile

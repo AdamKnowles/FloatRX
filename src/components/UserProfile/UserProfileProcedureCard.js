@@ -29,13 +29,13 @@ export default class UserProfileProcedureCard extends Component {
                 <h6>Complications: {this.props.procedure.complications}</h6>
                 
                 <div className="bothButtons">
-                <Button
+                <Button onClick={() =>this.props.deleteProcedureFromProfile(this.props.procedure.id)}
                   className="mr-2"
                   
                   
                   color="warning"
                 >
-                  Remove Medication
+                  Remove Procedure
                 </Button>
                 
                 

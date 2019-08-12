@@ -45,6 +45,7 @@ class UserProfile extends Component {
               key={procedure.id}
               procedure={procedure}
               addProcedureToProfile={this.props.addProcedureToProfile}
+              deleteProcedureFromProfile={this.props.deleteProcedureFromProfile}
               deleteMedFromProfile={this.props.deleteMedFromProfile}
               addNote={this.props.addNote}
               notes={this.props.notes}
