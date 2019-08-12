@@ -41,11 +41,11 @@ export default class ProcedureListModal extends Component {
                 >
                   <CardBody className="text-dark ">
                     <h1>
-                      <u>{this.props.procedure.name}</u>
+                      <u>{this.props.procedure.procedure.name}</u>
                     </h1>
-                    <h6>{this.props.procedure.indications}</h6>
-                    <h6>Method: {this.props.procedure.method}</h6>
-                    <h6>Complications: {this.props.procedure.complications}</h6>
+                    <h6>Indications: {this.props.procedure.procedure.indications}</h6>
+                    <h6>Method: {this.props.procedure.procedure.method}</h6>
+                    <h6>Complications: {this.props.procedure.procedure.complications}</h6>
                     
                   </CardBody>
                 </Card>
