@@ -176,7 +176,7 @@ class ApplicationViews extends Component {
     this.setState({
       userId: sessionStorage.getItem("userId")
     });
-    this.userData(this.state.userId)
+    // this.userData(this.state.userId)
   };
 
   

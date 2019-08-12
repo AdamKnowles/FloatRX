@@ -85,15 +85,6 @@
   ],
   "userProfileProcedure": [
     {
-      "name": "Kidney Biopsy",
-      "indications": "Hematuria: Presence of acanthocytes or red blood cell casts with an elevated Scr level or proteinuria. Proteinuria: Proteinuria > 1 g/d as measured on multiple visits with no clear comorbidity; proteinuria > 3 g/d in the absence of diabetes or a rapid increase in proteinuria even with diabetes; proteinuria < 3 g/d with an elevated Scr level with no clear comorbid conditions such as diabetes or hypertension. AKI: In the setting of ATI, persistent injury despite reversal of cause or if Scr did not return to baseline with 7-14 d of injury onset; in the setting of presumptive AIN, if there has been no resolution of injury despite removal of culprit medication. CKD: Rapid elevation in Scr level or new-onset hematuria or proteinuria",
-      "method": "Ultrasound- and CT-guided biopsies are performed with the patient in the prone position. Patients who cannot remain prone (due to immobility issues, abdominal distension or ascites, or intubation) should be positioned in the lateral decubitus or sitting position. Percutaneous ultrasound-guided kidney biopsy is usually performed on the inferior pole of the left or right kidney. The left kidney is visible without other organs impeding acquisition of the tissue; however, in the case of splenomegaly, injury to the spleen can be significant.",
-      "complications": "Bleeding",
-      "procedureId": 1,
-      "userId": 1,
-      "id": 1
-    },
-    {
       "name": "Paracentesis",
       "procedureId": 3,
       "userId": 7,
@@ -106,37 +97,31 @@
       "id": 5
     },
     {
-      "name": "Liver Biopsy",
-      "procedureId": 2,
-      "userId": 2,
-      "id": 7
-    },
-    {
-      "name": "Liver Biopsy",
+      "name": "Paracentesis",
+      "indications": "New-onset ascites. Fluid evaluation helps to determine etiology, differentiate transudate versus exudate, detect the presence of cancerous cells, or address other considerations. Suspected spontaneous or secondary bacterial peritonitis. Refractory ascites",
+      "method": "Switch to the longer 20-gauge needle, and administer 4-5 mL of lidocaine along the catheter insertion tract (see the image below). Make sure to anesthetize all the way down to the peritoneum. The authors recommend alternating injection and intermittent aspiration down the tract until ascitic fluid is noticed in the syringe. Note the depth at which the peritoneum is entered. In obese patients, reaching the peritoneum may involve passing through a significant amount of adipose tissue",
+      "complications": "Failed attempt to collect peritoneal fluid. Persistent leak from the puncture site. Wound infection. Abdominal wall hematoma. Spontaneous hemoperitoneum. This rare complication is due to mesenteric variceal bleeding after removal of a large amount of ascitic fluid. Hollow viscus perforation (small or large bowel, stomach, bladder). Catheter laceration and loss in abdominal cavity. Laceration of major blood vessel (aorta, mesenteric artery, iliac artery). Postparacentesis hypotension. Dilutional hyponatremia. Hepatorenal syndrome",
       "procedureId": 2,
       "userId": 4,
-      "id": 8
+      "id": 12
     },
     {
-      "name": "Paracentesis",
-      "procedureId": 3,
-      "userId": 2,
-      "id": 9
+      "name": "CRRT",
+      "indications": "Intractable hyperkalaemia. Acidosis. Uraemic symptoms (nausea, pruritus, malaise).Therapy-resistant fluid overload. Chronic kidney disease (CKD) stage 5",
+      "method": "Haemodialysis (HD) involves circulating blood through a disposable dialyser. The vascular access of choice is the arteriovenous fistula (AVF). This, however, requires suitable peripheral veins and needs four to eight weeks for the fistula to mature. If there are no suitable veins, a graft can usually be inserted. Acute access with venous catheters has a high complication rate.Peritoneal dialysis (PD) involves using the peritoneum as the dialysis membrane, with pre-packaged fluid being instilled into the peritoneal space via a Tenckhoff catheter. This is usually only inserted once the decision to start dialysis is made.",
+      "complications": "Bleeding. Vessel damage. Bloodstream or localised infection. Air embolis. Hypoxia. Haemodynamic instability Hypocapnea. Hypothermia. Dialysis disequilibrium syndrome. Electrolyte disturbance. Hypocalcemia with citrate toxicity. Complications related to anticoagulation",
+      "procedureId": 5,
+      "userId": 4,
+      "id": 13
     },
     {
-      "name": "Paracentesis",
-      "procedureId": 3,
-      "userId": 2,
-      "id": 10
-    },
-    {
-      "name": "Kidney Biopsy",
-      "indications": "Hematuria: Presence of acanthocytes or red blood cell casts with an elevated Scr level or proteinuria. Proteinuria: Proteinuria > 1 g/d as measured on multiple visits with no clear comorbidity; proteinuria > 3 g/d in the absence of diabetes or a rapid increase in proteinuria even with diabetes; proteinuria < 3 g/d with an elevated Scr level with no clear comorbid conditions such as diabetes or hypertension. AKI: In the setting of ATI, persistent injury despite reversal of cause or if Scr did not return to baseline with 7-14 d of injury onset; in the setting of presumptive AIN, if there has been no resolution of injury despite removal of culprit medication. CKD: Rapid elevation in Scr level or new-onset hematuria or proteinuria",
-      "method": "Ultrasound- and CT-guided biopsies are performed with the patient in the prone position. Patients who cannot remain prone (due to immobility issues, abdominal distension or ascites, or intubation) should be positioned in the lateral decubitus or sitting position. Percutaneous ultrasound-guided kidney biopsy is usually performed on the inferior pole of the left or right kidney. The left kidney is visible without other organs impeding acquisition of the tissue; however, in the case of splenomegaly, injury to the spleen can be significant.",
-      "complications": "Bleeding",
-      "procedureId": 1,
-      "userId": 2,
-      "id": 11
+      "name": "Structured Intermittent Auscultation",
+      "indications": "Assess FHR before: initiation of labor-enhancing procedure; ambulation of patient; administration of medications; or initiation of analgesia or anesthesia. Assess FHR after: admission of patient; artificial or spontaneous rupture of membranes; vaginal examination; abnormal uterine activity; or evaluation of analgesia or anesthesia",
+      "method": "Palpate the abdomen to determine the position of the fetus (Leopold maneuvers). Place the Doppler over the area of maximal intensity of fetal heart tones. Differentiate maternal pulse from fetal pulse. Palpate for uterine contraction during period of FHR auscultation to determine relationship. Count FHR between contractions for ≥ 60 seconds to determine average baseline rate. Count FHR after uterine contraction for 60 seconds (at 5-second intervals) to identify fetal response to active labor (this may be subject to local protocols)",
+      "complications": " No significant complications",
+      "procedureId": 4,
+      "userId": 1,
+      "id": 14
     }
   ],
   "userProfile": [
@@ -672,10 +657,16 @@
       "id": 26
     },
     {
-      "userId": "1",
-      "procedureId": 1,
-      "note": "whyyyyyyyttttt",
-      "id": 27
+      "note": "This will puncture you",
+      "procedureId": 2,
+      "userId": 4,
+      "id": 28
+    },
+    {
+      "note": "this will filter you",
+      "procedureId": 5,
+      "userId": 4,
+      "id": 29
     }
   ],
   "unit": [
