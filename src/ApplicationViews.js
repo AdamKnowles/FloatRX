@@ -91,6 +91,7 @@ class ApplicationViews extends Component {
       );
   };
   addNote = note => {
+    
     let currentUserId = sessionStorage.getItem("userId");
     
     return APImanager.post("notes", note)
@@ -265,6 +266,7 @@ class ApplicationViews extends Component {
                 userProfileProcedure={this.state.userProfileProcedure}
                 addProcedureToProfile={this.addProcedureToProfile}
                 deleteProcedureFromProfile={this.deleteProcedureFromProfile}
+                procedures={this.state.procedures}
                 
                 units={this.state.units}
                 deleteMedFromProfile={this.deleteMedFromProfile}

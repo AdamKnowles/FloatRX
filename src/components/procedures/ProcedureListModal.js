@@ -44,8 +44,8 @@ export default class ProcedureListModal extends Component {
                       <u>{this.props.procedure.name}</u>
                     </h1>
                     <h6>{this.props.procedure.indications}</h6>
-                    <h6>Route: {this.props.procedure.method}</h6>
-                    <h6>Dosage: {this.props.procedure.complications}</h6>
+                    <h6>Method: {this.props.procedure.method}</h6>
+                    <h6>Complications: {this.props.procedure.complications}</h6>
                     
                   </CardBody>
                 </Card>

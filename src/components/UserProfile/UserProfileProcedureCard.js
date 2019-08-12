@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
 import AddNoteToProfileModal from "./AddNoteToProfileModal";
 import "./userProfile.css"
+import AddNoteProcedureToProfile from "./addNoteProcedureToProfile"
 
 export default class UserProfileProcedureCard extends Component {
   
@@ -37,6 +38,7 @@ export default class UserProfileProcedureCard extends Component {
                 >
                   Remove Procedure
                 </Button>
+                <AddNoteProcedureToProfile procedures={this.props.procedures}  {...this.props} />
                 
                 
                   

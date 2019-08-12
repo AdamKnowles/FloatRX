@@ -85,35 +85,19 @@
   ],
   "userProfileProcedure": [
     {
-      "name": "CRRT",
-      "userId": 6,
-      "id": 4
-    },
-    {
-      "name": "CRRT",
-      "userId": 4,
-      "id": 5
-    },
-    {
       "name": "Kidney Biopsy",
       "indications": "Hematuria: Presence of acanthocytes or red blood cell casts with an elevated Scr level or proteinuria. Proteinuria: Proteinuria > 1 g/d as measured on multiple visits with no clear comorbidity; proteinuria > 3 g/d in the absence of diabetes or a rapid increase in proteinuria even with diabetes; proteinuria < 3 g/d with an elevated Scr level with no clear comorbid conditions such as diabetes or hypertension. AKI: In the setting of ATI, persistent injury despite reversal of cause or if Scr did not return to baseline with 7-14 d of injury onset; in the setting of presumptive AIN, if there has been no resolution of injury despite removal of culprit medication. CKD: Rapid elevation in Scr level or new-onset hematuria or proteinuria",
       "method": "Ultrasound- and CT-guided biopsies are performed with the patient in the prone position. Patients who cannot remain prone (due to immobility issues, abdominal distension or ascites, or intubation) should be positioned in the lateral decubitus or sitting position. Percutaneous ultrasound-guided kidney biopsy is usually performed on the inferior pole of the left or right kidney. The left kidney is visible without other organs impeding acquisition of the tissue; however, in the case of splenomegaly, injury to the spleen can be significant.",
       "complications": "Bleeding",
-      "userId": 2,
-      "id": 6
+      "procedureId": 1,
+      "userId": 1,
+      "id": 1
     },
     {
-      "name": "Paracentesis",
+      "name": "Liver Biopsy",
+      "procedureId": 2,
       "userId": 1,
-      "id": 7
-    },
-    {
-      "name": "Kidney Biopsy",
-      "indications": "Hematuria: Presence of acanthocytes or red blood cell casts with an elevated Scr level or proteinuria. Proteinuria: Proteinuria > 1 g/d as measured on multiple visits with no clear comorbidity; proteinuria > 3 g/d in the absence of diabetes or a rapid increase in proteinuria even with diabetes; proteinuria < 3 g/d with an elevated Scr level with no clear comorbid conditions such as diabetes or hypertension. AKI: In the setting of ATI, persistent injury despite reversal of cause or if Scr did not return to baseline with 7-14 d of injury onset; in the setting of presumptive AIN, if there has been no resolution of injury despite removal of culprit medication. CKD: Rapid elevation in Scr level or new-onset hematuria or proteinuria",
-      "method": "Ultrasound- and CT-guided biopsies are performed with the patient in the prone position. Patients who cannot remain prone (due to immobility issues, abdominal distension or ascites, or intubation) should be positioned in the lateral decubitus or sitting position. Percutaneous ultrasound-guided kidney biopsy is usually performed on the inferior pole of the left or right kidney. The left kidney is visible without other organs impeding acquisition of the tissue; however, in the case of splenomegaly, injury to the spleen can be significant.",
-      "complications": "Bleeding",
-      "userId": 1,
-      "id": 8
+      "id": 2
     }
   ],
   "userProfile": [
@@ -224,18 +208,6 @@
       "medicationId": 19,
       "userId": 10,
       "id": 23
-    },
-    {
-      "name": "phenazopyridine",
-      "class": " Alpha1 Agonist",
-      "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3 times a day",
-      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
-      "mechanism": "Produces topical analgesia",
-      "medicationId": 21,
-      "userId": 11,
-      "id": 24
     },
     {
       "name": "phenazopyridine",
@@ -394,18 +366,6 @@
       "id": 90
     },
     {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 91
-    },
-    {
       "name": "cyclosporine",
       "class": "calcineurin inhibitor",
       "route": "PO",
@@ -463,7 +423,113 @@
       "name": "CRRT"
     }
   ],
-  "notes": [],
+  "notes": [
+    {
+      "note": "this is paracentesis",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "note": "paracentesis",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "note": "crrt",
+      "procedureId": 10,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "note": "kidney",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "note": "para",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "note": "paracent",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "note": "hdfskjdlk",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "note": "kidney",
+      "procedureId": 8,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "note": "biopsy",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "note": "jdfjlds",
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "note": "para",
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "note": "nf,mansd,fmn,smnf,sd",
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "note": "kl;flsdjfldsjfljsdlkfjlsdjflsdjfljsdlf",
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "note": "lkjflksdalkfj",
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "note": "ljhldfjlsjfdssfasfasdfsd",
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "note": "jklfjlsdkjflkdsjf",
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "note": "kljsldfkjdlskjflksdjflksdjf",
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "note": "jhskdfhkjsdfjdflkjdslfjlksdjflsdjflsdfj",
+      "procedureId": 7,
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "note": "kljflkjflkjsdlf",
+      "procedureId": 1,
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "note": "jfljlsdkjflsjdlfkjsd",
+      "procedureId": 2,
+      "userId": 1,
+      "id": 20
+    }
+  ],
   "unit": [
     {
       "id": 1,

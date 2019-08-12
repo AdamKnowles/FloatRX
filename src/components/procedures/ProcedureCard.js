@@ -11,6 +11,7 @@ export default class ProcedureCard extends Component {
       indications: this.props.procedure.indications,
       method: this.props.procedure.method,
       complications: this.props.procedure.complications,
+      procedureId: this.props.procedure.id,
       modal: false
         };
         this.toggle = this.toggle.bind(this);
@@ -28,6 +29,7 @@ export default class ProcedureCard extends Component {
       indications: this.state.indications,
       method: this.state.method,
       complications: this.state.complications,
+      procedureId: this.state.procedureId,
       userId: Number(sessionStorage.getItem("userId"))
         };
     
