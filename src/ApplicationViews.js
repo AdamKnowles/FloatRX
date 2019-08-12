@@ -28,7 +28,7 @@ class ApplicationViews extends Component {
     APImanager.getAllUnitMedications().then(
       medications => (newState.medications = medications))
       APImanager.getAll("unit").then(units => (newState.units = units));
-      APImanager.getAll("procedures").then(procedures => (newState.procedures = procedures));
+      APImanager.getAllUnitProcedures().then(procedures => (newState.procedures = procedures));
       APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
       APImanager.getUserProcedures("userProfileProcedure", currentUserId)
@@ -239,7 +239,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated()){
             return (
-              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile}
+              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} showAllMeds={this.showAllMeds}
                 
                 
                 

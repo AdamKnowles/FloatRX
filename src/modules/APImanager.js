@@ -25,6 +25,11 @@ export default Object.create(null, {
         return fetch(`${remoteURL}/unitMedications?_expand=medication`).then(e => e.json());
     }
   },
+  getAllUnitProcedures: {
+    value: function () {
+        return fetch(`${remoteURL}/unitProcedures?_expand=procedure`).then(e => e.json());
+    }
+  },
   getUserMeds:{
     value:function(resource, id) {
     return fetch(`${remoteURL}/${resource}?userId=${id}`)

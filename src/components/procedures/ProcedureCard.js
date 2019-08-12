@@ -7,11 +7,11 @@ export default class ProcedureCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-      name: this.props.procedure.name,
-      indications: this.props.procedure.indications,
-      method: this.props.procedure.method,
-      complications: this.props.procedure.complications,
-      procedureId: this.props.procedure.id,
+      name: this.props.procedure.procedure.name,
+      indications: this.props.procedure.procedure.indications,
+      method: this.props.procedure.procedure.method,
+      complications: this.props.procedure.procedure.complications,
+      procedureId: this.props.procedure.procedure.id,
       modal: false
         };
         this.toggle = this.toggle.bind(this);
@@ -41,7 +41,7 @@ export default class ProcedureCard extends Component {
         return (
             <section className="procedures">
         {
-          <div key={this.props.procedure.id} className="">
+          <div key={this.props.procedure.procedure.id} className="">
             
             <Card
               body
@@ -52,7 +52,7 @@ export default class ProcedureCard extends Component {
             >
               <CardBody className="#8fbc8f">
                 <h1 onClick={this.toggle}>
-                  <u>{this.props.procedure.name}</u>
+                  <u>{this.props.procedure.procedure.name}</u>
                 </h1>
                 
               <ProcedureListModal  procedures={ this.props.procedures} procedure={this.props.procedure} toggle={this.toggle} addNewProcedure={this.addNewProcedure}  />
