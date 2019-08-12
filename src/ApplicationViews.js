@@ -17,6 +17,7 @@ class ApplicationViews extends Component {
     users: [],
     units: [],
     userProfile: [],
+    userProfileProcedure:[],
     procedures: [],
     notes:[],
     unitParam: ""
@@ -30,6 +31,8 @@ class ApplicationViews extends Component {
       APImanager.getAll("procedures").then(procedures => (newState.procedures = procedures));
       APImanager.getUserMeds("userProfile", currentUserId)
       .then(userProfile => (newState.userProfile = userProfile))
+      APImanager.getUserMeds("userProfileProcedure", currentUserId)
+      .then(userProfileProcedure => (newState.userProfileProcedure = userProfileProcedure))
       APImanager.getUserNotes("notes", currentUserId)
       .then(notes => (newState.notes = notes))
       .then(() => this.setState(newState));
@@ -73,6 +76,16 @@ class ApplicationViews extends Component {
       .then(medication =>
         this.setState({
           userProfile: medication
+        })
+      );
+  };
+  addProcedureToProfile = procedure => {
+    let currentUserId = sessionStorage.getItem("userId");
+    return APImanager.post("userProfileProcedure", procedure)
+      .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
+      .then(procedure =>
+        this.setState({
+          userProfileProcedure: procedure
         })
       );
   };
@@ -211,7 +224,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated()){
             return (
-              <ProcedureList procedures={this.state.procedures}
+              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile}
                 
                 
                 
@@ -235,6 +248,9 @@ class ApplicationViews extends Component {
             return (
               <UserProfile
                 userProfile={this.state.userProfile}
+                userProfileProcedure={this.state.userProfileProcedure}
+                addProcedureToProfile={this.addProcedureToProfile}
+                
                 units={this.state.units}
                 deleteMedFromProfile={this.deleteMedFromProfile}
                 logout={this.logout}

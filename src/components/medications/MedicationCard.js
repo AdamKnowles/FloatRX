@@ -106,10 +106,13 @@ export default class MedicationCard extends Component {
               style={{ backgroundColor: "#9CA89E", borderColor: "#9CA89E" }}
             >
               <CardBody className="#8fbc8f">
-                <h1 onClick={this.toggle}>
+                <h1>
                   <u>{this.props.medication.medication.name}</u>
                 </h1>
                 <h4>{this.props.medication.medication.class}</h4>
+                <Button color="primary" body className="text-center mr-2" onClick={this.toggle}>
+                  More Info
+                </Button>
                 <Button color="danger" body className="text-center" onClick={this.addNewMed}>
                   Add to Profile
                 </Button>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router";
 import MedicationCard from "../medications/MedicationCard";
 import UserProfileMedCard from "./UserProfileMedCard";
+import UserProfileProcedureCard from "./UserProfileProcedureCard"
 import { Button } from "reactstrap";
 class UserProfile extends Component {
   render() {
@@ -36,6 +37,24 @@ class UserProfile extends Component {
               {...this.props}
             />
           ))}
+          
+        </div>
+        <div>
+          {this.props.userProfileProcedure.map(procedure => (
+            <UserProfileProcedureCard
+              key={procedure.id}
+              procedure={procedure}
+              addProcedureToProfile={this.props.addProcedureToProfile}
+              deleteMedFromProfile={this.props.deleteMedFromProfile}
+              addNote={this.props.addNote}
+              notes={this.props.notes}
+              toggle={this.props.toggle}
+              deleteNoteFromProfile={this.props.deleteNoteFromProfile}
+              editNewNote={this.props.editNewNote}
+              {...this.props}
+            />
+          ))}
+          
         </div>
         </div>
       </React.Fragment>
