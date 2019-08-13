@@ -71,7 +71,7 @@ export default class AddNoteProcedureModal extends Component {
                   <CardBody className="text-dark">
                       <h2 className="p-1 mb-4 bg-secondary text-white">Add Note</h2>
                     <h1>
-                      <u>{this.props.procedure.name}</u>
+                      <u>{this.props.procedure.procedure.name}</u>
                     </h1>
                     
                     <textarea

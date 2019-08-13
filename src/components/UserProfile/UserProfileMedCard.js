@@ -10,7 +10,7 @@ export default class UserProfileMedCard extends Component {
     return (
       <section className="medication">
         {
-          <div key={this.props.medication.id} className="">
+          <div key={this.props.medication.medication.id} className="">
             
             <Card
               body
@@ -21,14 +21,14 @@ export default class UserProfileMedCard extends Component {
             >
               <CardBody className="text-light ">
                 <h1>
-                  <u>{this.props.medication.name}</u>
+                  <u>{this.props.medication.medication.name}</u>
                 </h1>
-                <h4>{this.props.medication.class}</h4>
-                <h6>Route: {this.props.medication.route}</h6>
-                <h6>Dosage: {this.props.medication.dosage}</h6>
-                <h6>Frequency: {this.props.medication.frequency}</h6>
-                <h6>Indication: {this.props.medication.indications}</h6>
-                <h6>Mechanism of Action: {this.props.medication.mechanism}</h6>
+                <h4>{this.props.medication.medication.class}</h4>
+                <h6>Route: {this.props.medication.medication.route}</h6>
+                <h6>Dosage: {this.props.medication.medication.dosage}</h6>
+                <h6>Frequency: {this.props.medication.medication.frequency}</h6>
+                <h6>Indication: {this.props.medication.medication.indications}</h6>
+                <h6>Mechanism of Action: {this.props.medication.medication.mechanism}</h6>
                 <h6 />
                 <div className="bothButtons">
                 <Button

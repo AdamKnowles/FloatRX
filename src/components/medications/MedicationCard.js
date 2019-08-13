@@ -6,13 +6,6 @@ export default class MedicationCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: this.props.medication.medication.name,
-      class: this.props.medication.medication.class,
-      route: this.props.medication.medication.route,
-      dosage: this.props.medication.medication.dosage,
-      frequency: this.props.medication.medication.frequency,
-      indications: this.props.medication.medication.indications,
-      mechanism: this.props.medication.medication.mechanism,
       medicationId: this.props.medication.medication.id,
       modal: false
     };
@@ -27,13 +20,6 @@ export default class MedicationCard extends Component {
   addNewMed = evt => {
     evt.preventDefault();
     const medication = {
-      name: this.state.name,
-      class: this.state.class,
-      route: this.state.route,
-      dosage: this.state.dosage,
-      frequency: this.state.frequency,
-      indications: this.state.indications,
-      mechanism: this.state.mechanism,
       medicationId: this.state.medicationId,
       userId: Number(sessionStorage.getItem("userId"))
     };

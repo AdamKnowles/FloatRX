@@ -61,6 +61,7 @@ class ApplicationViews extends Component {
     sessionStorage.clear()
     this.state.unitParam = ""
     this.state.userProfileProcedure =[]
+    this.state.userProfile=[]
     this.props.history.push("/");
     
   };
@@ -267,6 +268,7 @@ class ApplicationViews extends Component {
                 addProcedureToProfile={this.addProcedureToProfile}
                 deleteProcedureFromProfile={this.deleteProcedureFromProfile}
                 procedures={this.state.procedures}
+                medications={this.state.medications}
                 
                 units={this.state.units}
                 deleteMedFromProfile={this.deleteMedFromProfile}
