@@ -103,6 +103,11 @@
       "procedureId": 1,
       "userId": 4,
       "id": 5
+    },
+    {
+      "procedureId": 1,
+      "userId": 4,
+      "id": 6
     }
   ],
   "userProfile": [
@@ -120,6 +125,16 @@
       "medicationId": 2,
       "userId": 1,
       "id": 3
+    },
+    {
+      "medicationId": 16,
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "medicationId": 1,
+      "userId": 4,
+      "id": 5
     }
   ],
   "procedures": [

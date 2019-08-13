@@ -83,6 +83,7 @@ class ApplicationViews extends Component {
   };
   addProcedureToProfile = procedure => {
     let currentUserId = sessionStorage.getItem("userId");
+    
     return APImanager.post("userProfileProcedure", procedure)
       .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
       .then(procedure =>

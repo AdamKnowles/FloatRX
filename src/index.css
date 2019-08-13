@@ -54,3 +54,20 @@ justify-content: space-between
   margin-top: 100px;
   text-align: center
 }
+
+.userBtn {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 40px
+  
+  
+}
+
+/* .procedureTab {
+  background-color: blue;
+  color: white
+}
+.medTab{
+  background-color: orange;
+  color:white
+} */
