@@ -51,7 +51,7 @@ export default class AddNoteProcedureToProfile extends Component {
             ><div className="text-dark">
           </div>
           <h1>
-            <u>{this.props.procedure.name}</u>
+            <u>{this.props.procedure.procedure.name}</u>
           </h1>
               
              

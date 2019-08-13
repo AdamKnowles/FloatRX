@@ -15,7 +15,7 @@ export default class ProcedureList extends Component {
           <div className="showAllMeds">
           
           <Button className="match" color="info" onClick={this.props.showAllMeds} >
-          Show All Medications
+          Show All Procedures
         </Button></div>
           <MedDropdown
               units={this.props.units}

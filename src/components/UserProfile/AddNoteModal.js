@@ -71,9 +71,9 @@ export default class AddNoteModal extends Component {
                   <CardBody className="text-dark">
                       <h2 className="p-1 mb-4 bg-secondary text-white">Add Note</h2>
                     <h1>
-                      <u>{this.props.medication.name}</u>
+                      <u>{this.props.medication.medication.name}</u>
                     </h1>
-                    <h4>{this.props.medication.class}</h4>
+                    <h4>{this.props.medication.medication.class}</h4>
                     <textarea
               onChange={this.handleFieldChange}
               type="text"

@@ -85,381 +85,41 @@
   ],
   "userProfileProcedure": [
     {
-      "name": "Paracentesis",
-      "procedureId": 3,
-      "userId": 7,
+      "procedureId": 2,
+      "userId": 6,
+      "id": 1
+    },
+    {
+      "procedureId": 1,
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "procedureId": 2,
+      "userId": 1,
       "id": 4
     },
     {
-      "name": "Paracentesis",
-      "procedureId": 3,
-      "userId": 5,
+      "procedureId": 1,
+      "userId": 4,
       "id": 5
-    },
-    {
-      "name": "Paracentesis",
-      "indications": "New-onset ascites. Fluid evaluation helps to determine etiology, differentiate transudate versus exudate, detect the presence of cancerous cells, or address other considerations. Suspected spontaneous or secondary bacterial peritonitis. Refractory ascites",
-      "method": "Switch to the longer 20-gauge needle, and administer 4-5 mL of lidocaine along the catheter insertion tract (see the image below). Make sure to anesthetize all the way down to the peritoneum. The authors recommend alternating injection and intermittent aspiration down the tract until ascitic fluid is noticed in the syringe. Note the depth at which the peritoneum is entered. In obese patients, reaching the peritoneum may involve passing through a significant amount of adipose tissue",
-      "complications": "Failed attempt to collect peritoneal fluid. Persistent leak from the puncture site. Wound infection. Abdominal wall hematoma. Spontaneous hemoperitoneum. This rare complication is due to mesenteric variceal bleeding after removal of a large amount of ascitic fluid. Hollow viscus perforation (small or large bowel, stomach, bladder). Catheter laceration and loss in abdominal cavity. Laceration of major blood vessel (aorta, mesenteric artery, iliac artery). Postparacentesis hypotension. Dilutional hyponatremia. Hepatorenal syndrome",
-      "procedureId": 2,
-      "userId": 4,
-      "id": 12
-    },
-    {
-      "name": "CRRT",
-      "indications": "Intractable hyperkalaemia. Acidosis. Uraemic symptoms (nausea, pruritus, malaise).Therapy-resistant fluid overload. Chronic kidney disease (CKD) stage 5",
-      "method": "Haemodialysis (HD) involves circulating blood through a disposable dialyser. The vascular access of choice is the arteriovenous fistula (AVF). This, however, requires suitable peripheral veins and needs four to eight weeks for the fistula to mature. If there are no suitable veins, a graft can usually be inserted. Acute access with venous catheters has a high complication rate.Peritoneal dialysis (PD) involves using the peritoneum as the dialysis membrane, with pre-packaged fluid being instilled into the peritoneal space via a Tenckhoff catheter. This is usually only inserted once the decision to start dialysis is made.",
-      "complications": "Bleeding. Vessel damage. Bloodstream or localised infection. Air embolis. Hypoxia. Haemodynamic instability Hypocapnea. Hypothermia. Dialysis disequilibrium syndrome. Electrolyte disturbance. Hypocalcemia with citrate toxicity. Complications related to anticoagulation",
-      "procedureId": 5,
-      "userId": 4,
-      "id": 13
-    },
-    {
-      "name": "Structured Intermittent Auscultation",
-      "indications": "Assess FHR before: initiation of labor-enhancing procedure; ambulation of patient; administration of medications; or initiation of analgesia or anesthesia. Assess FHR after: admission of patient; artificial or spontaneous rupture of membranes; vaginal examination; abnormal uterine activity; or evaluation of analgesia or anesthesia",
-      "method": "Palpate the abdomen to determine the position of the fetus (Leopold maneuvers). Place the Doppler over the area of maximal intensity of fetal heart tones. Differentiate maternal pulse from fetal pulse. Palpate for uterine contraction during period of FHR auscultation to determine relationship. Count FHR between contractions for ≥ 60 seconds to determine average baseline rate. Count FHR after uterine contraction for 60 seconds (at 5-second intervals) to identify fetal response to active labor (this may be subject to local protocols)",
-      "complications": " No significant complications",
-      "procedureId": 4,
-      "userId": 1,
-      "id": 14
     }
   ],
   "userProfile": [
     {
-      "name": "cisplatin",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
-      "userId": 3,
-      "id": 4
+      "medicationId": 10,
+      "userId": 2,
+      "id": 1
     },
     {
-      "name": "methotrexate",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "40 mg",
-      "frequency": "Once a day for 28 days",
-      "indications": "Used to treat leukemia and certain types of cancer of the breast, skin, head and neck, or lung",
-      "mechanism": "Inhibits dihydrofolate reductase; inhibits lymphocyte proliferation (folate antagonist)",
-      "medicationId": 7,
-      "userId": 3,
-      "id": 5
-    },
-    {
-      "name": "cyclosporine",
-      "class": "calcineurin inhibitor",
-      "route": "PO",
-      "dosage": " 7-9 mg/kg/day",
-      "frequency": "Twice a day",
-      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
-      "medicationId": 4,
-      "userId": 3,
-      "id": 7
-    },
-    {
-      "name": "mycophenolate mofetil",
-      "class": "inosine monophosphateh dehydrogenase inhibitor",
-      "route": "PO",
-      "dosage": "1.5 mg",
-      "frequency": "Every 12 Hours",
-      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
-      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
-      "medicationId": 2,
-      "userId": 3,
-      "id": 8
-    },
-    {
-      "name": "oxytocin",
-      "class": "polypeptide hormone",
-      "route": "IV",
-      "dosage": "0.5-2 milliunits/min",
-      "frequency": "Every 15-40 min",
-      "indications": "Used to induce labor or strengthen labor contractions during childbirth, and to control bleeding after childbirth",
-      "mechanism": "Binds to oxytocin receptors in myometrium, increasing intracellular Ca and stimulating uterine contractions",
-      "medicationId": 11,
-      "userId": 8,
-      "id": 16
-    },
-    {
-      "name": "magnesium sulfate",
-      "class": "Antidysrhythmics, Electrolytes",
-      "route": "IV",
-      "dosage": "1-2 g/h",
-      "frequency": "Continuous",
-      "indications": "Used to prevent seizures in pregnant women with conditions such as pre-eclampsia, eclampsia, or toxemia of pregnancy",
-      "mechanism": "Participates in physiologic processes",
-      "medicationId": 12,
-      "userId": 9,
-      "id": 18
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 9,
-      "id": 19
-    },
-    {
-      "name": "nitroprusside",
-      "class": "nitrate",
-      "route": "IV",
-      "dosage": "3-4 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Hypertensive Crisis or high blood pressure",
-      "mechanism": "Directly dilates peripheral vessels",
-      "medicationId": 18,
-      "userId": 10,
-      "id": 22
-    },
-    {
-      "name": "vasopressin",
-      "class": "anti-diuretic hormone",
-      "route": "IV",
-      "dosage": "0.01-0.04 units/min",
-      "frequency": "Continuous",
-      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
-      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
       "medicationId": 19,
-      "userId": 10,
-      "id": 23
-    },
-    {
-      "name": "phenazopyridine",
-      "class": " Alpha1 Agonist",
-      "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3 times a day",
-      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
-      "mechanism": "Produces topical analgesia",
-      "medicationId": 21,
-      "userId": 11,
-      "id": 25
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 12,
-      "id": 33
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 5,
-      "id": 34
-    },
-    {
-      "name": "norepinephrine",
-      "class": " Catecholamines",
-      "route": "IV",
-      "dosage": "0.02-1 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to treat life-threatening low blood pressure (hypotension)",
-      "mechanism": "Stimulates alpha and beta-1 adrenergic receptors; produces inotropic and vasopressor effects",
-      "medicationId": 17,
-      "userId": 13,
-      "id": 50
-    },
-    {
-      "name": "propofol",
-      "class": "general anesthetic",
-      "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
       "userId": 4,
-      "id": 53
+      "id": 2
     },
     {
-      "name": "propofol",
-      "class": "general anesthetic",
-      "route": "IV",
-      "dosage": "5 mcg/kg/min",
-      "frequency": "Continuous",
-      "indications": "Used to sedate a patient who is under critical care and needs a mechanical ventilator",
-      "mechanism": "Induces hypnosis",
-      "medicationId": 16,
-      "userId": 5,
-      "id": 54
-    },
-    {
-      "name": "phenazopyridine",
-      "class": " Alpha1 Agonist",
-      "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3 times a day",
-      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
-      "mechanism": "Produces topical analgesia",
-      "medicationId": 21,
-      "userId": 14,
-      "id": 55
-    },
-    {
-      "name": "sirolimus",
-      "class": "immunosuppressant",
-      "route": "PO",
-      "dosage": "1-5 mg",
-      "frequency": "Once a Day",
-      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "mechanism": "Inhibits T-lymphocyte activation and proliferation, and inhibits antibody production; inhibits mTOR signaling pathway, inhibiting proliferation of lymphangioleiomyomatosis cells and preventing release of lymphangiogenic growth factors",
-      "medicationId": 5,
-      "userId": 6,
-      "id": 61
-    },
-    {
-      "name": "vasopressin",
-      "class": "anti-diuretic hormone",
-      "route": "IV",
-      "dosage": "0.01-0.04 units/min",
-      "frequency": "Continuous",
-      "indications": "Helps prevent loss of water from the body by reducing urine output and helping the kidneys reabsorb water into the body. Vasopressin also raises blood pressure by narrowing blood vessels.",
-      "mechanism": "Directly stimulates V1 and V2 receptors, resulting in vasoconstriction and antidiuresis",
-      "medicationId": 19,
-      "userId": 15,
-      "id": 65
-    },
-    {
-      "name": "phenazopyridine",
-      "class": " Alpha1 Agonist",
-      "route": "PO",
-      "dosage": "100-200 mg",
-      "frequency": "3 times a day",
-      "indications": "used to treat urinary symptoms such as pain or burning, increased urination, and increased urge to urinate. These symptoms can be caused by infection, injury, surgery, catheter, or other conditions that irritate the bladder",
-      "mechanism": "Produces topical analgesia",
-      "medicationId": 21,
-      "userId": 15,
-      "id": 66
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 4,
-      "id": 73
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 90
-    },
-    {
-      "name": "cyclosporine",
-      "class": "calcineurin inhibitor",
-      "route": "PO",
-      "dosage": " 7-9 mg/kg/day",
-      "frequency": "Twice a day",
-      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
-      "medicationId": 4,
-      "userId": 7,
-      "id": 92
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 93
-    },
-    {
-      "name": "cyclosporine",
-      "class": "calcineurin inhibitor",
-      "route": "PO",
-      "dosage": " 7-9 mg/kg/day",
-      "frequency": "Twice a day",
-      "indications": "Used to prevent organ rejection after a kidney, heart, or liver transplant.",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocytes",
-      "medicationId": 4,
-      "userId": 1,
-      "id": 94
-    },
-    {
-      "name": "mycophenolate mofetil",
-      "class": "inosine monophosphateh dehydrogenase inhibitor",
-      "route": "PO",
-      "dosage": "1.5 mg",
-      "frequency": "Every 12 Hours",
-      "indications": "Used with other medicines to prevent organ rejection after a kidney, liver, or heart transplant",
-      "mechanism": "Inhibits B- and T-lymphocyte proliferation",
       "medicationId": 2,
-      "userId": 2,
-      "id": 95
-    },
-    {
-      "name": "tamsulosin",
-      "class": "alpha-1 blocker, selective",
-      "route": "PO",
-      "dosage": "0.4 mg",
-      "frequency": "Daily",
-      "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
-      "mechanism": "Selectively antagonizes prostate alpha-1a adrenergic receptors, relaxing smooth muscle and improving urine flow (peripherally-acting alpha blocker)",
-      "medicationId": 25,
-      "userId": 2,
-      "id": 96
-    },
-    {
-      "name": "tacrolimus",
-      "class": "Calcineurin Inhibitors",
-      "route": "PO",
-      "dosage": "0.1-0.2 mg/kg/day",
-      "frequency": "Every 12 Hours",
-      "indications": "For use after allogenic organ transplant to reduce the activity of the patient's immune system and so the risk of organ rejection",
-      "mechanism": "Exact mechanism of action unknown; inhibits T-lymphocyte activation",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 97
-    },
-    {
-      "name": "cisplatin",
-      "class": "antineoplastics",
-      "route": "IV",
-      "dosage": "20-70 mg",
-      "frequency": "Once a day for 5 Days",
-      "indications": "Testicular and Ovarian Carcinoma",
-      "mechanism": "Death of rapidly growing cells, particularly malignant ones",
-      "medicationId": 6,
-      "userId": 2,
-      "id": 98
+      "userId": 1,
+      "id": 3
     }
   ],
   "procedures": [
@@ -540,133 +200,10 @@
   ],
   "notes": [
     {
-      "note": "this is paracentesis",
-      "userId": 1,
+      "note": "hhhf",
+      "medicationId": 10,
+      "userId": 2,
       "id": 1
-    },
-    {
-      "note": "paracentesis",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "note": "kidney",
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "note": "para",
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "note": "paracent",
-      "userId": 1,
-      "id": 6
-    },
-    {
-      "note": "hdfskjdlk",
-      "userId": 1,
-      "id": 7
-    },
-    {
-      "note": "biopsy",
-      "userId": 1,
-      "id": 9
-    },
-    {
-      "note": "jdfjlds",
-      "userId": 1,
-      "id": 10
-    },
-    {
-      "note": "para",
-      "userId": 1,
-      "id": 11
-    },
-    {
-      "note": "nf,mansd,fmn,smnf,sd",
-      "userId": 1,
-      "id": 12
-    },
-    {
-      "note": "kl;flsdjfldsjfljsdlkfjlsdjflsdjfljsdlf",
-      "userId": 1,
-      "id": 13
-    },
-    {
-      "note": "lkjflksdalkfj",
-      "userId": 1,
-      "id": 14
-    },
-    {
-      "note": "ljhldfjlsjfdssfasfasdfsd",
-      "userId": 1,
-      "id": 15
-    },
-    {
-      "note": "jklfjlsdkjflkdsjf",
-      "userId": 1,
-      "id": 16
-    },
-    {
-      "note": "kljsldfkjdlskjflksdjflksdjf",
-      "userId": 1,
-      "id": 17
-    },
-    {
-      "note": "jfljlsdkjflsjdlfkjsd",
-      "procedureId": 2,
-      "userId": 1,
-      "id": 20
-    },
-    {
-      "note": "idjdjdjd",
-      "procedureId": 4,
-      "userId": 2,
-      "id": 21
-    },
-    {
-      "userId": "1",
-      "prcedureId": 1,
-      "note": "nkdsnfkjdsnf jkflksadlfjlkds",
-      "id": 22
-    },
-    {
-      "userId": "1",
-      "prcedureId": 1,
-      "note": "nkjsdhflkdsjflkjds fffffffffffffffffffffffffffffffffffffffffff",
-      "id": 23
-    },
-    {
-      "note": "this is liver biopsy",
-      "procedureId": 2,
-      "userId": 2,
-      "id": 24
-    },
-    {
-      "note": "this is para",
-      "procedureId": 3,
-      "userId": 2,
-      "id": 25
-    },
-    {
-      "note": "hjkhkjh",
-      "medicationId": 1,
-      "userId": 2,
-      "id": 26
-    },
-    {
-      "note": "This will puncture you",
-      "procedureId": 2,
-      "userId": 4,
-      "id": 28
-    },
-    {
-      "note": "this will filter you",
-      "procedureId": 5,
-      "userId": 4,
-      "id": 29
     }
   ],
   "unit": [
@@ -820,7 +357,7 @@
   ],
   "medications": [
     {
-      "name": "tacrolimus",
+      "name": "Tacrolimus",
       "class": "Calcineurin Inhibitors",
       "route": "PO",
       "dosage": "0.1-0.2 mg/kg/day",

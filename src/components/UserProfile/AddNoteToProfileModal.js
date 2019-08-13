@@ -45,9 +45,9 @@ export default class AddNoteToProfileModal extends Component {
               inverse
               style={{ backgroundColor: "#93E9BE", borderColor: "#93E9BE" }}
             ><div className="text-dark"><h1>
-            <u>{this.props.medication.name}</u>
+            <u>{this.props.medication.medication.name}</u>
           </h1>
-          <h4>{this.props.medication.class}</h4></div>
+          <h4>{this.props.medication.medication.class}</h4></div>
               
               <AddNoteModal {...this.props} />
                 
