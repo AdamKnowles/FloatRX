@@ -8,7 +8,8 @@ export default class ProcedureCard extends Component {
         super(props);
         this.state = {
       procedureId: this.props.procedure.procedure.id,
-      modal: false
+      modal: false,
+     
         };
         this.toggle = this.toggle.bind(this);
       }
@@ -20,6 +21,8 @@ export default class ProcedureCard extends Component {
 
       addNewProcedure = evt => {
         evt.preventDefault();
+        
+        
         const procedure = {
       procedureId: this.state.procedureId,
       userId: Number(sessionStorage.getItem("userId"))
@@ -49,7 +52,7 @@ export default class ProcedureCard extends Component {
                 <h4>Procedure</h4>
                 
               <ProcedureListModal  procedures={ this.props.procedures} procedure={this.props.procedure} toggle={this.toggle} addNewProcedure={this.addNewProcedure}  />
-                <Button color="danger" body className="text-center" onClick={this.addNewProcedure}>
+                <Button  color="danger" body className="text-center" onClick={this.addNewProcedure} >
                   Add to Profile
                 </Button>
               </CardBody>
