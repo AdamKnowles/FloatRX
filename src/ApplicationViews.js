@@ -93,8 +93,31 @@ class ApplicationViews extends Component {
       );
   };
   makeAdminMed = medication => {
-    return APImanager.post("medications", medication)
+    let promise = APImanager.post("medications", medication);
+    promise.then( result => {
+        
+      let id = result.id;
+      let join ={
+        medicationId: id,
+        unitId: parseInt(this.state.unitParam)
+      }
+      APImanager.post("unitMedications", join).then(() => this.getAllUnitMeds()).then(med =>
+        this.setState({
+          medications: med
+        })
+      );
+
+      console.log("Med id: " + id);
+      
+    })
+    
+    
+
+    
+    return promise
   };
+  
+  
   addNote = note => {
     
     let currentUserId = sessionStorage.getItem("userId");
@@ -294,7 +317,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin makeAdminMed={this.makeAdminMed} {...props} />
+              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>

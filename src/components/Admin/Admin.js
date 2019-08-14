@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MedDropdown from '../Dropdown';
 
 export default class Admin extends Component {
 
@@ -121,6 +122,8 @@ export default class Admin extends Component {
               id="mechanism"
               placeholder="Mechanism"
             />
+          </div>
+          <div ><MedDropdown {...this.props} />
           </div>
           
           
