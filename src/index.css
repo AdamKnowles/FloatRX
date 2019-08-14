@@ -71,3 +71,8 @@ justify-content: space-between
   background-color: orange;
   color:white
 } */
+
+.medCardBtn{
+  display:flex;
+  justify-content: center;
+}

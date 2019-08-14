@@ -95,11 +95,6 @@
       "id": 3
     },
     {
-      "procedureId": 2,
-      "userId": 1,
-      "id": 4
-    },
-    {
       "procedureId": 1,
       "userId": 4,
       "id": 5
@@ -108,6 +103,26 @@
       "procedureId": 1,
       "userId": 4,
       "id": 6
+    },
+    {
+      "procedureId": 3,
+      "userId": 5,
+      "id": 7
+    },
+    {
+      "procedureId": 6,
+      "userId": 5,
+      "id": 8
+    },
+    {
+      "procedureId": 5,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "procedureId": 1,
+      "userId": 1,
+      "id": 10
     }
   ],
   "userProfile": [
@@ -135,6 +150,36 @@
       "medicationId": 1,
       "userId": 4,
       "id": 5
+    },
+    {
+      "medicationId": 1,
+      "userId": 5,
+      "id": 6
+    },
+    {
+      "medicationId": 2,
+      "userId": 5,
+      "id": 7
+    },
+    {
+      "medicationId": 19,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "medicationId": 2,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "medicationId": 1,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "medicationId": 4,
+      "userId": 1,
+      "id": 11
     }
   ],
   "procedures": [
@@ -620,6 +665,16 @@
       "indications": "Used to improve urination in men with benign prostatic hyperplasia (enlarged prostate",
       "mechanism": "Selectively antagonizes prostate alpha-1a adrenergic receptors, relaxing smooth muscle and improving urine flow (peripherally-acting alpha blocker)",
       "id": 25
+    },
+    {
+      "name": "lasix",
+      "class": "",
+      "route": "",
+      "dosage": "",
+      "frequency": "",
+      "indications": "",
+      "mechanism": "",
+      "id": 26
     }
   ]
 }

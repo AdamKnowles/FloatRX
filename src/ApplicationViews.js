@@ -92,6 +92,9 @@ class ApplicationViews extends Component {
         })
       );
   };
+  makeAdminMed = medication => {
+    return APImanager.post("medications", medication)
+  };
   addNote = note => {
     
     let currentUserId = sessionStorage.getItem("userId");
@@ -291,7 +294,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin />
+              <Admin makeAdminMed={this.makeAdminMed} {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>
