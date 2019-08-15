@@ -220,6 +220,26 @@ class ApplicationViews extends Component {
         this.setState({ notes: note });
       });
   };
+  editAdminMed = (editedEventObject) => {
+    console.log("edit button clicked")
+    
+    return APImanager.put("medications", editedEventObject)
+      .then(() => APImanager.getAllUnitMedications())
+      .then(medication => {
+
+        this.setState({ medications: medication });
+      });
+  };
+  editAdminProcedure = (editedEventObject) => {
+    console.log("edit button clicked")
+    
+    return APImanager.put("procedures", editedEventObject)
+      .then(() => APImanager.getAllUnitProcedures())
+      .then(procedure => {
+
+        this.setState({ procedures: procedure });
+      });
+  };
   
 
   register = user => {
@@ -280,6 +300,8 @@ class ApplicationViews extends Component {
                 logout={this.logout}
                 showAllMeds={this.showAllMeds}
                 deleteAdminMed={this.deleteAdminMed}
+                editAdminMed={this.editAdminMed}
+               
                 
                 
                 
@@ -300,7 +322,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated()){
             return (
-              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} showAllMeds={this.showAllMeds} makeAdminProcedure={this.makeAdminProcedure} deleteAdminProcedure={this.deleteAdminProcedure}
+              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} showAllMeds={this.showAllMeds} makeAdminProcedure={this.makeAdminProcedure} deleteAdminProcedure={this.deleteAdminProcedure} editAdminProcedure={this.editAdminProcedure}
         
                 {...props}
                 
@@ -345,7 +367,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} {...props} />
+              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed} {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>

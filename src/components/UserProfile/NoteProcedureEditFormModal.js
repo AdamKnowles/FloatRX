@@ -19,6 +19,7 @@ export default class NoteProcedureEditFormModal extends Component {
       }
     
       toggle() {
+        
         this.setState(prevState => ({
           modal: !prevState.modal,
            

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Card, CardBody, Button, Modal, ModalFooter } from "reactstrap";
 import "../../index.css"
 import AdminButton from "./AdminButton"
+import AdminEditMed from "./AdminEditMed"
+
 
 export default class MedicationCard extends Component {
   constructor(props) {
@@ -100,6 +102,7 @@ export default class MedicationCard extends Component {
                 </h1>
                 <h4>{this.props.medication.medication.class}</h4>
                 <div className= "medCardBtn">
+                  <AdminEditMed editAdminMed={this.props.editAdminMed} medications={this.props.medications}  {...this.props} />
                 <AdminButton deleteAdminMed={this.props.deleteAdminMed} medications={this.props.medications} {...this.props} />
                 <Button color="primary" body className="text-center mr-2 ml-2" onClick={this.toggle}>
                   More Info
