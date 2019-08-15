@@ -100,7 +100,7 @@ export default class MedicationCard extends Component {
                 </h1>
                 <h4>{this.props.medication.medication.class}</h4>
                 <div className= "medCardBtn">
-                <AdminButton {...this.props} />
+                <AdminButton deleteAdminMed={this.props.deleteAdminMed} medications={this.props.medications} {...this.props} />
                 <Button color="primary" body className="text-center mr-2 ml-2" onClick={this.toggle}>
                   More Info
                 </Button>

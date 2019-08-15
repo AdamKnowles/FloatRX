@@ -151,6 +151,14 @@ class ApplicationViews extends Component {
         this.setState({ userProfileProcedure: procedure });
       });
   };
+  deleteAdminMed = id => {
+    
+    return APImanager.delete("medications", id)
+      .then(() => APImanager.getAllUnitMedications())
+      .then(medication => {
+        this.setState({ medications: medication });
+      });
+  };
   deleteNoteFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
     return APImanager.delete("notes", id)
@@ -247,6 +255,7 @@ class ApplicationViews extends Component {
                 searchParam={this.searchParam}
                 logout={this.logout}
                 showAllMeds={this.showAllMeds}
+                deleteAdminMed={this.deleteAdminMed}
                 
                 
                 
@@ -317,7 +326,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} {...props} />
+              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>

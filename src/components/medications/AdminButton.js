@@ -8,7 +8,7 @@ export default class AdminButton extends Component {
         if(this.isAuthenticated() & this.adminAuthenticated()){
         return (
             <div>
-                <Button>Edit</Button>
+                <Button onClick={() =>this.props.deleteAdminMed(this.props.medication.medication.id)}>Delete</Button>
                 
             </div>
         )
