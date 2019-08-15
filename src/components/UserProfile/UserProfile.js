@@ -17,6 +17,7 @@ class UserProfile extends Component {
 
   toggle(tab) {
     if (this.state.activeTab !== tab) {
+      
       this.setState({
         activeTab: tab
       });
@@ -55,11 +56,11 @@ class UserProfile extends Component {
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
           
-        <div className="d-flex justify-content-center"><Button
+        <div className="d-flex justify-content-center"><Button size="lg"
           
            
           type="button" color="success"
-          onClick={() => this.props.history.push("/medicationlist")} className="mr-2"
+          onClick={() => this.props.history.push("/medicationlist")} className="mr-2 mb-3"
         >
           Add Medication
         </Button>
@@ -85,10 +86,10 @@ class UserProfile extends Component {
           </TabPane>
           <TabPane tabId="2">
           <div className="d-flex justify-content-center">
-        <Button
+        <Button className="mb-3"
           
            
-          type="button" color="success"
+          type="button" color="success" size="lg"
           onClick={() => this.props.history.push("/procedures")}
         >
           Add Procedure

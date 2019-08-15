@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardBody, Button, Modal, ModalFooter } from "reactstrap";
 import "../../index.css"
+import AdminButton from "./AdminButton"
 
 export default class MedicationCard extends Component {
   constructor(props) {
@@ -28,6 +29,8 @@ export default class MedicationCard extends Component {
       .addMedicationToProfile(medication)
       .then(() => this.props.history.push("/profile"));
   };
+
+  
   render() {
     return (
       <section className="medication">
@@ -96,12 +99,15 @@ export default class MedicationCard extends Component {
                   <u>{this.props.medication.medication.name}</u>
                 </h1>
                 <h4>{this.props.medication.medication.class}</h4>
-                <Button color="primary" body className="text-center mr-2" onClick={this.toggle}>
+                <div className= "medCardBtn">
+                <AdminButton deleteAdminMed={this.props.deleteAdminMed} medications={this.props.medications} {...this.props} />
+                <Button color="primary" body className="text-center mr-2 ml-2" onClick={this.toggle}>
                   More Info
                 </Button>
                 <Button color="danger" body className="text-center" onClick={this.addNewMed}>
                   Add to Profile
                 </Button>
+                </div>
               </CardBody>
             </Card>
           </div>

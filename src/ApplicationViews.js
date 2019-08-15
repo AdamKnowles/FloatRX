@@ -92,6 +92,48 @@ class ApplicationViews extends Component {
         })
       );
   };
+  makeAdminMed = medication => {
+    let promise = APImanager.post("medications", medication);
+    promise.then( result => {
+        
+      let id = result.id;
+      let join ={
+        medicationId: id,
+        unitId: parseInt(this.state.unitParam)
+      }
+      APImanager.post("unitMedications", join).then(() => this.getAllUnitMeds()).then(med =>
+        this.setState({
+          medications: med
+        })
+      );
+
+      console.log("Med id: " + id);
+      
+    })
+    return promise
+  };
+  makeAdminProcedure = procedure => {
+    let promise = APImanager.post("procedures", procedure);
+    promise.then( result => {
+        
+      let id = result.id;
+      let join ={
+        procedureId: id,
+        unitId: parseInt(this.state.unitParam)
+      }
+      APImanager.post("unitProcedures", join).then(() => APImanager.getAllUnitProcedures()).then(procedure =>
+        this.setState({
+          procedures: procedure
+        })
+      );
+
+      console.log("Med id: " + id);
+      
+    })
+    return promise
+  };
+  
+  
   addNote = note => {
     
     let currentUserId = sessionStorage.getItem("userId");
@@ -123,6 +165,22 @@ class ApplicationViews extends Component {
       .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
       .then(procedure => {
         this.setState({ userProfileProcedure: procedure });
+      });
+  };
+  deleteAdminMed = id => {
+    
+    return APImanager.delete("medications", id)
+      .then(() => APImanager.getAllUnitMedications())
+      .then(medication => {
+        this.setState({ medications: medication });
+      });
+  };
+  deleteAdminProcedure = id => {
+    
+    return APImanager.delete("procedures", id)
+      .then(() => APImanager.getAllUnitProcedures())
+      .then(procedure => {
+        this.setState({ procedures: procedure });
       });
   };
   deleteNoteFromProfile = id => {
@@ -221,6 +279,7 @@ class ApplicationViews extends Component {
                 searchParam={this.searchParam}
                 logout={this.logout}
                 showAllMeds={this.showAllMeds}
+                deleteAdminMed={this.deleteAdminMed}
                 
                 
                 
@@ -241,13 +300,8 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated()){
             return (
-              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} showAllMeds={this.showAllMeds}
-                
-                
-                
-                
-                
-                
+              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} showAllMeds={this.showAllMeds} makeAdminProcedure={this.makeAdminProcedure} deleteAdminProcedure={this.deleteAdminProcedure}
+        
                 {...props}
                 
               />
@@ -291,7 +345,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin />
+              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>

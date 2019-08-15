@@ -34,7 +34,7 @@ export default class ProcedureList extends Component {
                 <ProcedureCard
                   key={procedure.id}
                   
-                  procedure={procedure} toggle={this.props.toggle}
+                  procedure={procedure} toggle={this.props.toggle} 
                   
                   {...this.props}
                 />
@@ -61,7 +61,7 @@ export default class ProcedureList extends Component {
                             <ProcedureCard
                               key={procedure.id}
                               addProcedureToProfile={this.props.addProcedureToProfile}
-                              procedure={procedure}
+                              procedure={procedure} deleteAdminProcedure={this.props.deleteAdminProcedure}
                               
                               {...this.props}
                             />

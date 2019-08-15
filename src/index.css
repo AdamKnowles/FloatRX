@@ -71,3 +71,13 @@ justify-content: space-between
   background-color: orange;
   color:white
 } */
+
+.medCardBtn{
+  display:flex;
+  justify-content: center;
+}
+
+.procedureBtn {
+  display:flex;
+  justify-content: center;
+}
