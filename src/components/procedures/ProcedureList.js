@@ -34,7 +34,7 @@ export default class ProcedureList extends Component {
                 <ProcedureCard
                   key={procedure.id}
                   
-                  procedure={procedure} toggle={this.props.toggle}
+                  procedure={procedure} toggle={this.props.toggle} 
                   
                   {...this.props}
                 />

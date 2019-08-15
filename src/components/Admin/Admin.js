@@ -10,7 +10,11 @@ export default class Admin extends Component {
         dosage: "",
         frequency: "",
         indications: "",
-        mechanism: ""
+        mechanism: "",
+        procedureName:"",
+        procedureIndications:"",
+        method:"",
+        complications:""
       };
 
       handleFieldChange = (evt) => {
@@ -35,6 +39,20 @@ export default class Admin extends Component {
           this.props
           .makeAdminMed(adminMedication)
           .then(() => this.props.history.push("/medicationlist"));
+        }
+      makeAdminProcedure = (evt) => {
+        evt.preventDefault();
+          const adminProcedure = {
+        name: this.state.procedureName,
+        indications: this.state.procedureIndications,
+        method: this.state.method,
+        complications: this.state.complications
+        
+          }
+          
+          this.props
+          .makeAdminProcedure(adminProcedure)
+          .then(() => this.props.history.push("/procedures"));
         }
 
 
@@ -133,6 +151,68 @@ export default class Admin extends Component {
             className="btn btn-primary"
           >
             Add Medication
+          </button>
+        </form>
+                
+            </div>
+            <h1 className="admin">Add a Procedure</h1>
+            <div className ="container">
+        <form className="adminForm">
+          <div className="form-group">
+           
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={this.handleFieldChange}
+              id="procedureName"
+              placeholder="Procedure Name"
+            />
+          </div>
+          <div className="form-group">
+            
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={this.handleFieldChange}
+              id="procedureIndications"
+              placeholder="Indications"
+            />
+          </div>
+          <div className="form-group">
+            
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={this.handleFieldChange}
+              id="method"
+              placeholder="Method"
+            />
+          </div>
+          <div className="form-group">
+            
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={this.handleFieldChange}
+              id="complications"
+              placeholder="Complications"
+            />
+          </div>
+          
+          <div ><MedDropdown {...this.props} />
+          </div>
+          
+          
+          <button
+            type="submit"
+            onClick={this.makeAdminProcedure}
+            className="btn btn-primary"
+          >
+            Add Procedure
           </button>
         </form>
                 

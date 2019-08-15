@@ -234,6 +234,20 @@
       "indications": "It is often used to find causes of bleeding or blockage, or any abnormalities of the bladder and its lining.",
       "method": "The cystoscope is inserted through the urethra into the bladder. The cystoscope is a thin, lighted tube with lenses. Most often it is bendable, but some models are rigid. Water or saline is infused through the cystoscope into the bladder. As the fluid fills the bladder, the bladder wall is stretched so the urologist can see clearly.",
       "complications": "Infection. Rarely, cystoscopy can introduce germs into your urinary tract, causing infection. Bleeding. Cystoscopy might cause some blood in your urine. Pain. You might experience abdominal pain and a burning sensation when urinating."
+    },
+    {
+      "name": "IV",
+      "indications": "",
+      "method": "",
+      "complications": "",
+      "id": 7
+    },
+    {
+      "name": "Foley",
+      "indications": "",
+      "method": "",
+      "complications": "",
+      "id": 8
     }
   ],
   "unitProcedures": [
@@ -266,6 +280,16 @@
       "id": 6,
       "unitId": 5,
       "procedureId": 6
+    },
+    {
+      "procedureId": 7,
+      "unitId": 1,
+      "id": 7
+    },
+    {
+      "procedureId": 8,
+      "unitId": 5,
+      "id": 8
     }
   ],
   "notes": [
