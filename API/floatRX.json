@@ -185,7 +185,7 @@
     },
     {
       "name": "Foley",
-      "indictions": "Gotta pee/keep tracka da pee",
+      "indications": "gotta pee",
       "method": "stick it in there",
       "complications": "UTI",
       "id": 7
@@ -378,6 +378,11 @@
       "id": 25,
       "medicationId": 25,
       "unitId": 5
+    },
+    {
+      "medicationId": 41,
+      "unitId": 2,
+      "id": 26
     }
   ],
   "medications": [
@@ -730,6 +735,16 @@
       "indications": "",
       "mechanism": "",
       "id": 40
+    },
+    {
+      "name": "dilaudid",
+      "class": "opioid",
+      "route": "IV",
+      "dosage": "2 mg",
+      "frequency": "q2",
+      "indications": "pain",
+      "mechanism": "",
+      "id": 41
     }
   ]
 }

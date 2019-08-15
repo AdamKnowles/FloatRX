@@ -41,7 +41,7 @@ export default class EditAdminProcedure extends Component {
         const procedure = {
 
         name: this.state.name,
-        indictions: this.state.indications,
+        indications: this.state.indications,
         method: this.state.method,
         complications: this.state.complications,
         id: this.props.procedure.procedureId
