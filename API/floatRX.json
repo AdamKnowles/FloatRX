@@ -98,6 +98,21 @@
       "procedureId": 6,
       "userId": 5,
       "id": 8
+    },
+    {
+      "procedureId": 6,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "procedureId": 2,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "procedureId": 5,
+      "userId": 1,
+      "id": 11
     }
   ],
   "userProfile": [
@@ -105,11 +120,6 @@
       "medicationId": 19,
       "userId": 4,
       "id": 2
-    },
-    {
-      "medicationId": 2,
-      "userId": 1,
-      "id": 3
     },
     {
       "medicationId": 16,
@@ -137,14 +147,9 @@
       "id": 8
     },
     {
-      "medicationId": 25,
-      "userId": 2,
-      "id": 13
-    },
-    {
       "medicationId": 1,
-      "userId": 1,
-      "id": 14
+      "userId": 2,
+      "id": 15
     }
   ],
   "procedures": [

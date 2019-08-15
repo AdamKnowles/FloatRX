@@ -82,13 +82,13 @@ export default class AdminEditMed extends Component {
         return (
             <React.Fragment>
                 <div>
-                <Button className="edit" color="primary"   onClick={this.toggle}>Edit</Button>
+                <Button className="edit" color="warning"   onClick={this.toggle}>Edit</Button>
             </div>
             <div>
             <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
                 className={this.props.className} size="lg">
-            <h1 className="admin">Edit Medication</h1>
+            <h3 className="text-center">Edit Medication</h3>
             <div className ="container">
         <form className="adminForm">
           <div className="form-group">
