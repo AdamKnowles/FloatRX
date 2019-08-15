@@ -90,21 +90,6 @@
       "id": 1
     },
     {
-      "procedureId": 1,
-      "userId": 2,
-      "id": 3
-    },
-    {
-      "procedureId": 1,
-      "userId": 4,
-      "id": 5
-    },
-    {
-      "procedureId": 1,
-      "userId": 4,
-      "id": 6
-    },
-    {
       "procedureId": 3,
       "userId": 5,
       "id": 7
@@ -113,11 +98,6 @@
       "procedureId": 6,
       "userId": 5,
       "id": 8
-    },
-    {
-      "procedureId": 1,
-      "userId": 1,
-      "id": 10
     }
   ],
   "userProfile": [
@@ -165,21 +145,9 @@
       "medicationId": 1,
       "userId": 1,
       "id": 14
-    },
-    {
-      "medicationId": 41,
-      "userId": 2,
-      "id": 15
     }
   ],
   "procedures": [
-    {
-      "id": 1,
-      "name": "Kidney Biopsy",
-      "indications": "Hematuria: Presence of acanthocytes or red blood cell casts with an elevated Scr level or proteinuria. Proteinuria: Proteinuria > 1 g/d as measured on multiple visits with no clear comorbidity; proteinuria > 3 g/d in the absence of diabetes or a rapid increase in proteinuria even with diabetes; proteinuria < 3 g/d with an elevated Scr level with no clear comorbid conditions such as diabetes or hypertension. AKI: In the setting of ATI, persistent injury despite reversal of cause or if Scr did not return to baseline with 7-14 d of injury onset; in the setting of presumptive AIN, if there has been no resolution of injury despite removal of culprit medication. CKD: Rapid elevation in Scr level or new-onset hematuria or proteinuria",
-      "method": "Ultrasound- and CT-guided biopsies are performed with the patient in the prone position. Patients who cannot remain prone (due to immobility issues, abdominal distension or ascites, or intubation) should be positioned in the lateral decubitus or sitting position. Percutaneous ultrasound-guided kidney biopsy is usually performed on the inferior pole of the left or right kidney. The left kidney is visible without other organs impeding acquisition of the tissue; however, in the case of splenomegaly, injury to the spleen can be significant.",
-      "complications": "Bleeding"
-    },
     {
       "id": 2,
       "name": "Paracentesis",
@@ -225,11 +193,6 @@
   ],
   "unitProcedures": [
     {
-      "id": 1,
-      "unitId": 1,
-      "procedureId": 1
-    },
-    {
       "id": 2,
       "unitId": 1,
       "procedureId": 2
@@ -266,18 +229,6 @@
       "medicationId": 10,
       "userId": 2,
       "id": 1
-    },
-    {
-      "note": "what",
-      "medicationId": 41,
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "note": "no",
-      "medicationId": 41,
-      "userId": 2,
-      "id": 3
     }
   ],
   "unit": [
@@ -427,11 +378,6 @@
       "id": 25,
       "medicationId": 25,
       "unitId": 5
-    },
-    {
-      "medicationId": 41,
-      "unitId": 5,
-      "id": 26
     }
   ],
   "medications": [
@@ -784,16 +730,6 @@
       "indications": "",
       "mechanism": "",
       "id": 40
-    },
-    {
-      "name": "furosemide ",
-      "class": "Diuretic",
-      "route": "IV",
-      "dosage": "20 mg",
-      "frequency": "q12",
-      "indications": "Ya got extra fluid",
-      "mechanism": "Stimulates da kidneyyyysss",
-      "id": 41
     }
   ]
 }

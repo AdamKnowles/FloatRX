@@ -126,8 +126,7 @@ export default class Admin extends Component {
               className="form-control"
               onChange={this.handleFieldChange}
               id="indications"
-              placeholder="Indica
-              tions"
+              placeholder="Indications"
             />
           </div>
           <div className="form-group">

@@ -74,9 +74,9 @@ export default class EditAdminProcedure extends Component {
         if(this.isAuthenticated() & this.adminAuthenticated()){
         return (
             <React.Fragment>
-                <div>
+                
                 <Button className="edit" color="primary" size=""  onClick={this.toggle}>Edit</Button>
-            </div>
+            
             <div>
             <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
@@ -139,7 +139,7 @@ export default class EditAdminProcedure extends Component {
           <button
             type="submit"
             onClick={this.editAdminProcedure}
-            className="btn btn-primary"
+            className="btn btn-primary mr-2"
           >
             Save
           </button>

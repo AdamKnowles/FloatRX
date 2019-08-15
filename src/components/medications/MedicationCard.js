@@ -3,6 +3,8 @@ import { Card, CardBody, Button, Modal, ModalFooter } from "reactstrap";
 import "../../index.css"
 import AdminButton from "./AdminButton"
 import AdminEditMed from "./AdminEditMed"
+import AdminDeleteButtonModal from "./AdminDeleteButtonModal";
+
 
 
 export default class MedicationCard extends Component {
@@ -103,11 +105,11 @@ export default class MedicationCard extends Component {
                 <h4>{this.props.medication.medication.class}</h4>
                 <div className= "medCardBtn">
                   <AdminEditMed editAdminMed={this.props.editAdminMed} medications={this.props.medications}  {...this.props} />
-                <AdminButton deleteAdminMed={this.props.deleteAdminMed} medications={this.props.medications} {...this.props} />
-                <Button color="primary" body className="text-center mr-2 ml-2" onClick={this.toggle}>
+                <AdminDeleteButtonModal deleteAdminMed={this.props.deleteAdminMed} medications={this.props.medications} {...this.props} />
+                <Button className="mr-2" color="primary"  onClick={this.toggle}>
                   More Info
                 </Button>
-                <Button color="danger" body className="text-center" onClick={this.addNewMed}>
+                <Button color="danger" onClick={this.addNewMed}>
                   Add to Profile
                 </Button>
                 </div>
