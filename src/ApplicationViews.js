@@ -175,6 +175,14 @@ class ApplicationViews extends Component {
         this.setState({ medications: medication });
       });
   };
+  deleteAdminProcedure = id => {
+    
+    return APImanager.delete("procedures", id)
+      .then(() => APImanager.getAllUnitProcedures())
+      .then(procedure => {
+        this.setState({ procedures: procedure });
+      });
+  };
   deleteNoteFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
     return APImanager.delete("notes", id)
@@ -292,7 +300,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated()){
             return (
-              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} showAllMeds={this.showAllMeds} makeAdminProcedure={this.makeAdminProcedure}
+              <ProcedureList procedures={this.state.procedures} addProcedureToProfile={this.addProcedureToProfile} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} showAllMeds={this.showAllMeds} makeAdminProcedure={this.makeAdminProcedure} deleteAdminProcedure={this.deleteAdminProcedure}
         
                 {...props}
                 
