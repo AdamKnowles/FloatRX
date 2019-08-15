@@ -115,27 +115,12 @@
       "id": 8
     },
     {
-      "procedureId": 5,
-      "userId": 1,
-      "id": 9
-    },
-    {
       "procedureId": 1,
       "userId": 1,
       "id": 10
-    },
-    {
-      "procedureId": 6,
-      "userId": 1,
-      "id": 11
     }
   ],
   "userProfile": [
-    {
-      "medicationId": 10,
-      "userId": 2,
-      "id": 1
-    },
     {
       "medicationId": 19,
       "userId": 4,
@@ -172,24 +157,19 @@
       "id": 8
     },
     {
-      "medicationId": 2,
-      "userId": 1,
-      "id": 9
+      "medicationId": 25,
+      "userId": 2,
+      "id": 13
     },
     {
       "medicationId": 1,
       "userId": 1,
-      "id": 10
+      "id": 14
     },
     {
-      "medicationId": 4,
-      "userId": 1,
-      "id": 11
-    },
-    {
-      "medicationId": 2,
-      "userId": 1,
-      "id": 12
+      "medicationId": 41,
+      "userId": 2,
+      "id": 15
     }
   ],
   "procedures": [
@@ -234,6 +214,13 @@
       "indications": "It is often used to find causes of bleeding or blockage, or any abnormalities of the bladder and its lining.",
       "method": "The cystoscope is inserted through the urethra into the bladder. The cystoscope is a thin, lighted tube with lenses. Most often it is bendable, but some models are rigid. Water or saline is infused through the cystoscope into the bladder. As the fluid fills the bladder, the bladder wall is stretched so the urologist can see clearly.",
       "complications": "Infection. Rarely, cystoscopy can introduce germs into your urinary tract, causing infection. Bleeding. Cystoscopy might cause some blood in your urine. Pain. You might experience abdominal pain and a burning sensation when urinating."
+    },
+    {
+      "name": "Foley",
+      "indictions": "Gotta pee/keep tracka da pee",
+      "method": "stick it in there",
+      "complications": "UTI",
+      "id": 7
     }
   ],
   "unitProcedures": [
@@ -266,6 +253,11 @@
       "id": 6,
       "unitId": 5,
       "procedureId": 6
+    },
+    {
+      "procedureId": 7,
+      "unitId": 5,
+      "id": 7
     }
   ],
   "notes": [
@@ -274,6 +266,18 @@
       "medicationId": 10,
       "userId": 2,
       "id": 1
+    },
+    {
+      "note": "what",
+      "medicationId": 41,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "note": "no",
+      "medicationId": 41,
+      "userId": 2,
+      "id": 3
     }
   ],
   "unit": [
@@ -423,6 +427,11 @@
       "id": 25,
       "medicationId": 25,
       "unitId": 5
+    },
+    {
+      "medicationId": 41,
+      "unitId": 5,
+      "id": 26
     }
   ],
   "medications": [
@@ -775,6 +784,16 @@
       "indications": "",
       "mechanism": "",
       "id": 40
+    },
+    {
+      "name": "furosemide ",
+      "class": "Diuretic",
+      "route": "IV",
+      "dosage": "20 mg",
+      "frequency": "q12",
+      "indications": "Ya got extra fluid",
+      "mechanism": "Stimulates da kidneyyyysss",
+      "id": 41
     }
   ]
 }
