@@ -43,7 +43,7 @@ justify-content: space-between
 }
 
 .logout{
-  margin-right: 780px;
+  margin-right: 710px;
 }
 
 .match{
@@ -77,7 +77,7 @@ justify-content: space-between
   justify-content: center;
 }
 
-.procedureBtn {
+.procedureBtn{
   display:flex;
-  justify-content: center;
+  justify-content: center
 }
