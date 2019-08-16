@@ -7,7 +7,10 @@ import Admin from "../Admin/Admin"
 
 
 export default class NavBar extends Component {
+    isAuthenticated = () => sessionStorage.getItem("userId") !== null;
+    adminAuthenticated = () => sessionStorage.getItem("userId") == 1;
     render() {
+        if(this.isAuthenticated() & this.adminAuthenticated()){
         return (
 
            /* <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -73,5 +76,35 @@ export default class NavBar extends Component {
                 
             </nav>
         )
+        }
+        else if(this.isAuthenticated()){
+            return ( <nav className="navbar navbar-dark bg-dark d-flex justify-content-start p-0 fixed-top  " >
+                
+            <div className="d-flex justify-content-end"><h4 className="text-white">FloatRX</h4>
+            <ul className="nav nav-pills nav-fill">
+                <li className="nav-item">
+                    <Link className="nav-link text-white ml-3" to="/medicationlist" >Medication List</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link text-white ml-3" to="/procedures" >Procedure List</Link>
+                </li>
+                <li className="userProfile">
+                    <Link className="nav-link text-white " to="/profile">User Profile</Link>
+                </li>
+                
+                <Button  onClick={this.props.logout}>
+      Logout
+    </Button>
+                
+                
+            </ul>
+            </div>
+            
+        </nav>
+    )
+        }
+        else{
+            return null
+        }
     }
 }

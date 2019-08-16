@@ -8,7 +8,7 @@ export default class AdminDeleteButton extends Component {
         if(this.isAuthenticated() & this.adminAuthenticated()){
         return (
             <div>
-                <Button className="mr-2" onClick={() =>this.props.deleteAdminProcedure(this.props.procedure.procedure.id)}>Delete</Button>
+                <Button color="success"  className="mr-2" onClick={() =>this.props.deleteAdminProcedure(this.props.procedure.procedure.id)}>Delete</Button>
                 
             </div>
         )

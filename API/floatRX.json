@@ -98,6 +98,26 @@
       "procedureId": 6,
       "userId": 5,
       "id": 8
+    },
+    {
+      "procedureId": 6,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "procedureId": 5,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "procedureId": 2,
+      "userId": 4,
+      "id": 12
+    },
+    {
+      "procedureId": 7,
+      "userId": 2,
+      "id": 13
     }
   ],
   "userProfile": [
@@ -105,11 +125,6 @@
       "medicationId": 19,
       "userId": 4,
       "id": 2
-    },
-    {
-      "medicationId": 2,
-      "userId": 1,
-      "id": 3
     },
     {
       "medicationId": 16,
@@ -137,14 +152,9 @@
       "id": 8
     },
     {
-      "medicationId": 25,
-      "userId": 2,
-      "id": 13
-    },
-    {
       "medicationId": 1,
-      "userId": 1,
-      "id": 14
+      "userId": 2,
+      "id": 15
     }
   ],
   "procedures": [
@@ -184,10 +194,10 @@
       "complications": "Infection. Rarely, cystoscopy can introduce germs into your urinary tract, causing infection. Bleeding. Cystoscopy might cause some blood in your urine. Pain. You might experience abdominal pain and a burning sensation when urinating."
     },
     {
-      "name": "Foley",
-      "indictions": "Gotta pee/keep tracka da pee",
-      "method": "stick it in there",
-      "complications": "UTI",
+      "name": "Chemotherapy",
+      "indications": "Cancer",
+      "method": "In the port",
+      "complications": "Alot",
       "id": 7
     }
   ],
@@ -219,7 +229,7 @@
     },
     {
       "procedureId": 7,
-      "unitId": 5,
+      "unitId": 2,
       "id": 7
     }
   ],
@@ -378,6 +388,16 @@
       "id": 25,
       "medicationId": 25,
       "unitId": 5
+    },
+    {
+      "medicationId": 41,
+      "unitId": 2,
+      "id": 26
+    },
+    {
+      "medicationId": 42,
+      "unitId": 2,
+      "id": 27
     }
   ],
   "medications": [
@@ -730,6 +750,26 @@
       "indications": "",
       "mechanism": "",
       "id": 40
+    },
+    {
+      "name": "dilaudid",
+      "class": "opioid",
+      "route": "IV",
+      "dosage": "2 mg",
+      "frequency": "q2",
+      "indications": "pain",
+      "mechanism": "",
+      "id": 41
+    },
+    {
+      "name": "fentanyl",
+      "class": "opioid",
+      "route": "IV",
+      "dosage": "25 mcg",
+      "frequency": "q2",
+      "indications": "PAIN",
+      "mechanism": "",
+      "id": 42
     }
   ]
 }

@@ -51,7 +51,7 @@ justify-content: space-between
 }
 
 .admin{
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center
 }
 
@@ -78,6 +78,27 @@ justify-content: space-between
 }
 
 .procedureBtn{
+  display:flex;
+  justify-content: center
+}
+
+.userProfile{
+  margin-right: 900px;
+}
+
+.adminTab{
+  display:flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px
+}
+
+.adminUnit{
+  display: flex;
+  justify-content: left
+}
+
+.adminButton{
   display:flex;
   justify-content: center
 }

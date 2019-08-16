@@ -41,7 +41,7 @@ export default class EditAdminProcedure extends Component {
         const procedure = {
 
         name: this.state.name,
-        indictions: this.state.indications,
+        indications: this.state.indications,
         method: this.state.method,
         complications: this.state.complications,
         id: this.props.procedure.procedureId
@@ -75,13 +75,14 @@ export default class EditAdminProcedure extends Component {
         return (
             <React.Fragment>
                 
-                <Button className="edit" color="primary" size=""  onClick={this.toggle}>Edit</Button>
+                <Button className="edit" color="warning" size=""  onClick={this.toggle}>Edit</Button>
             
             <div>
             <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
                 className={this.props.className} size="lg">
-            <h1 className="admin">Edit Medication</h1>
+            <CardBody body inverse style={{ backgroundColor: "#B5B3CA", borderColor: "#B5B3CA" }}>
+            <h3 className="text-center text-dark">Edit Procedure</h3>
             <div className ="container">
             <form className="adminForm">
           <div className="form-group">
@@ -149,6 +150,7 @@ export default class EditAdminProcedure extends Component {
         </form>
                 
             </div>
+            </CardBody>
             </Modal>
             </div>
             

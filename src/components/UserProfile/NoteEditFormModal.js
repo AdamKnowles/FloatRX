@@ -70,18 +70,16 @@ export default class NoteEditFormModal extends Component {
                 className={this.props.className} size="lg"
               >
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
-                <Card
-                  body
-                  className="text-center"
+                
+                  <CardBody className="text-dark" body
+                  className="text-center text-dark"
                   body
                   inverse
                   style={{
                     backgroundColor: "#93E9BE",
                     borderColor: "#93E9BE",
                     color: "#93E9BE"
-                  }}
-                >
-                  <CardBody className="text-dark">
+                  }}>
                       <h2 className="p-1 mb-4 bg-secondary text-white">Edit Note </h2>
                   <h1>
                       <u>{this.props.medication.medication.name}</u>
@@ -99,7 +97,7 @@ export default class NoteEditFormModal extends Component {
               rows="8"
             />
                   </CardBody>
-                </Card>
+                
 
                 <ModalFooter>
                   <Button

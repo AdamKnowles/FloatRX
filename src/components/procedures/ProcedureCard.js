@@ -46,7 +46,7 @@ export default class ProcedureCard extends Component {
               className="text-center"
               body
               inverse
-              style={{ backgroundColor: "#9CA89E", borderColor: "#9CA89E" }}
+              style={{ backgroundColor: "#B5B3CA", borderColor: "#B5B3CA" }}
             >
               <CardBody className="#8fbc8f">
                 <h1 onClick={this.toggle}>

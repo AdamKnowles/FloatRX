@@ -42,7 +42,7 @@ export default class AddNoteProcedureToProfile extends Component {
                 className={this.props.className} size="lg">
                     <div key={this.props.notes.id} ></div>
                   
-          <Card
+          <CardBody
               
               className="text-center"
               body
@@ -69,13 +69,13 @@ export default class AddNoteProcedureToProfile extends Component {
                     Delete
                   </Button></div></div></CardBody></React.Fragment>))}</div>
                    
-                  <Button  onClick={this.toggle} className=" btn mt-4">
+                  <Button  onClick={this.toggle} className=" btn-block mt-4">
                     Cancel
                   </Button>
                 
                 
               
-            </Card>
+            </CardBody>
             
         </Modal>
         }

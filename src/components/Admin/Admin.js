@@ -1,7 +1,25 @@
 import React, { Component } from 'react'
 import MedDropdown from '../Dropdown';
+import classnames from 'classnames';
+import {TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 
 export default class Admin extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    
+  }
+
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      
+      this.setState({
+        activeTab: tab
+      });
+    }
+  }
 
     state = {
         name: "",
@@ -14,7 +32,8 @@ export default class Admin extends Component {
         procedureName:"",
         procedureIndications:"",
         method:"",
-        complications:""
+        complications:"",
+        activeTab: '1'
       };
 
       handleFieldChange = (evt) => {
@@ -60,8 +79,32 @@ export default class Admin extends Component {
         return (
             
             <React.Fragment>
-            <h1 className="admin">Add a Medication</h1>
-            <div className ="container">
+              
+               <div className="adminTab">
+        <Nav   tabs>
+          <NavItem className="">
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '1' })}
+              onClick={() => { this.toggle('1'); }}
+            >
+              Add Medication
+            </NavLink>
+          </NavItem>
+          <NavItem className="">
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '2' })}
+              onClick={() => { this.toggle('2'); }}
+            >
+              Add Procedure
+            </NavLink>
+          </NavItem>
+        </Nav>
+        </div>
+              <div className="container">
+        <TabContent activeTab={this.state.activeTab}>
+          <TabPane tabId="1">
+            {/* <h1 className="admin">Add a Medication</h1> */}
+            
         <form className="adminForm">
           <div className="form-group">
            
@@ -140,22 +183,25 @@ export default class Admin extends Component {
               placeholder="Mechanism"
             />
           </div>
-          <div ><MedDropdown {...this.props} />
+          <div className="adminUnit"><MedDropdown {...this.props} />
           </div>
           
-          
+          <div className="adminButton">
           <button
             type="submit"
             onClick={this.makeAdminMed}
             className="btn btn-primary"
           >
             Add Medication
-          </button>
+          </button></div>
         </form>
                 
-            </div>
-            <h1 className="admin">Add a Procedure</h1>
-            <div className ="container">
+            
+            </TabPane>
+            <TabPane tabId="2">
+
+            {/* <h1 className="admin">Add a Procedure</h1> */}
+            
         <form className="adminForm">
           <div className="form-group">
            
@@ -202,19 +248,22 @@ export default class Admin extends Component {
             />
           </div>
           
-          <div ><MedDropdown {...this.props} />
+          <div className="adminUnit"><MedDropdown {...this.props} />
           </div>
           
-          
+          <div className="adminButton">
           <button
             type="submit"
             onClick={this.makeAdminProcedure}
             className="btn btn-primary"
           >
             Add Procedure
-          </button>
+          </button></div>
         </form>
                 
+            
+            </TabPane>
+            </TabContent>
             </div>
       </React.Fragment>
         )
