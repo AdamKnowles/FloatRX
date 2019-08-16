@@ -87,8 +87,15 @@ export default class AdminEditMed extends Component {
             <div>
             <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
-                className={this.props.className} size="lg">
-            <h3 className="text-center">Edit Medication</h3>
+                className={this.props.className} size="lg" >
+                    <CardBody body
+                  inverse
+                  style={{
+                    backgroundColor: "#9CA89E",
+                    borderColor: "#9CA89E",
+                    color: "#9CA89E"
+                  }}>
+            <h3 className="text-center text-dark">Edit Medication</h3>
             <div className ="container">
         <form className="adminForm">
           <div className="form-group">
@@ -191,6 +198,7 @@ export default class AdminEditMed extends Component {
         </form>
                 
             </div>
+            </CardBody>
             </Modal>
             </div>
             

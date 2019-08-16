@@ -81,7 +81,8 @@ export default class EditAdminProcedure extends Component {
             <Modal isOpen={this.state.modal}
                 toggle={this.toggle}
                 className={this.props.className} size="lg">
-            <h3 className="text-center">Edit Procedure</h3>
+            <CardBody body inverse style={{ backgroundColor: "#B5B3CA", borderColor: "#B5B3CA" }}>
+            <h3 className="text-center text-dark">Edit Procedure</h3>
             <div className ="container">
             <form className="adminForm">
           <div className="form-group">
@@ -149,6 +150,7 @@ export default class EditAdminProcedure extends Component {
         </form>
                 
             </div>
+            </CardBody>
             </Modal>
             </div>
             

@@ -43,18 +43,16 @@ export default class AdminDeleteButtonModal extends Component {
                 size=""
               >
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
-                <Card
-                  body
-                  className="text-center"
+               
+                  <CardBody className="text-dark" body
+                  className="text-center text-dark"
                   body
                   inverse
                   style={{
-                    backgroundColor: "#93E9BE",
-                    borderColor: "#93E9BE",
-                    color: "#93E9BE"
-                  }}
-                >
-                  <CardBody className="text-dark">
+                    backgroundColor: "#9CA89E",
+                    borderColor: "#9CA89E",
+                    color: "#9CA89E"
+                  }}>
                       
                     <h4>
                       Delete {this.props.medication.medication.name} from Medication List?
@@ -62,7 +60,7 @@ export default class AdminDeleteButtonModal extends Component {
                     
                     
                   </CardBody>
-                </Card>
+                
 
                 <ModalFooter>
                   <AdminButton deleteAdminMed={this.props.deleteAdminMed} {...this.props} />

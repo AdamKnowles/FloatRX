@@ -57,8 +57,8 @@ export default class AddNoteProcedureModal extends Component {
                 size="lg"
               >
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
-                <Card
-                  body
+               
+                  <CardBody className="text-dark text-center"body
                   className="text-center"
                   body
                   inverse
@@ -66,9 +66,7 @@ export default class AddNoteProcedureModal extends Component {
                     backgroundColor: "#93E9BE",
                     borderColor: "#93E9BE",
                     color: "#93E9BE"
-                  }}
-                >
-                  <CardBody className="text-dark">
+                  }}>
                       <h2 className="p-1 mb-4 bg-secondary text-white">Add Note</h2>
                     <h1>
                       <u>{this.props.procedure.procedure.name}</u>
@@ -85,7 +83,7 @@ export default class AddNoteProcedureModal extends Component {
               rows="8"
             />
                   </CardBody>
-                </Card>
+                
 
                 <ModalFooter>
                   <Button

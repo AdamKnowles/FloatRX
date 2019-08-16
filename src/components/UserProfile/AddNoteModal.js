@@ -57,18 +57,14 @@ export default class AddNoteModal extends Component {
                 size="lg"
               >
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
-                <Card
-                  body
-                  className="text-center"
-                  body
+                
+                  <CardBody className="text-dark text-center" body
                   inverse
                   style={{
                     backgroundColor: "#93E9BE",
                     borderColor: "#93E9BE",
                     color: "#93E9BE"
-                  }}
-                >
-                  <CardBody className="text-dark">
+                  }}>
                       <h2 className="p-1 mb-4 bg-secondary text-white">Add Note</h2>
                     <h1>
                       <u>{this.props.medication.medication.name}</u>
@@ -85,7 +81,7 @@ export default class AddNoteModal extends Component {
               rows="8"
             />
                   </CardBody>
-                </Card>
+                
 
                 <ModalFooter>
                   <Button

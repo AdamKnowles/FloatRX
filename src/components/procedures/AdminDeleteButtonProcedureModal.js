@@ -44,18 +44,10 @@ export default class AdminDeleteButtonProcedureModal extends Component {
                 size=""
               >
                 {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
-                <Card
-                  body
-                  className="text-center"
-                  body
+                
+                  <CardBody className="text-dark" body
                   inverse
-                  style={{
-                    backgroundColor: "#93E9BE",
-                    borderColor: "#93E9BE",
-                    color: "#93E9BE"
-                  }}
-                >
-                  <CardBody className="text-dark">
+                  style={{ backgroundColor: "#B5B3CA", borderColor: "#B5B3CA" }}>
                       
                     <h4>
                       Delete {this.props.procedure.procedure.name} from Procedure List?
@@ -63,7 +55,7 @@ export default class AdminDeleteButtonProcedureModal extends Component {
                     
                     
                   </CardBody>
-                </Card>
+                
 
                 <ModalFooter>
                   <AdminDeleteButton deleteAdminProcedure={this.props.deleteAdminProcedure} {...this.props} />

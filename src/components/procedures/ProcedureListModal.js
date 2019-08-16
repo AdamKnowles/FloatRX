@@ -27,19 +27,14 @@ export default class ProcedureListModal extends Component {
                 className={this.props.className}
                 size="lg"
               >
-                {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
-                <Card
-                  body
-                  className="text-center "
-                  body
+                
+                  <CardBody className="text-dark text-center " body
                   inverse
                   style={{
-                    backgroundColor: "#93E9BE",
-                    borderColor: "#93E9BE",
-                    color: "#93E9BE"
-                  }}
-                >
-                  <CardBody className="text-dark ">
+                    backgroundColor: "#B5B3CA",
+                    borderColor: "#B5B3CA",
+                    color: "#B5B3CA"
+                  }}>
                     <h1>
                       <u>{this.props.procedure.procedure.name}</u>
                     </h1>
@@ -48,7 +43,7 @@ export default class ProcedureListModal extends Component {
                     <h6>Complications: {this.props.procedure.procedure.complications}</h6>
                     
                   </CardBody>
-                </Card>
+                
 
                 <ModalFooter>
                   <Button

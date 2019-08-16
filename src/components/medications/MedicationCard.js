@@ -47,19 +47,13 @@ export default class MedicationCard extends Component {
                 className={this.props.className}
                 size="lg"
               >
-                {/* <ModalHeader toggle={this.toggle}>Modal title</ModalHeader> */}
-                <Card
-                  body
-                  className="text-center "
-                  body
+                  <CardBody className="text-dark text-center " body
                   inverse
                   style={{
-                    backgroundColor: "#93E9BE",
-                    borderColor: "#93E9BE",
-                    color: "#93E9BE"
-                  }}
-                >
-                  <CardBody className="text-dark ">
+                    backgroundColor: "#9CA89E",
+                    borderColor: "#9CA89E",
+                    color: "#9CA89E"
+                  }}>
                     <h1>
                       <u>{this.props.medication.medication.name}</u>
                     </h1>
@@ -75,7 +69,7 @@ export default class MedicationCard extends Component {
                       {this.props.medication.medication.mechanism}
                     </h6>
                   </CardBody>
-                </Card>
+                {/* </Card> */}
 
                 <ModalFooter>
                   <Button
