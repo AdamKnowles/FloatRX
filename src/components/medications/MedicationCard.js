@@ -65,8 +65,7 @@ export default class MedicationCard extends Component {
                       Indication: {this.props.medication.medication.indications}
                     </h6>
                     <h6>
-                      Mechanism of Action:
-                      {this.props.medication.medication.mechanism}
+                      Mechanism of Action: {this.props.medication.medication.mechanism}
                     </h6>
                   </CardBody>
                 {/* </Card> */}

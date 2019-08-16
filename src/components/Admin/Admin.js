@@ -33,7 +33,8 @@ export default class Admin extends Component {
         procedureIndications:"",
         method:"",
         complications:"",
-        activeTab: '1'
+        activeTab: '1',
+        unitName: ""
       };
 
       handleFieldChange = (evt) => {
@@ -73,6 +74,20 @@ export default class Admin extends Component {
           .makeAdminProcedure(adminProcedure)
           .then(() => this.props.history.push("/procedures"));
         }
+      createUnit = (evt) => {
+        evt.preventDefault();
+          const unit = {
+        name: this.state.unitName,
+        
+        
+          }
+          
+          this.props
+          .createUnit(unit)
+          this.refs.unitNameRef.value = '';
+          alert(`${this.state.unitName} Unit added`)
+          // .then(() => this.props.history.push("/procedures"));
+        }
 
 
     render() {
@@ -98,15 +113,27 @@ export default class Admin extends Component {
               Add Procedure
             </NavLink>
           </NavItem>
+          <NavItem className="">
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '3' })}
+              onClick={() => { this.toggle('3'); }}
+            >
+              Create Unit
+            </NavLink>
+          </NavItem>
         </Nav>
         </div>
+        <div className="container">
+        <div className="adminContainer">
               <div className="container">
+                <div className="">
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             {/* <h1 className="admin">Add a Medication</h1> */}
             
-        <form className="adminForm">
+        <form className="adminForm mb-4">
           <div className="form-group">
+            <br></br>
            
             <input
               type="text"
@@ -204,6 +231,7 @@ export default class Admin extends Component {
             
         <form className="adminForm">
           <div className="form-group">
+            <br></br>
            
             <input
               type="text"
@@ -263,8 +291,49 @@ export default class Admin extends Component {
                 
             
             </TabPane>
+            <TabPane tabId="3">
+
+           
+            
+        <form className="adminForm">
+          <div className="form-group">
+            <br></br>
+           
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={this.handleFieldChange}
+              id="unitName"
+              ref="unitNameRef"
+              placeholder="Unit Name"
+            />
+          </div>
+          
+          
+          
+          
+          
+          
+          <div className="adminButton">
+          <button
+            type="submit"
+            onClick={this.createUnit}
+            
+            className="btn btn-primary"
+          >
+            Create Unit
+          </button></div>
+        </form>
+                
+            
+            </TabPane>
             </TabContent>
             </div>
+            </div>
+            </div>
+            </div>
+            
       </React.Fragment>
         )
     }

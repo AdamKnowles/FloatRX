@@ -74,6 +74,11 @@
       "username": "christi",
       "password": "galy",
       "id": 15
+    },
+    {
+      "username": "peggy",
+      "password": "sween",
+      "id": 16
     }
   ],
   "userMedications": [
@@ -199,6 +204,13 @@
       "method": "In the port",
       "complications": "Alot",
       "id": 7
+    },
+    {
+      "name": "Phlebotomy",
+      "indications": "Gotta get that blood",
+      "method": "Stick the needle in, suck blood out",
+      "complications": "hematoma, patient getting frustrated",
+      "id": 8
     }
   ],
   "unitProcedures": [
@@ -231,6 +243,11 @@
       "procedureId": 7,
       "unitId": 2,
       "id": 7
+    },
+    {
+      "procedureId": 8,
+      "unitId": 4,
+      "id": 8
     }
   ],
   "notes": [
@@ -261,6 +278,46 @@
     {
       "id": 5,
       "name": "Urology"
+    },
+    {
+      "name": "Cardiac",
+      "id": 6
+    },
+    {
+      "name": "Vascular",
+      "id": 7
+    },
+    {
+      "name": "Gastrointestinal",
+      "id": 8
+    },
+    {
+      "name": "PACU",
+      "id": 9
+    },
+    {
+      "name": "Neurology",
+      "id": 10
+    },
+    {
+      "name": "Pediatrics",
+      "id": 11
+    },
+    {
+      "name": "Trauma",
+      "id": 12
+    },
+    {
+      "name": "MICU",
+      "id": 13
+    },
+    {
+      "name": "Burn",
+      "id": 14
+    },
+    {
+      "name": "PICU",
+      "id": 15
     }
   ],
   "unitMedications": [
@@ -398,6 +455,16 @@
       "medicationId": 42,
       "unitId": 2,
       "id": 27
+    },
+    {
+      "medicationId": 43,
+      "unitId": 3,
+      "id": 28
+    },
+    {
+      "medicationId": 44,
+      "unitId": 6,
+      "id": 29
     }
   ],
   "medications": [
@@ -770,6 +837,26 @@
       "indications": "PAIN",
       "mechanism": "",
       "id": 42
+    },
+    {
+      "name": "Toradol",
+      "class": "NSAID",
+      "route": "IV",
+      "dosage": "2 mg",
+      "frequency": "q6",
+      "indications": "Pain, inflammation",
+      "mechanism": "It is not well known",
+      "id": 43
+    },
+    {
+      "name": "Adenosine",
+      "class": "",
+      "route": "",
+      "dosage": "",
+      "frequency": "",
+      "indications": "",
+      "mechanism": "",
+      "id": 44
     }
   ]
 }

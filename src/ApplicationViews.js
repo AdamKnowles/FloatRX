@@ -150,6 +150,22 @@ class ApplicationViews extends Component {
       
       
   };
+  createUnit = unit => {
+    
+    
+    
+    return APImanager.post("unit", unit)
+      .then(() => APImanager.getAll("unit"))
+      .then(unit =>
+        this.setState({
+          units: unit
+          
+        })
+        
+      );
+      
+      
+  };
 
   deleteMedFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
@@ -367,7 +383,8 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed} {...props} />
+              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed}
+              createUnit={this.createUnit} {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>
