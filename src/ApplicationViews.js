@@ -14,13 +14,13 @@ import Login from "./components/Login/login";
 class ApplicationViews extends Component {
   state = {
     medications: [],
-    users: [],
+    procedures: [],
     units: [],
     userProfile: [],
     userProfileProcedure:[],
-    procedures: [],
     notes:[],
-    unitParam: ""
+    unitParam: "",
+    
   };
   componentDidMount() {
     const newState = {}
@@ -69,6 +69,7 @@ class ApplicationViews extends Component {
   searchParam = unitId => {
     this.setState({ unitParam: unitId });
   };
+  
   
 
   addMedicationToProfile = medication => {
@@ -150,6 +151,22 @@ class ApplicationViews extends Component {
       
       
   };
+  createUnit = unit => {
+    
+    
+    
+    return APImanager.post("unit", unit)
+      .then(() => APImanager.getAll("unit"))
+      .then(unit =>
+        this.setState({
+          units: unit
+          
+        })
+        
+      );
+      
+      
+  };
 
   deleteMedFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
@@ -182,6 +199,15 @@ class ApplicationViews extends Component {
       .then(procedure => {
         this.setState({ procedures: procedure });
       });
+  };
+  deleteAdminUnit = id => {
+    
+    
+    return APImanager.delete("unit", id)
+    .then(() => APImanager.getAll("unit"))
+    .then(unit => {
+      this.setState({ units: unit });
+    });
   };
   deleteNoteFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
@@ -367,7 +393,8 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed} {...props} />
+              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed} deleteAdminUnit={this.deleteAdminUnit}
+              createUnit={this.createUnit} adminParam={this.adminParam} adminEditParam={this.state.adminEditParam}  {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import MedDropdown from '../Dropdown';
 import classnames from 'classnames';
 import {TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import UnitCard from './UnitCard';
 
 export default class Admin extends Component {
 
@@ -33,7 +34,8 @@ export default class Admin extends Component {
         procedureIndications:"",
         method:"",
         complications:"",
-        activeTab: '1'
+        activeTab: '1',
+        unitName: ""
       };
 
       handleFieldChange = (evt) => {
@@ -73,6 +75,20 @@ export default class Admin extends Component {
           .makeAdminProcedure(adminProcedure)
           .then(() => this.props.history.push("/procedures"));
         }
+      createUnit = (evt) => {
+        evt.preventDefault();
+          const unit = {
+        name: this.state.unitName,
+        
+        
+          }
+          
+          this.props
+          .createUnit(unit)
+          this.refs.unitNameRef.value = '';
+          alert(`${this.state.unitName} Unit added`)
+          // .then(() => this.props.history.push("/procedures"));
+        }
 
 
     render() {
@@ -87,7 +103,7 @@ export default class Admin extends Component {
               className={classnames({ active: this.state.activeTab === '1' })}
               onClick={() => { this.toggle('1'); }}
             >
-              Add Medication
+              Create Medication
             </NavLink>
           </NavItem>
           <NavItem className="">
@@ -95,18 +111,30 @@ export default class Admin extends Component {
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggle('2'); }}
             >
-              Add Procedure
+              Create Procedure
+            </NavLink>
+          </NavItem>
+          <NavItem className="">
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '3' })}
+              onClick={() => { this.toggle('3'); }}
+            >
+              Create Unit
             </NavLink>
           </NavItem>
         </Nav>
         </div>
+        <div className="container">
+        <div className="adminContainer">
               <div className="container">
+                <div className="">
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             {/* <h1 className="admin">Add a Medication</h1> */}
             
-        <form className="adminForm">
+        <form className="adminForm mb-4">
           <div className="form-group">
+            <br></br>
            
             <input
               type="text"
@@ -192,7 +220,7 @@ export default class Admin extends Component {
             onClick={this.makeAdminMed}
             className="btn btn-primary"
           >
-            Add Medication
+            Create Medication
           </button></div>
         </form>
                 
@@ -204,6 +232,7 @@ export default class Admin extends Component {
             
         <form className="adminForm">
           <div className="form-group">
+            <br></br>
            
             <input
               type="text"
@@ -212,7 +241,7 @@ export default class Admin extends Component {
               onChange={this.handleFieldChange}
               id="procedureName"
               placeholder="Procedure Name"
-            />
+              />
           </div>
           <div className="form-group">
             
@@ -245,7 +274,7 @@ export default class Admin extends Component {
               onChange={this.handleFieldChange}
               id="complications"
               placeholder="Complications"
-            />
+              />
           </div>
           
           <div className="adminUnit"><MedDropdown {...this.props} />
@@ -256,15 +285,66 @@ export default class Admin extends Component {
             type="submit"
             onClick={this.makeAdminProcedure}
             className="btn btn-primary"
-          >
-            Add Procedure
+            >
+            Create Procedure
           </button></div>
         </form>
                 
             
             </TabPane>
+            <TabPane tabId="3">
+
+           
+            
+        <form className="adminForm">
+          <div className="form-group">
+            <br></br>
+           
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={this.handleFieldChange}
+              id="unitName"
+              ref="unitNameRef"
+              placeholder="Unit Name"
+              />
+          </div>
+          
+          
+          
+          
+          
+          
+          <div className="adminButton">
+          <button
+            type="submit"
+            onClick={this.createUnit}
+            
+            className="btn btn-primary mb-3"
+            >
+            Create Unit
+          </button></div>
+        </form>
+                {this.props.units.map(unit => (
+                    <UnitCard
+                      key={unit.id}
+                      units={this.props.units}
+                      unit={unit}
+                      deleteAdminUnit={this.props.deleteAdminUnit}
+                      
+                      {...this.props}
+                    />
+                  ))}
+                
+            
+            </TabPane>
             </TabContent>
             </div>
+            </div>
+            </div>
+            </div>
+            
       </React.Fragment>
         )
     }

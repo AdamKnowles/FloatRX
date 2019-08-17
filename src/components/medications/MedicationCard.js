@@ -65,8 +65,7 @@ export default class MedicationCard extends Component {
                       Indication: {this.props.medication.medication.indications}
                     </h6>
                     <h6>
-                      Mechanism of Action:
-                      {this.props.medication.medication.mechanism}
+                      Mechanism of Action: {this.props.medication.medication.mechanism}
                     </h6>
                   </CardBody>
                 {/* </Card> */}
@@ -98,7 +97,7 @@ export default class MedicationCard extends Component {
                 </h1>
                 <h4>{this.props.medication.medication.class}</h4>
                 <div className= "medCardBtn">
-                  <AdminEditMed editAdminMed={this.props.editAdminMed} medications={this.props.medications}  {...this.props} />
+                  <AdminEditMed editAdminMed={this.props.editAdminMed} medications={this.props.medications}    {...this.props} />
                 <AdminDeleteButtonModal deleteAdminMed={this.props.deleteAdminMed} medications={this.props.medications} {...this.props} />
                 <Button className="mr-2" color="primary"  onClick={this.toggle}>
                   More Info

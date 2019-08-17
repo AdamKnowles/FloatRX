@@ -49,6 +49,7 @@ class MedicationList extends Component {
                   medication={medication}
                   deleteAdminMed={this.props.deleteAdminMed}
                   editAdminMed={this.props.editAdminMed}
+                  
                   {...this.props}
                 />
               ))}

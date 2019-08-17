@@ -80,6 +80,7 @@ export default class Login extends Component {
         <br></br>
         <br></br>
         <br></br>
+        <h1 className ="loginHeader">FloatRx</h1>
       <div className="card">
         <form onSubmit={this.handleLogin}>
           
