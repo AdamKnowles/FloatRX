@@ -14,11 +14,10 @@ import Login from "./components/Login/login";
 class ApplicationViews extends Component {
   state = {
     medications: [],
-    users: [],
+    procedures: [],
     units: [],
     userProfile: [],
     userProfileProcedure:[],
-    procedures: [],
     notes:[],
     unitParam: ""
   };
@@ -198,6 +197,15 @@ class ApplicationViews extends Component {
       .then(procedure => {
         this.setState({ procedures: procedure });
       });
+  };
+  deleteAdminUnit = id => {
+    
+    
+    return APImanager.delete("unit", id)
+    .then(() => APImanager.getAll("unit"))
+    .then(unit => {
+      this.setState({ units: unit });
+    });
   };
   deleteNoteFromProfile = id => {
     let currentUserId = sessionStorage.getItem("userId");
@@ -383,7 +391,7 @@ class ApplicationViews extends Component {
           render={props => {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
-              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed}
+              <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed} deleteAdminUnit={this.deleteAdminUnit}
               createUnit={this.createUnit} {...props} />
             );}
             else if(this.isAuthenticated()){

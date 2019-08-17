@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import MedDropdown from '../Dropdown';
 import classnames from 'classnames';
 import {TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import UnitCard from './UnitCard';
 
 export default class Admin extends Component {
 
@@ -102,7 +103,7 @@ export default class Admin extends Component {
               className={classnames({ active: this.state.activeTab === '1' })}
               onClick={() => { this.toggle('1'); }}
             >
-              Add Medication
+              Create Medication
             </NavLink>
           </NavItem>
           <NavItem className="">
@@ -110,7 +111,7 @@ export default class Admin extends Component {
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggle('2'); }}
             >
-              Add Procedure
+              Create Procedure
             </NavLink>
           </NavItem>
           <NavItem className="">
@@ -219,7 +220,7 @@ export default class Admin extends Component {
             onClick={this.makeAdminMed}
             className="btn btn-primary"
           >
-            Add Medication
+            Create Medication
           </button></div>
         </form>
                 
@@ -240,7 +241,7 @@ export default class Admin extends Component {
               onChange={this.handleFieldChange}
               id="procedureName"
               placeholder="Procedure Name"
-            />
+              />
           </div>
           <div className="form-group">
             
@@ -273,7 +274,7 @@ export default class Admin extends Component {
               onChange={this.handleFieldChange}
               id="complications"
               placeholder="Complications"
-            />
+              />
           </div>
           
           <div className="adminUnit"><MedDropdown {...this.props} />
@@ -284,8 +285,8 @@ export default class Admin extends Component {
             type="submit"
             onClick={this.makeAdminProcedure}
             className="btn btn-primary"
-          >
-            Add Procedure
+            >
+            Create Procedure
           </button></div>
         </form>
                 
@@ -307,7 +308,7 @@ export default class Admin extends Component {
               id="unitName"
               ref="unitNameRef"
               placeholder="Unit Name"
-            />
+              />
           </div>
           
           
@@ -320,11 +321,21 @@ export default class Admin extends Component {
             type="submit"
             onClick={this.createUnit}
             
-            className="btn btn-primary"
-          >
+            className="btn btn-primary mb-3"
+            >
             Create Unit
           </button></div>
         </form>
+                {this.props.units.map(unit => (
+                    <UnitCard
+                      key={unit.id}
+                      units={this.props.units}
+                      unit={unit}
+                      deleteAdminUnit={this.props.deleteAdminUnit}
+                      
+                      {...this.props}
+                    />
+                  ))}
                 
             
             </TabPane>

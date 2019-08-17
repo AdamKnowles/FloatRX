@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardBody, Button,Modal, ModalFooter } from "reactstrap";
 import APImanager from "../../modules/APImanager"
+import MedDropdown from '../Dropdown';
 
 export default class AdminEditMed extends Component {
     constructor(props) {
@@ -16,6 +17,7 @@ export default class AdminEditMed extends Component {
         frequency: "",
         indications: "",
         mechanism: "",
+        
         
           
         };
@@ -181,6 +183,7 @@ export default class AdminEditMed extends Component {
               value={this.state.mechanism}
             />
           </div>
+          
           <div >
           </div>
           

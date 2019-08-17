@@ -123,6 +123,11 @@
       "procedureId": 7,
       "userId": 2,
       "id": 13
+    },
+    {
+      "procedureId": 2,
+      "userId": 1,
+      "id": 14
     }
   ],
   "userProfile": [
@@ -160,6 +165,11 @@
       "medicationId": 1,
       "userId": 2,
       "id": 15
+    },
+    {
+      "medicationId": 10,
+      "userId": 1,
+      "id": 16
     }
   ],
   "procedures": [
@@ -280,44 +290,8 @@
       "name": "Urology"
     },
     {
-      "name": "Cardiac",
-      "id": 6
-    },
-    {
-      "name": "Vascular",
-      "id": 7
-    },
-    {
-      "name": "Gastrointestinal",
-      "id": 8
-    },
-    {
-      "name": "PACU",
-      "id": 9
-    },
-    {
-      "name": "Neurology",
-      "id": 10
-    },
-    {
-      "name": "Pediatrics",
-      "id": 11
-    },
-    {
       "name": "Trauma",
-      "id": 12
-    },
-    {
-      "name": "MICU",
-      "id": 13
-    },
-    {
-      "name": "Burn",
-      "id": 14
-    },
-    {
-      "name": "PICU",
-      "id": 15
+      "id": 6
     }
   ],
   "unitMedications": [
@@ -849,12 +823,12 @@
       "id": 43
     },
     {
-      "name": "Adenosine",
-      "class": "",
-      "route": "",
-      "dosage": "",
-      "frequency": "",
-      "indications": "",
+      "name": "Colloid",
+      "class": "Bandage",
+      "route": "Dermal",
+      "dosage": "PRN",
+      "frequency": "PRN",
+      "indications": "Burns",
       "mechanism": "",
       "id": 44
     }
