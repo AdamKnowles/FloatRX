@@ -52,7 +52,7 @@ export default class NavBar extends Component {
 
             <nav className="navbar navbar-dark bg-dark d-flex justify-content-start p-0 fixed-top  " >
                 
-                <div className="d-flex justify-content-end"><h4 className="text-white">FloatRX</h4>
+                <div className="d-flex justify-content-end"><h4 className="text-white">FloatRx</h4>
                 <ul className="nav nav-pills nav-fill">
                     <li className="nav-item">
                         <Link className="nav-link text-white ml-3" to="/medicationlist" >Medication List</Link>
@@ -80,7 +80,7 @@ export default class NavBar extends Component {
         else if(this.isAuthenticated()){
             return ( <nav className="navbar navbar-dark bg-dark d-flex justify-content-start p-0 fixed-top  " >
                 
-            <div className="d-flex justify-content-end"><h4 className="text-white">FloatRX</h4>
+            <div className="d-flex justify-content-end"><h4 className="text-white">FloatRx</h4>
             <ul className="nav nav-pills nav-fill">
                 <li className="nav-item">
                     <Link className="nav-link text-white ml-3" to="/medicationlist" >Medication List</Link>

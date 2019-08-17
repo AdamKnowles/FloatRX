@@ -19,7 +19,8 @@ class ApplicationViews extends Component {
     userProfile: [],
     userProfileProcedure:[],
     notes:[],
-    unitParam: ""
+    unitParam: "",
+    
   };
   componentDidMount() {
     const newState = {}
@@ -68,6 +69,7 @@ class ApplicationViews extends Component {
   searchParam = unitId => {
     this.setState({ unitParam: unitId });
   };
+  
   
 
   addMedicationToProfile = medication => {
@@ -392,7 +394,7 @@ class ApplicationViews extends Component {
             if(this.isAuthenticated() & this.adminAuthenticated()){
             return (
               <Admin makeAdminMed={this.makeAdminMed} units={this.state.units} unitParam={this.state.unitParam} searchParam={this.searchParam} deleteAdminMed={this.deleteAdminMed} makeAdminProcedure={this.makeAdminProcedure} editAdminMed={this.editAdminMed} deleteAdminUnit={this.deleteAdminUnit}
-              createUnit={this.createUnit} {...props} />
+              createUnit={this.createUnit} adminParam={this.adminParam} adminEditParam={this.state.adminEditParam}  {...props} />
             );}
             else if(this.isAuthenticated()){
               return <React.Fragment> <br></br><br></br><h3 className="text-center">You do not have Administrator Privileges</h3></React.Fragment>
