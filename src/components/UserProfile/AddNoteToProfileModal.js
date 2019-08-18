@@ -54,7 +54,7 @@ export default class AddNoteToProfileModal extends Component {
                     <CardBody className="text-dark mt-4" inverse
               style={{ backgroundColor: "#93E9BE", borderColor: "#FFF4EF" }}>
                 <div >
-                  <CardBody className="text-dark border border-dark" inverse
+                  <CardBody className="text-dark rounded" inverse
               style={{ backgroundColor: "#FFF4EF", borderColor: "#FFF4EF" }}>
                 <h6 className="mt-0">{note.note}</h6>
                 </CardBody>

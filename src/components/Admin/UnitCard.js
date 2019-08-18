@@ -13,7 +13,7 @@ export default class UnitCard extends Component {
                   className="text-center text-dark"
                   body
                   inverse
-                  style={{ backgroundColor: "#98FF98", borderColor: "#98FF98" }}
+                  style={{ backgroundColor: "#E7F2F8", borderColor: "#E7F2F8" }}
                 >
                   <CardBody className="#8fbc8f">
                     <h1><u>{this.props.unit.name}</u></h1>

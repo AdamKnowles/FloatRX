@@ -79,6 +79,11 @@
       "username": "peggy",
       "password": "sween",
       "id": 16
+    },
+    {
+      "username": "Jimmy",
+      "password": "lloyd",
+      "id": 17
     }
   ],
   "userMedications": [
@@ -120,24 +125,9 @@
       "id": 12
     },
     {
-      "procedureId": 7,
-      "userId": 2,
-      "id": 13
-    },
-    {
       "procedureId": 2,
       "userId": 1,
       "id": 14
-    },
-    {
-      "procedureId": 4,
-      "userId": 1,
-      "id": 15
-    },
-    {
-      "procedureId": 8,
-      "userId": 1,
-      "id": 16
     }
   ],
   "userProfile": [
@@ -182,9 +172,9 @@
       "id": 16
     },
     {
-      "medicationId": 2,
-      "userId": 1,
-      "id": 17
+      "medicationId": 1,
+      "userId": 6,
+      "id": 18
     }
   ],
   "procedures": [
@@ -222,20 +212,6 @@
       "indications": "It is often used to find causes of bleeding or blockage, or any abnormalities of the bladder and its lining.",
       "method": "The cystoscope is inserted through the urethra into the bladder. The cystoscope is a thin, lighted tube with lenses. Most often it is bendable, but some models are rigid. Water or saline is infused through the cystoscope into the bladder. As the fluid fills the bladder, the bladder wall is stretched so the urologist can see clearly.",
       "complications": "Infection. Rarely, cystoscopy can introduce germs into your urinary tract, causing infection. Bleeding. Cystoscopy might cause some blood in your urine. Pain. You might experience abdominal pain and a burning sensation when urinating."
-    },
-    {
-      "name": "Chemotherapy",
-      "indications": "Cancer",
-      "method": "In the port",
-      "complications": "Alot",
-      "id": 7
-    },
-    {
-      "name": "Phlebotomy",
-      "indications": "Gotta get that blood",
-      "method": "Stick the needle in, suck blood out",
-      "complications": "hematoma, patient getting frustrated",
-      "id": 8
     }
   ],
   "unitProcedures": [
@@ -263,16 +239,6 @@
       "id": 6,
       "unitId": 5,
       "procedureId": 6
-    },
-    {
-      "procedureId": 7,
-      "unitId": 2,
-      "id": 7
-    },
-    {
-      "procedureId": 8,
-      "unitId": 4,
-      "id": 8
     }
   ],
   "notes": [
@@ -303,14 +269,6 @@
     {
       "id": 5,
       "name": "Urology"
-    },
-    {
-      "name": "Trauma",
-      "id": 6
-    },
-    {
-      "name": "Cardiac",
-      "id": 7
     }
   ],
   "unitMedications": [
@@ -438,26 +396,6 @@
       "id": 25,
       "medicationId": 25,
       "unitId": 5
-    },
-    {
-      "medicationId": 41,
-      "unitId": 2,
-      "id": 26
-    },
-    {
-      "medicationId": 42,
-      "unitId": 2,
-      "id": 27
-    },
-    {
-      "medicationId": 43,
-      "unitId": 3,
-      "id": 28
-    },
-    {
-      "medicationId": 44,
-      "unitId": 6,
-      "id": 29
     }
   ],
   "medications": [
@@ -810,46 +748,6 @@
       "indications": "",
       "mechanism": "",
       "id": 40
-    },
-    {
-      "name": "dilaudid",
-      "class": "opioid",
-      "route": "IV",
-      "dosage": "2 mg",
-      "frequency": "q2",
-      "indications": "pain",
-      "mechanism": "",
-      "id": 41
-    },
-    {
-      "name": "fentanyl",
-      "class": "opioid",
-      "route": "IV",
-      "dosage": "25 mcg",
-      "frequency": "q2",
-      "indications": "PAIN",
-      "mechanism": "",
-      "id": 42
-    },
-    {
-      "name": "Toradol",
-      "class": "NSAID",
-      "route": "IV",
-      "dosage": "2 mg",
-      "frequency": "q6",
-      "indications": "Pain, inflammation",
-      "mechanism": "It is not well known",
-      "id": 43
-    },
-    {
-      "name": "Colloid",
-      "class": "Bandage",
-      "route": "Dermal",
-      "dosage": "PRN",
-      "frequency": "PRN",
-      "indications": "Burns",
-      "mechanism": "",
-      "id": 44
     }
   ]
 }
