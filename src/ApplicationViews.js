@@ -185,19 +185,29 @@ class ApplicationViews extends Component {
       });
   };
   deleteAdminMed = id => {
+    let currentUserId = sessionStorage.getItem("userId");
     
     return APImanager.delete("medications", id)
       .then(() => APImanager.getAllUnitMedications())
       .then(medication => {
         this.setState({ medications: medication });
+      })
+      .then(() => APImanager.getUserMeds("userProfile", currentUserId))
+      .then(medication => {
+        this.setState({ userProfile: medication });
       });
   };
   deleteAdminProcedure = id => {
+    let currentUserId = sessionStorage.getItem("userId");
     
     return APImanager.delete("procedures", id)
       .then(() => APImanager.getAllUnitProcedures())
       .then(procedure => {
         this.setState({ procedures: procedure });
+      })
+      .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
+      .then(procedure => {
+        this.setState({ userProfileProcedure: procedure });
       });
   };
   deleteAdminUnit = id => {

@@ -180,6 +180,7 @@ export default class AdminEditMed extends Component {
               className="form-control"
               onChange={this.handleFieldChange}
               id="mechanism"
+              placeholder="Mechanism"
               value={this.state.mechanism}
             />
           </div>
