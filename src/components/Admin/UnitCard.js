@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card, CardBody, Button } from 'reactstrap';
+import UnitRemoveButton from "./UnitRemoveButton"
 
 export default class UnitCard extends Component {
     render() {
@@ -17,7 +18,16 @@ export default class UnitCard extends Component {
                 >
                   <CardBody className="#8fbc8f">
                     <h5><u>{this.props.unit.name}</u></h5>
-                    <Button size ="sm" onClick={() =>this.props.deleteAdminUnit(this.props.unit.id)}>Remove Unit</Button>
+                    
+                    
+                    
+                     
+                    
+                      
+                      <UnitRemoveButton deleteAdminUnit={this.props.deleteAdminUnit}{...this.props} />
+                    
+                
+                    
                     
                     
                   </CardBody>

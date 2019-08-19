@@ -64,8 +64,8 @@ export default class AddNoteProcedureModal extends Component {
                   inverse
                   style={{
                     backgroundColor: "#93E9BE",
-                    borderColor: "#93E9BE",
-                    color: "#93E9BE"
+                    borderColor: "#93E9BE"
+                    
                   }}>
                       <h2 className="p-1 mb-4 bg-secondary text-white">Add Note</h2>
                     <h1>

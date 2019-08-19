@@ -29,7 +29,7 @@ export default class AdminDeleteButtonModal extends Component {
         
         
         render() {
-            if(this.isAuthenticated() & this.adminAuthenticated()){
+            if(this.isAuthenticated() & this.adminAuthenticated() & this.props.medication.medication.id > 25){
         return (
             <React.Fragment>
             <Button className="mr-2" color="success"  onClick={this.toggle} >
