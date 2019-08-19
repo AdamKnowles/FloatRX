@@ -12,8 +12,11 @@ Upon load, you will be taken to the user profile. You can toggle between medicat
 Dependencies:
 
 react
+
 ReactStrap
+
 Bootstrap
+
 react-dom
 
 Installations:
