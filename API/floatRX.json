@@ -123,11 +123,6 @@
       "procedureId": 2,
       "userId": 1,
       "id": 14
-    },
-    {
-      "procedureId": 3,
-      "userId": 1,
-      "id": 15
     }
   ],
   "userProfile": [
@@ -168,11 +163,6 @@
     },
     {
       "medicationId": 1,
-      "userId": 1,
-      "id": 19
-    },
-    {
-      "medicationId": 2,
       "userId": 1,
       "id": 20
     }
@@ -253,12 +243,6 @@
       "procedureId": 5,
       "userId": 2,
       "id": 2
-    },
-    {
-      "note": "what up",
-      "medicationId": 1,
-      "userId": 1,
-      "id": 3
     }
   ],
   "unit": [
