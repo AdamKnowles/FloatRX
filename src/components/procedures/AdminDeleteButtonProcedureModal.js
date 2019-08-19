@@ -30,7 +30,7 @@ export default class AdminDeleteButtonProcedureModal extends Component {
         
         
         render() {
-            if(this.isAuthenticated() & this.adminAuthenticated()){
+            if(this.isAuthenticated() & this.adminAuthenticated() & this.props.procedure.procedure.id > 6){
         return (
             <React.Fragment>
             <Button className="mr-2" color="success"  onClick={this.toggle} >
