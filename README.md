@@ -18,13 +18,11 @@ react-dom
 
 Installations:
 
--git clone "project"
+-git clone app
 
 -cd into float-rx
 
--npm install --save bootstrap
-
--npm install --save reactstrap react react-dom
+-npm install
 
 Start Application:
 
