@@ -63,7 +63,7 @@ export default class AddNoteProcedureToProfile extends Component {
                   note.procedureId === this.props.procedure.procedureId).
               map( note =>(<React.Fragment><CardBody className="text-dark mt-4" 
               inverse
-              style={{ backgroundColor: "#93E9BE", borderColor: "#FFF4EF" }}><div ><CardBody className="text-dark border border-dark" 
+              style={{ backgroundColor: "#93E9BE", borderColor: "#FFF4EF" }}><div ><CardBody className="text-dark rounded" 
               inverse
               style={{ backgroundColor: "#FFF4EF", borderColor: "#FFF4EF" }}><h6 className="mt-0">{note.note}</h6></CardBody><div className="editDeleteButtons" > <NoteProcedureEditFormModal toggle={this.toggle} editNewNote={this.props.editNewNote} notes={this.props.notes} note={note} {...this.props} />  <Button color="danger" size="" onClick={() =>this.props.deleteNoteFromProfile(note.id)} >
                     Delete

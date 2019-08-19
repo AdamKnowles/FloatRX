@@ -258,22 +258,32 @@ class ApplicationViews extends Component {
   };
   editAdminMed = (editedEventObject) => {
     console.log("edit button clicked")
+    let currentUserId = sessionStorage.getItem("userId");
     
     return APImanager.put("medications", editedEventObject)
       .then(() => APImanager.getAllUnitMedications())
       .then(medication => {
 
         this.setState({ medications: medication });
+      })
+      .then(() => APImanager.getUserMeds("userProfile", currentUserId))
+      .then(medication => {
+        this.setState({ userProfile: medication });
       });
   };
   editAdminProcedure = (editedEventObject) => {
     console.log("edit button clicked")
+    let currentUserId = sessionStorage.getItem("userId");
     
     return APImanager.put("procedures", editedEventObject)
       .then(() => APImanager.getAllUnitProcedures())
       .then(procedure => {
 
         this.setState({ procedures: procedure });
+      })
+      .then(() => APImanager.getUserProcedures("userProfileProcedure", currentUserId))
+      .then(procedure => {
+        this.setState({ userProfileProcedure: procedure });
       });
   };
   
